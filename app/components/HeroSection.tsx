@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-import Carousel from '@/app/images/carousel-1.png'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const carouselItems = [
