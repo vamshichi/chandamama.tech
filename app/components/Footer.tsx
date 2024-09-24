@@ -45,10 +45,10 @@ export default function Footer() {
                 <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
               </li>
               <li className="mb-2">
-                <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                <Link href="/privacypolicy" className="hover:text-white transition-colors">Privacy Policy</Link>
               </li>
               <li className="mb-2">
-                <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+                <Link href="/termsofservice" className="hover:text-white transition-colors">Terms of Service</Link>
               </li>
             </ul>
           </div>
@@ -68,7 +68,7 @@ export default function Footer() {
                 type="submit"
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
-                Subscribe
+                Contact
               </button>
             </form>
           </div>

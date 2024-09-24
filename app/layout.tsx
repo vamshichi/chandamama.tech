@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-import Navbar from "./components/Header";
+import Navbar from "@/app/components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -16,8 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Chandamamma.tech",
-  description: "tranding News best books and the top gadgets will be showen here ",
+  title: "chandamama.tech",
+  description: "With Chandamama.tech, you’ll find a blend of information, entertainment, and convenience, all while accessing affiliate links to help you make informed decisions when purchasing eBooks and gadgets.",
 };
 
 export default function RootLayout({
