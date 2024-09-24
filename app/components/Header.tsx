@@ -12,7 +12,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md z-50 relative">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-gray-800">
@@ -36,7 +36,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-white shadow-md md:hidden">
+          <div className="absolute top-16 left-0 right-0 bg-white shadow-md z-50 md:hidden">
             <div className="flex flex-col items-center py-4 space-y-4">
               <NavLink href="/" onClick={toggleMenu}>Home</NavLink>
               <NavLink href="/news" onClick={toggleMenu}>News</NavLink>
