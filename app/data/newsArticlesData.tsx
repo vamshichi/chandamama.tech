@@ -1,7 +1,3 @@
-import aiImage from "@/app/images/news/aiImage.png"
-import Image from "next/image";
-
-
 const newsArticlesData = [ 
     {
       id: 1,
