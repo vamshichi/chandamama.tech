@@ -5,7 +5,7 @@ const TermsOfService: React.FC = () => {
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-6 text-gray-800">Terms of Service for Chandamama.tech</h1>
-        <p className="text-gray-600 mb-4">Last Updated: [Insert Date]</p>
+        <p className="text-gray-600 mb-4">Last Updated: September 25, 2024</p>
         
         <div className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-2xl font-semibold mb-4">1. Acceptance of Terms</h2>
@@ -61,7 +61,7 @@ const TermsOfService: React.FC = () => {
 
           <h2 className="text-2xl font-semibold mb-4">9. Governing Law</h2>
           <p className="text-gray-700 mb-4">
-            These Terms of Service shall be governed by and construed in accordance with the laws of [Your Country/State]. Any legal action or proceeding arising out of or related to these terms shall be brought exclusively in the courts located in [Your Location].
+            These Terms of Service shall be governed by and construed in accordance with the laws of India. Any legal action or proceeding arising out of or related to these terms shall be brought exclusively in the courts located in Bangalore, India.
           </p>
 
           <h2 className="text-2xl font-semibold mb-4">10. Contact Us</h2>

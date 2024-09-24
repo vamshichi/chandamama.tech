@@ -17,7 +17,7 @@ const AboutChandamama = () => {
         <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Latest News</h2>
           <p className="text-gray-600 mb-4">
-            Our news section brings you the latest updates from the world of technology, business, innovation, and beyond. Whether it’s a groundbreaking tech development or business trends, we keep you informed with quality news articles.
+            Our news section brings you the latest updates from the world of technology, business, innovation, and beyond. Whether it&aposs a groundbreaking tech development or business trends, we keep you informed with quality news articles.
           </p>
           <a
             href="/news"

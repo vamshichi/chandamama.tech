@@ -37,7 +37,7 @@ const PrivacyPolicy: React.FC = () => {
 
         <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">4. Third-Party Services</h2>
         <p className="text-gray-600 mb-4">
-          Our website may contain links to third-party sites or services that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy and terms of service of any third-party site you visit.
+          Our website may contain links to third-party sites or services that are not operated by us. If you click on a third-party link, you will be directed to that third party&apos;s site. We strongly advise you to review the Privacy Policy and terms of service of any third-party site you visit.
         </p>
         
         <p className="text-gray-600 mb-4">
