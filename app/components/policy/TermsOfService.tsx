@@ -46,7 +46,7 @@ const TermsOfService: React.FC = () => {
 
           <h2 className="text-2xl font-semibold mb-4">7. Disclaimers</h2>
           <p className="text-gray-700 mb-4">
-            The services provided by Chandamama.tech are on an "as is" and "as available" basis. We make no warranties, express or implied, regarding the operation of our services or the information, content, materials, or products included on our site.
+            The services provided by Chandamama.tech are on an as is and as available basis. We make no warranties, express or implied, regarding the operation of our services or the information, content, materials, or products included on our site.
           </p>
 
           <h2 className="text-2xl font-semibold mb-4">8. Limitation of Liability</h2>
