@@ -3,6 +3,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
+import Logo from '@/app/icon.png'
+import Image from 'next/image'
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,8 +18,9 @@ export default function Navbar() {
     <header className="bg-white shadow-md z-50 relative">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-gray-800">
-        Chandamama
+        <Link href="/" className="text-2xl font-bold text-gray-800 flex">
+        <Image src={Logo} alt="Chandamama Logo" width={40} height={40} />
+        <p className='pt-1 font-serif'>Chandamama</p>
         </Link>
 
         {/* Desktop Navigation */}
