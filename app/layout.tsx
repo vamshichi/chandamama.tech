@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "chandamama.tech",
-  description: "With Chandamama.tech, you’ll find a blend of information, entertainment, and convenience, all while accessing affiliate links to help you make informed decisions when purchasing eBooks and gadgets.",
+  description: "With Chandamama.tech, you&apos;ll find a blend of information, entertainment, and convenience, all while accessing affiliate links to help you make informed decisions when purchasing eBooks and gadgets.",
 };
 
 export default function RootLayout({
@@ -34,7 +34,6 @@ export default function RootLayout({
         <main>
         {children}
         </main>
-        
       </body>
     </html>
   );
