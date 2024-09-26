@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Social Media Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <h3 className=" font-serif mb-4 text-2xl">Follow Us</h3>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                 <Facebook size={24} aria-label="Facebook" />
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Important Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Important Links</h3>
+            <h3 className="text-2xl font-serif mb-4">Important Links</h3>
             <ul>
               <li className="mb-2">
                 <Link href="/about" className="hover:text-white transition-colors">About</Link>
@@ -80,7 +80,7 @@ export default function Footer() {
 
           {/* Newsletter Signup */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Stay Updated</h3>
+            <h3 className="text-2xl font-serif mb-4">Stay Updated</h3>
             <p className="mb-4">Sign up for our newsletter to get the latest updates.</p>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
               <input

@@ -42,15 +42,15 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-gray-50 px-4">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-6 text-gray-800">Contact Us</h1>
-        <p className="text-gray-600 mb-6">
+        <h1 className="text-3xl font-serif text-gray-800 mb-8 ">Contact Us</h1>
+        <p className="my-2 text-gray-700">
           We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out using the form below or through our contact details.
         </p>
 
         <div className="bg-white shadow-md rounded-lg p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
+          <h2 className="text-3xl font-serif text-gray-800 mb-8">Get in Touch</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-gray-700 mb-1" htmlFor="name">Name</label>
@@ -97,26 +97,26 @@ export default function ContactPage() {
             </button>
           </form>
           {submitStatus === 'success' && (
-            <p className="mt-4 text-green-600">Your message has been sent successfully!</p>
+            <p className="mt-2 text-gray-700">Your message has been sent successfully!</p>
           )}
           {submitStatus === 'error' && (
-            <p className="mt-4 text-red-600">There was an error sending your message. Please try again.</p>
+            <p className="mt-2 text-gray-700">There was an error sending your message. Please try again.</p>
           )}
         </div>
 
         <div className="bg-white shadow-md rounded-lg p-6">
-          <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
-          <p className="text-gray-700 mb-2">
+          <h2 className="text-3xl font-serif text-gray-800 mb-8 ">Contact Information</h2>
+          <p className="mt-2 text-gray-700">
             <strong>Email:</strong> 
             <a href="mailto:chandamamadreams@gmail.com" className="text-blue-500 hover:underline"> chandamamadreams@gmail.com</a>
           </p>
-          <p className="text-gray-700 mb-2">
+          <p className="mt-2 text-gray-700">
             <strong>Phone:</strong> 9886603072
           </p>
-          <p className="text-gray-700 mb-2">
-            <strong>Address:</strong> 123 Chandamama Lane, City, State, Zip Code
+          <p className="mt-2 text-gray-700">
+            <strong>Address:</strong> #11 KG Halli, Bengaluru, Karnataka, 560015
           </p>
-          <p className="text-gray-700">
+          <p className="mt-2 text-gray-700">
             We look forward to connecting with you!
           </p>
         </div>

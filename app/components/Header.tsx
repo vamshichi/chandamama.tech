@@ -44,7 +44,7 @@ export default function Navbar() {
             <div className="flex flex-col items-center py-4 space-y-4">
               <NavLink href="/" onClick={toggleMenu}>Home</NavLink>
               <NavLink href="/news" onClick={toggleMenu}>News</NavLink>
-              <NavLink href="/ebooks" onClick={toggleMenu}>eBooks</NavLink>
+              <NavLink href="/ebooks" onClick={toggleMenu}>Courses</NavLink>
               <NavLink href="/gadgets" onClick={toggleMenu}>Gadgets</NavLink>
               <NavLink href="/about" onClick={toggleMenu}>About</NavLink>
               <NavLink href="/contact" onClick={toggleMenu}>Contact</NavLink>
