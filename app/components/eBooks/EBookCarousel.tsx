@@ -37,7 +37,9 @@ export default function EBookCarousel() {
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6 text-gray-800">Top eBooks</h2>
+        <Link href={"/ebooks"}>
+          <h2 className="text-3xl font-serif text-gray-800 mb-8">Courses</h2>
+        </Link>
         <Slider {...settings}>
           {sortedEBooks.map((book) => (
             <div key={book.id} className="p-4">
@@ -78,7 +80,16 @@ export default function EBookCarousel() {
             </div>
           ))}
         </Slider>
+        <div className="flex justify-center mt-12">
+            <Link 
+              href="/ebooks"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out"
+            >
+              View All Courses
+            </Link>
       </div>
+      </div>
+      
     </section>
   );
 }

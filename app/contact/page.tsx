@@ -1,5 +1,5 @@
 import ContactPage from "../components/contact/ContactPage";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 
 const Contact: React.FC = () => {
@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
     <div>
       <HeroSection />
       <ContactPage />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

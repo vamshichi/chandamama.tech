@@ -1,15 +1,40 @@
-'use client'
+'use client';
 
-import React from 'react'
-import Link from 'next/link'
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 export default function Footer() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    // Add newsletter signup logic here
-    console.log('Newsletter signup submitted')
-  }
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setEmail(''); // Clear the input field on success
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <footer className="bg-gray-800 text-gray-100 py-10">
@@ -63,14 +88,23 @@ export default function Footer() {
                 placeholder="Your email"
                 className="w-full px-4 py-2 rounded-lg bg-gray-700 text-gray-100 border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600"
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <button
                 type="submit"
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
+                disabled={isSubmitting}
               >
-                Contact
+                {isSubmitting ? 'Submitting...' : 'Subscribe'}
               </button>
             </form>
+            {submitStatus === 'success' && (
+              <p className="mt-2 text-green-400">Thank you for subscribing!</p>
+            )}
+            {submitStatus === 'error' && (
+              <p className="mt-2 text-red-400">An error occurred. Please try again.</p>
+            )}
           </div>
         </div>
 
@@ -80,5 +114,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

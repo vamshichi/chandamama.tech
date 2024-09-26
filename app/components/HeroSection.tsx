@@ -46,7 +46,7 @@ export default function HeroSection() {
     <section className="relative">
       <div id="hero-carousel" className="relative w-full" data-carousel="slide">
         {/* Carousel wrapper */}
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="relative h-56 overflow-hidden md:h-96">
           {carouselItems.map((item, index) => (
             <div
               key={index}

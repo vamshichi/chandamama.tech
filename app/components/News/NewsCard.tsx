@@ -1,16 +1,17 @@
-"use client"
+'use client'
 
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { NewspaperIcon } from 'lucide-react'
+import { StaticImageData } from 'next/image'
 
 interface NewsCardProps {
   id: number
   title: string
   date: string
   snippet: string
-  image: string
+  image: string | StaticImageData
   slug: string
 }
 
@@ -21,7 +22,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, snippet, image, slug }
     setImageError(true)
   }
 
-  const isExternalImage = image.startsWith('http') || image.startsWith('data:')
+  const isExternalImage = typeof image === 'string' && (image.startsWith('http') || image.startsWith('data:'))
 
   return (
     <div className="border rounded-lg shadow-lg overflow-hidden">

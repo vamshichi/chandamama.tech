@@ -1,4 +1,4 @@
-import Footer from "@/app/components/Footer";
+// import Footer from "@/app/components/Footer";
 import HeroSection from "@/app/components/HeroSection";
 import PopularGadgetsSection from "@/app/components/gadgets/PopularGadgetsSection";
 import NewsGrid from "@/app/components/News/NewsGrid";
@@ -10,15 +10,15 @@ export default function Home() {
       <main>
         <HeroSection />
          <section className="py-12 bg-gray-100">
-          <div className="container mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Latest News</h2>
+          <div className="container mx-auto ">
+            <h2 className="text-3xl font-serif text-gray-800 mb-8 px-4">Latest News</h2>
             {/* Show only 6 news articles on the homepage */}
             <NewsGrid showViewAllButton={true} limit={6} />
           </div>
         </section> 
          <EBookCarousel /> 
         <PopularGadgetsSection />
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </div>
   );

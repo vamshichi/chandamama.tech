@@ -1,6 +1,7 @@
 import React from "react";
 import gadgetsData from "@/app/data/gadgetsData"; // Assuming this is where your data is located
 import Link from "next/link"; // Corrected the Link import from next/link
+import Image from "next/image";
 
 const GadgetsPage: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const GadgetsPage: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {gadgetsData.map((gadget) => (
             <div key={gadget.id} className="border rounded-md p-4">
-              <img
+              <Image
                 src={gadget.image || "/placeholder.svg"} // Make sure placeholder is in /public
                 alt={gadget.title}
                 className="w-full h-48 object-cover mb-4"
@@ -20,7 +21,7 @@ const GadgetsPage: React.FC = () => {
               <div className="mt-4 space-x-2">
                 {/* Correct Link from Next.js */}
                 <Link href={gadget.buyLink} target="_blank" passHref>
-                  <span className="text-white bg-green-500 hover:bg-green-700 px-4 py-2 rounded">
+                  <span className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out">
                     Buy Now
                   </span>
                 </Link>

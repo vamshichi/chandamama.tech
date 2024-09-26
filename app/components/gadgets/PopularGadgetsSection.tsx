@@ -6,7 +6,10 @@ export default function PopularGadgetsSection() {
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6 text-gray-800">Popular Gadgets</h2>
+        <Link href={"/gadgets"}>
+        <h2 className="text-3xl font-serif text-gray-800 mb-8">Popular Gadgets</h2>
+        </Link>
+        
         <div className="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
           {gadgetsData.map((gadget) => (
             <div key={gadget.id} className="min-w-[250px] bg-white p-4 border rounded-lg shadow-md flex flex-col">
@@ -37,9 +40,19 @@ export default function PopularGadgetsSection() {
                   Learn More
                 </Link>
               </div>
+              
             </div>
           ))}
+
         </div>
+        <div className="flex justify-center mt-12">
+            <Link 
+              href="/news"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out"
+            >
+              View All gadgets
+            </Link>
+      </div>
       </div>
     </section>
   )

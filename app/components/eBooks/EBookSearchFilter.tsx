@@ -1,79 +1,103 @@
-// components/EBookSearchFilter.tsx
-"use client"
+'use client'
 
-import { useState } from 'react';
-import eBooksData from '@/app/data/eBooksData';
-import Link from 'next/link';
+import { useState, useMemo } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Search, Download } from 'lucide-react'
+import eBooksData from '@/app/data/eBooksData'
 
-const EBookSearchFilter: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+export default function EBookSearchFilter() {
+  const [searchTerm, setSearchTerm] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
 
-  const filteredEBooks = eBooksData.filter((book) => {
-    const matchesSearch = book.title.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory ? book.category === selectedCategory : true;
-    return matchesSearch && matchesCategory;
-  });
+  const categories = useMemo(() => {
+    const allCategories = eBooksData.map(book => book.category)
+    return ['All', ...allCategories.filter((category, index) => allCategories.indexOf(category) === index)]
+  }, [])
+
+  const filteredEBooks = useMemo(() => {
+    return eBooksData.filter((book) => {
+      const matchesSearch = book.title.toLowerCase().includes(searchTerm.toLowerCase())
+      const matchesCategory = selectedCategory === 'All' || !selectedCategory ? true : book.category === selectedCategory
+      return matchesSearch && matchesCategory
+    })
+  }, [searchTerm, selectedCategory])
 
   return (
-    <div className="container mx-auto py-8">
-      {/* Search Bar */}
-      <div className="mb-4">
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search for eBooks..."
-          className="border border-gray-300 rounded-md p-2 w-full"
-        />
-      </div>
-
-      {/* Category Filter */}
-      <div className="flex justify-center space-x-4 mb-8">
-        <button
-          className={`px-4 py-2 ${!selectedCategory ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-          onClick={() => setSelectedCategory(null)}
-        >
-          All
-        </button>
-        <button
-          className={`px-4 py-2 ${selectedCategory === 'Technology' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-          onClick={() => setSelectedCategory('Technology')}
-        >
-          Technology
-        </button>
-        <button
-          className={`px-4 py-2 ${selectedCategory === 'Fiction' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-          onClick={() => setSelectedCategory('Fiction')}
-        >
-          Fiction
-        </button>
-        <button
-          className={`px-4 py-2 ${selectedCategory === 'Non-fiction' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-          onClick={() => setSelectedCategory('Non-fiction')}
-        >
-          Non-fiction
-        </button>
-      </div>
-
-      {/* eBooks Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {filteredEBooks.map((book) => (
-          <div key={book.id} className="border rounded-lg p-4 shadow-md">
-            <img src={book.image || '/default-cover.jpg'} alt={book.title} className="w-full h-48 object-cover" />
-            <h3 className="mt-4 font-bold text-lg">{book.title}</h3>
-            <p className="text-gray-500">{book.category}</p>
-            <div className="flex justify-between mt-4">
-              <Link href={book.link}>
-                <span className="text-blue-500">Read More</span>
-              </Link>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md">Download</button>
-            </div>
+    <section className="bg-gray-50 py-12">
+      <div className="container mx-auto px-4">
+        <h1 className="text-3xl font-serif text-gray-800 mb-8 text-center">Course Library</h1>
+        
+        {/* Search Bar */}
+        <div className="mb-8 max-w-2xl mx-auto">
+          <div className="relative">
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="Search for eBooks..."
+              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
+            />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
           </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+        </div>
 
-export default EBookSearchFilter;
+        {/* Category Filter */}
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${
+                selectedCategory === category || (category === 'All' && !selectedCategory)
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-white text-gray-700 hover:bg-gray-100'
+              }`}
+              onClick={() => setSelectedCategory(category === 'All' ? null : category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        {/* eBooks Grid */}
+        {filteredEBooks.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {filteredEBooks.map((book) => (
+              <div key={book.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="relative h-48">
+                  <Image
+                    src={book.image || '/default-cover.jpg'}
+                    alt={book.title}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-bold text-lg text-gray-800 mb-2 line-clamp-2">{book.title}</h3>
+                  <p className="text-sm text-gray-500 mb-4">{book.category}</p>
+                  <div className="flex justify-between items-center">
+                    <Link 
+                      href={book.link}
+                      className="text-blue-500 hover:text-blue-700 transition duration-300"
+                    >
+                      Read More
+                    </Link>
+                    <button 
+                      className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 flex items-center"
+                      aria-label={`Download ${book.title}`}
+                    >
+                      <Download size={16} className="mr-2" />
+                      <span className="text-sm">Download</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-center text-gray-500 text-lg">No eBooks found matching your criteria.</p>
+        )}
+      </div>
+    </section>
+  )
+}

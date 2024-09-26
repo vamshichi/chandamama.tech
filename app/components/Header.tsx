@@ -16,11 +16,11 @@ export default function Navbar() {
 
   return (
     <header className="bg-white shadow-md z-50 relative">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <nav className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-gray-800 flex">
-        <Image src={Logo} alt="Chandamama Logo" width={40} height={40} />
-        <p className='pt-1 font-serif'>Chandamama</p>
+        <Image src={Logo} alt="Chandamama Logo" width={60} height={60} />
+        <p className='pt-4 font-serif text-yellow-400'>Chandamama</p>
         </Link>
 
         {/* Desktop Navigation */}
