@@ -20,7 +20,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-gray-800 flex">
         <Image src={Logo} alt="Chandamama Logo" width={60} height={60} />
-        <p className='pt-4 font-serif text-yellow-400'>Chandamama</p>
+        <p className='pt-4 font-serif text-black'>Chandamama</p>
         </Link>
 
         {/* Desktop Navigation */}
