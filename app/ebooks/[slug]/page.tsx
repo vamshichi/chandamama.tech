@@ -68,15 +68,15 @@ export default function EBookDetailClient() {
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300"
                 >
                   <Download className="mr-2" size={20} />
-                  Download eBook
+                  Buy product
                 </a>
-                <Link
+                {/* <Link
                   href={`/ebooks/read/${slug}`}
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300"
                 >
                   <BookOpen className="mr-2" size={20} />
                   Read Online
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

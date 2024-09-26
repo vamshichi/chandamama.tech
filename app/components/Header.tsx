@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className="hidden md:flex space-x-6">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/news">News</NavLink>
-          <NavLink href="/ebooks">eBooks</NavLink>
+          <NavLink href="/ebooks">Courses</NavLink>
           <NavLink href="/gadgets">Gadgets</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/contact">Contact</NavLink>
