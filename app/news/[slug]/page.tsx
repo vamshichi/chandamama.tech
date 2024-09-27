@@ -60,8 +60,8 @@ export default function NewsDetailClient() {
               <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{article.date}</div>
               <h1 className="mt-2 text-3xl leading-8 font-serif tracking-tight text-gray-900 sm:text-4xl">{article.title}</h1>
               <div className="mt-4 flex items-center text-sm text-gray-500">
-                <Calendar className="mr-2" size={16} />
-                <span>{article.date}</span>
+                {/* <Calendar className="mr-2" size={16} /> */}
+                {/* <span>{article.date}</span> */}
                 {article.readTime && (
                   <>
                     <Clock className="ml-4 mr-2" size={16} />

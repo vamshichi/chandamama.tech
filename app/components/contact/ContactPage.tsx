@@ -44,8 +44,8 @@ export default function ContactPage() {
   return (
     <section className="py-12 bg-gray-50 px-4">
       <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-serif text-gray-800 mb-8 ">Contact Us</h1>
-        <p className="my-2 text-gray-700">
+        <h1 className="text-3xl font-serif text-gray-800 mb-5 ">Contact Us</h1>
+        <p className="mb-4 text-gray-700">
           We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out using the form below or through our contact details.
         </p>
 

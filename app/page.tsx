@@ -13,7 +13,7 @@ export default function Home() {
           <div className="container mx-auto ">
             <h2 className="text-3xl font-serif text-gray-800 mb-8 px-4">Latest News</h2>
             {/* Show only 6 news articles on the homepage */}
-            <NewsGrid showViewAllButton={true} limit={6} />
+            <NewsGrid showViewAllButton={true} limit={3} />
           </div>
         </section> 
          <EBookCarousel /> 
