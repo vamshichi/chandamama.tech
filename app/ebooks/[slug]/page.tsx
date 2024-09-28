@@ -6,15 +6,18 @@ import Link from 'next/link'
 import { ArrowLeft, Download, BookOpen } from 'lucide-react'
 import eBooksData from '@/app/data/eBooksData'
 import EBookCarousel from '@/app/components/eBooks/EBookCarousel'
+import EBookMetaTags from '@/app/components/eBooks/EBookMetaTags'
 
 export default function EBookDetailClient() {
   const params = useParams()
   const slug = params.slug as string
+  
 
   const book = eBooksData.find((b) => b.link.includes(slug))
 
   if (!book) {
     return (
+      
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Book Not Found</h1>
@@ -30,8 +33,16 @@ export default function EBookDetailClient() {
       </div>
     )
   }
-
+  const fullUrl = `https://www.chandamama.tech${book.link}`
   return (
+    <>
+      <EBookMetaTags
+        title={book.title}
+        category={book.category}
+        image={book.image}
+        content={book.content}
+        url={fullUrl}
+      />
     <div className="min-h-screen bg-gray-100">
       <div className="container mx-auto py-12 px-4">
         <Link 
@@ -68,7 +79,7 @@ export default function EBookDetailClient() {
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300"
                 >
                   {/* <a className="mr-2" /> */}
-                  Know more
+                  Download
                 </a>
                 {/* <Link
                   href={`/ebooks/read/${slug}`}
@@ -84,5 +95,6 @@ export default function EBookDetailClient() {
       </div>
       <EBookCarousel />
     </div>
+    </>
   )
 }

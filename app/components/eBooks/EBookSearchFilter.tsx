@@ -89,7 +89,7 @@ export default function EBookSearchFilter() {
                   target="_blank" // Opens the link in a new tab
                   rel="noopener noreferrer" // Prevents security risks
                 >
-                  view link
+                  download
                 </Link>
               ) : (
                 <span className="text-sm text-gray-500"></span>
