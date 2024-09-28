@@ -56,12 +56,12 @@ export default function EBookDetailClient() {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="md:flex">
               <div className="md:flex-shrink-0">
-                <div className="relative w-full md:w-64 h-96">
+                <div className="relative w-full md:min-w-96 h-96">
                   <Image
                     src={book.image || '/placeholder.svg'}
                     alt={book.title}
                     fill
-                    style={{ objectFit: "cover" }}  
+                    // style={{ objectFit: "cover" }}  
                     className="rounded-t-lg md:rounded-l-lg md:rounded-t-none"
                   />
                 </div>

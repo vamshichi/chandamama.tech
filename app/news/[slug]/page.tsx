@@ -45,12 +45,12 @@ export default function NewsDetailClient() {
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="md:flex">
             <div className="md:flex-shrink-0">
-              <div className="relative w-full md:w-96 h-96">
+              <div className="relative w-full md:min-w-96 h-96">
                 <Image
                   src={article.image || '/placeholder.svg'}
                   alt={article.title}
                   fill
-                  style={{ objectFit: "cover" }}  
+                  // style={{ objectFit: "cover" }}  
                   className="rounded-t-lg md:rounded-l-none md:rounded-t-none"
                 />
               </div>

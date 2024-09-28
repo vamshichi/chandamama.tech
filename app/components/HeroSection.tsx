@@ -4,19 +4,14 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-// height=600&width=1200
 import BreakingNews from "@/app/images/heroScetion/BREAKING NEWS.png"
 import Books from "@/app/images/heroScetion/BOOKS.png"
 import gadgets from "@/app/images/heroScetion/Your paragraph text.png"
-
-
 
 const carouselItems = [
   { src: BreakingNews, alt: "BreakingNews" },
   { src: Books, alt: "Books" },
   { src: gadgets, alt: "gadgets" },
-  // { src: "", alt: "Carousel item 4" },
-  // { src: "", alt: "Carousel item 5" },
 ]
 
 export default function HeroSection() {
@@ -59,7 +54,6 @@ export default function HeroSection() {
                 src={item.src}
                 alt={item.alt}
                 fill
-                className="object-cover"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority={index === 0}
               />

@@ -17,8 +17,8 @@ export default function PopularGadgetsSection() {
                 <Image
                   src={gadget.image || "/placeholder.svg"}
                   alt={gadget.title}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  // objectFit="cover"
                   className="rounded-md"
                 />
               </div>

@@ -38,7 +38,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, snippet, image, slug }
       <div className="relative w-full h-48 bg-gray-200">
         {image && !imageError ? (
           isExternalImage ? (
-            <img
+            <Image
               src={image}
               alt={title}
               className="w-full h-full object-cover"
@@ -48,8 +48,8 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, snippet, image, slug }
             <Image
               src={image}
               alt={title}
-              layout="fill"
-              objectFit="cover"
+              fill
+              // objectFit="cover"
               onError={handleImageError}
             />
           )

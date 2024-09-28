@@ -68,7 +68,7 @@ export default function EBookSearchFilter() {
             src={book.image || '/default-cover.jpg'}
             alt={book.title}
             layout="fill"
-            objectFit="cover"
+            // objectFit="cover"
           />
         </div>
         <div className="p-4">

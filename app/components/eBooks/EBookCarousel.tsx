@@ -50,7 +50,7 @@ export default function EBookCarousel() {
                     alt={book.title}
                     width={400}  // You can adjust this value as needed
                     height={300} // You can adjust this value as needed
-                    style={{ objectFit: "cover" }} // Replace legacy prop
+                    // style={{ objectFit: "cover" }} // Replace legacy prop
                     className="rounded-md"
                   />
                 </div>
