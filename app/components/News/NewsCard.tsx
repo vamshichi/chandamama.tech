@@ -9,7 +9,7 @@ import { StaticImageData } from 'next/image'
 interface NewsCardProps {
   id: number
   title: string
-  date?: string
+  date : string
   snippet: string
   image: string | StaticImageData
   slug: string
@@ -22,8 +22,8 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, snippet, image, slug }
     setImageError(true)
   }
 
-  const getFormattedDate = (dateString?: string): string => {
-    const dateToFormat = dateString ? new Date(dateString) : new Date()
+  const getFormattedDate = (dateString: string): string => {
+    const dateToFormat = new Date(dateString)
     return dateToFormat.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
@@ -38,7 +38,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, snippet, image, slug }
       <div className="relative w-full h-48 bg-gray-200">
         {image && !imageError ? (
           isExternalImage ? (
-            <Image
+            <img
               src={image}
               alt={title}
               className="w-full h-full object-cover"
@@ -67,7 +67,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, snippet, image, slug }
         </h3>
         <time dateTime={date} className="text-sm text-gray-500 mb-2">
           {getFormattedDate(date)}
-        </time>
+        </time> 
         <p className="text-gray-700 flex-grow">{snippet}</p>
         <Link 
           href={`/news/${slug}`}

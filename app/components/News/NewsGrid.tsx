@@ -1,17 +1,17 @@
 import Link from 'next/link'
 import { StaticImageData } from 'next/image'
-import newsArticlesData from '@/app/data/newsArticlesData'
+import newsArticlesWithSnippets from '@/app/data/newsArticlesData'
 import NewsCard from './NewsCard'
 
 interface NewsArticle {
   id: number
   title: string
-  date?: string
-  snippet: string
+  date : string
   content: string
   image: string | StaticImageData
   slug: string
   readTime?: number
+  snippet: string
 }
 
 interface NewsGridProps {
@@ -20,12 +20,8 @@ interface NewsGridProps {
 }
 
 export default function NewsGrid({ showViewAllButton = false, limit }: NewsGridProps) {
-  // Reverse news articles order so the latest ones appear first
-  const sortedNews = [...newsArticlesData].sort((a, b) => {
-    const dateA = a.date ? new Date(a.date).getTime() : 0
-    const dateB = b.date ? new Date(b.date).getTime() : 0
-    return dateB - dateA
-  })
+  // Sort news articles by id in descending order to show the latest one (by id) first
+  const sortedNews = [...newsArticlesWithSnippets].sort((a, b) => b.id - a.id)
 
   // Limit the news if the `limit` prop is provided
   const displayedNews = limit ? sortedNews.slice(0, limit) : sortedNews
@@ -41,7 +37,7 @@ export default function NewsGrid({ showViewAllButton = false, limit }: NewsGridP
               id={news.id}
               title={news.title}
               date={news.date}
-              snippet={news.snippet || news.content.slice(0, 150) + '...'}
+              snippet={news.snippet}
               image={news.image}
               slug={news.slug}
             />
