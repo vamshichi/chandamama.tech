@@ -6,7 +6,7 @@ import NewsCard from './NewsCard'
 interface NewsArticle {
   id: number
   title: string
-  date : string
+  date: string
   content: string
   image: string | StaticImageData
   slug: string
@@ -20,11 +20,11 @@ interface NewsGridProps {
 }
 
 export default function NewsGrid({ showViewAllButton = false, limit }: NewsGridProps) {
-  // Sort news articles by id in descending order to show the latest one (by id) first
-  const sortedNews = [...newsArticlesWithSnippets].sort((a, b) => b.id - a.id)
+  // Reverse the news articles array
+  const reversedNews = [...newsArticlesWithSnippets].reverse();
 
   // Limit the news if the `limit` prop is provided
-  const displayedNews = limit ? sortedNews.slice(0, limit) : sortedNews
+  const displayedNews = limit ? reversedNews.slice(0, limit) : reversedNews;
 
   return (
     <section className="py-12 bg-gray-50">
@@ -56,5 +56,5 @@ export default function NewsGrid({ showViewAllButton = false, limit }: NewsGridP
         )}
       </div>
     </section>
-  )
+  );
 }

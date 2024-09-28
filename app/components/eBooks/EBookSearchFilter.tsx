@@ -58,45 +58,52 @@ export default function EBookSearchFilter() {
             </button>
           ))}
         </div>
-
-        {/* eBooks Grid */}
-        {filteredEBooks.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredEBooks.map((book) => (
-              <div key={book.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="relative h-48">
-                  <Image
-                    src={book.image || '/default-cover.jpg'}
-                    alt={book.title}
-                    layout="fill"
-                    objectFit="cover"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg text-gray-800 mb-2 line-clamp-2">{book.title}</h3>
-                  <p className="text-sm text-gray-500 mb-4">{book.category}</p>
-                  <div className="flex justify-between items-center">
-                    <Link 
-                      href={book.link}
-                      className="text-blue-500 hover:text-blue-700 transition duration-300"
-                    >
-                      Read More
-                    </Link>
-                    <button 
-                      className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 flex items-center"
-                      aria-label={`Download ${book.title}`}
-                    >
-                      <Download size={16} className="mr-2" />
-                      <span className="text-sm">Download</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
+       {/* eBooks Grid */}
+{filteredEBooks.length > 0 ? (
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    {filteredEBooks.map((book) => (
+      <div key={book.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div className="relative h-48">
+          <Image
+            src={book.image || '/default-cover.jpg'}
+            alt={book.title}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+        <div className="p-4">
+          <h3 className="font-bold text-lg text-gray-800 mb-2 line-clamp-2">{book.title}</h3>
+          <p className="text-sm text-gray-500 mb-4">{book.category}</p>
+          <div className="flex justify-between items-center">
+            <Link 
+              href={book.link}
+              className="text-blue-500 hover:text-blue-700 transition duration-300"
+            >
+              Read More
+            </Link>
+            <div>
+              {book.pdfLink ? (
+                <Link 
+                  href={book.pdfLink} 
+                  className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300"
+                  target="_blank" // Opens the link in a new tab
+                  rel="noopener noreferrer" // Prevents security risks
+                >
+                  view link
+                </Link>
+              ) : (
+                <span className="text-sm text-gray-500"></span>
+              )}
+            </div>
           </div>
-        ) : (
-          <p className="text-center text-gray-500 text-lg">No eBooks found matching your criteria.</p>
-        )}
+        </div>
+      </div>
+    ))}
+  </div>
+) : (
+  <p className="text-center text-gray-500 text-lg">No eBooks found matching your criteria.</p>
+)}
+
       </div>
     </section>
   )

@@ -63,12 +63,12 @@ export default function EBookDetailClient() {
               </p>
               <div className="mt-6 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <a
-                  href={book.link}
-                  download
+                  href={book.pdfLink}
+                  // download
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300"
                 >
-                  <Download className="mr-2" size={20} />
-                  Buy product
+                  {/* <a className="mr-2" /> */}
+                  Know more
                 </a>
                 {/* <Link
                   href={`/ebooks/read/${slug}`}
