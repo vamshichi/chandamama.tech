@@ -41,7 +41,7 @@ Windows Key + A: Open the Action Center.
 Windows Key + I: Open Settings.
 
 Click this link to explore more Excel shortcuts and become an Excel pro!`,
-   link: "/ebooks/the-art-of-programming",
+   link: "/ebooks/Mastering_Windows_10",
       pdfLink: 'https://drive.google.com/file/d/1WaA0qD0xTDc0ieCvbtCJCPkysVdC61Ov/view?usp=sharing',
     },
       {
@@ -90,7 +90,7 @@ Conclusion:
 Mastering Excel keyboard shortcuts can transform the way you work, making it easier to handle complex tasks and large spreadsheets. By integrating these shortcuts into your daily workflow, you can greatly enhance your productivity and efficiency in Excel.
 
 Click this link to explore more Excel shortcuts and become an Excel pro!`,
-        link: "/ebooks/fictional-world",
+        link: "/ebooks/Excel_Keyboard_Shortcuts",
         pdfLink:'https://drive.google.com/file/d/13NNY2IfUMtCyRYo3ZfuHhmJDx5k5prV5/view?usp=sharing',
       },
     // {
