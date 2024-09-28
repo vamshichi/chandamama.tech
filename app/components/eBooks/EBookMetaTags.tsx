@@ -14,7 +14,7 @@ const EBookMetaTags: React.FC<EBookMetaTagsProps> = ({ title, category, image, c
 
   return (
     <Head>
-      <title>{title} - Chandamama eBooks</title>
+      <title>{title} - Chandamama courses</title>
       <meta name="description" content={description} />
 
       {/* Open Graph Meta Tags */}

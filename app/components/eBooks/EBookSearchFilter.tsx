@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Search, Download } from 'lucide-react'
+import { Search } from 'lucide-react'
 import eBooksData from '@/app/data/eBooksData'
 
 export default function EBookSearchFilter() {
