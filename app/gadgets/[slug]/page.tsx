@@ -51,7 +51,7 @@ export default function GadgetDetailPage() {
                   src={gadget.image || "/placeholder.svg"}
                   alt={gadget.title}
                   fill
-                  style={{ objectFit: "cover" }}  
+                  // style={{ objectFit: "cover" }}  
                   className="rounded-t-lg md:rounded-l-lg md:rounded-t-none"
                 />
               </div>

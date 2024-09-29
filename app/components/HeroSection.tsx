@@ -4,14 +4,16 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-import BreakingNews from "@/app/images/heroScetion/BREAKING NEWS.png"
+import BreakingNews from "@/app/images/heroScetion/News.png"
 import Books from "@/app/images/heroScetion/BOOKS.png"
 import gadgets from "@/app/images/heroScetion/Your paragraph text.png"
+import AllNews from '@/app/images/heroScetion/allnews.png'
 
 const carouselItems = [
   { src: BreakingNews, alt: "BreakingNews" },
   { src: Books, alt: "Books" },
   { src: gadgets, alt: "gadgets" },
+  // { src: AllNews, alt: 'News' }
 ]
 
 export default function HeroSection() {
