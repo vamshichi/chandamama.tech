@@ -2,18 +2,17 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'  // Import Link from Next.js
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 import BreakingNews from "@/app/images/heroScetion/News.png"
-import Books from "@/app/images/heroScetion/BOOKS.png"
+import Books from "@/app/images/heroScetion/COURSES2.png"
 import gadgets from "@/app/images/heroScetion/Your paragraph text.png"
-import AllNews from '@/app/images/heroScetion/allnews.png'
 
 const carouselItems = [
-  { src: BreakingNews, alt: "BreakingNews" },
-  { src: Books, alt: "Books" },
-  { src: gadgets, alt: "gadgets" },
-  // { src: AllNews, alt: 'News' }
+  { src: BreakingNews, alt: "Breaking News", link: "/news" },
+  { src: Books, alt: "Books", link: "/ebooks" },
+  { src: gadgets, alt: "Gadgets", link: "/gadgets" },
 ]
 
 export default function HeroSection() {
@@ -44,23 +43,18 @@ export default function HeroSection() {
       <div id="hero-carousel" className="relative w-full" data-carousel="slide">
         {/* Carousel wrapper */}
         <div className="relative h-56 overflow-hidden md:h-96">
-          {carouselItems.map((item, index) => (
-            <div
-              key={index}
-              className={`absolute w-full h-full transition-opacity duration-700 ease-in-out ${
-                index === currentSlide ? 'opacity-100' : 'opacity-0'
-              }`}
-              data-carousel-item
-            >
+          {/* Only render the current slide with a unique Link */}
+          <div className="absolute w-full h-full transition-opacity duration-700 ease-in-out opacity-100" data-carousel-item>
+            <Link href={carouselItems[currentSlide].link}>
               <Image
-                src={item.src}
-                alt={item.alt}
+                src={carouselItems[currentSlide].src}
+                alt={carouselItems[currentSlide].alt}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                priority={index === 0}
+                priority
               />
-            </div>
-          ))}
+            </Link>
+          </div>
         </div>
         {/* Slider indicators */}
         <div className="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">

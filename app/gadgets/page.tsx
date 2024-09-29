@@ -11,11 +11,13 @@ const GadgetsPage: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {gadgetsData.map((gadget) => (
             <div key={gadget.id} className="border rounded-md p-4">
+              <Link href={gadget.learnMoreLink}>
               <Image
                 src={gadget.image || "/placeholder.svg"} // Make sure placeholder is in /public
                 alt={gadget.title}
                 className="w-full h-48 object-cover mb-4"
               />
+              </Link>
               <h3 className="text-lg font-semibold">{gadget.title}</h3>
               <p className="text-gray-600">{gadget.price}</p>
               <div className="mt-4 space-x-2">

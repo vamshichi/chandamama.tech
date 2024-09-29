@@ -35,7 +35,9 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, snippet, image, slug }
 
   return (
     <article className="border rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-xl flex flex-col h-full">
+     
       <div className="relative w-full h-48 bg-gray-200">
+       <Link href={`/news/${slug}`} >
         {image && !imageError ? (
           isExternalImage ? (
             <Image
@@ -58,6 +60,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, snippet, image, slug }
             <NewspaperIcon className="w-12 h-12 text-gray-400" aria-hidden="true" />
           </div>
         )}
+        </Link>
       </div>
       <div className="p-4 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">

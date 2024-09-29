@@ -12,8 +12,10 @@ export default function PopularGadgetsSection() {
         
         <div className="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
           {gadgetsData.map((gadget) => (
+            
             <div key={gadget.id} className="min-w-[250px] bg-white p-4 border rounded-lg shadow-md flex flex-col">
               <div className="relative w-full h-48 mb-4">
+              <Link href={gadget.learnMoreLink}>
                 <Image
                   src={gadget.image || "/placeholder.svg"}
                   alt={gadget.title}
@@ -21,6 +23,7 @@ export default function PopularGadgetsSection() {
                   // objectFit="cover"
                   className="rounded-md"
                 />
+                </Link>
               </div>
               <h3 className="text-lg font-semibold mb-2">{gadget.title}</h3>
               <p className="text-gray-600 mb-4">{gadget.price}</p>

@@ -45,6 +45,7 @@ export default function EBookCarousel() {
             <div key={book.id} className="p-4">
               <div className="border rounded-lg shadow-md p-4 bg-white h-full flex flex-col">
                 <div className="relative w-full h-48 mb-4">
+                  <Link href={book.link}>
                   <Image
                     src={book.image || "/placeholder.svg"}
                     alt={book.title}
@@ -53,6 +54,7 @@ export default function EBookCarousel() {
                     // style={{ objectFit: "cover" }} // Replace legacy prop
                     className="rounded-md"
                   />
+                  </Link>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">{book.title}</h3>
                 <p className="text-gray-600 mb-4 flex-grow">{book.category}</p>
