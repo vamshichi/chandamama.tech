@@ -61,7 +61,6 @@ export default function EBookDetailClient() {
                     src={book.image || '/placeholder.svg'}
                     alt={book.title}
                     fill
-                    // style={{ objectFit: "cover" }}  
                     className="rounded-t-lg md:rounded-l-lg md:rounded-t-none"
                   />
                 </div>
@@ -84,7 +83,8 @@ export default function EBookDetailClient() {
             </div>
           </div>
         </div>
-        <EBookCarousel />
+        {/* Pass the current slug to the EBookCarousel to exclude the current book */}
+        <EBookCarousel currentSlug={slug} />
       </div>
     </>
   )

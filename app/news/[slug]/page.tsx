@@ -89,12 +89,12 @@ export default function NewsDetailClient() {
         </div>
       </div>
       <section className="py-12 bg-gray-100">
-          <div className="container mx-auto ">
-            <h2 className="text-3xl font-serif text-gray-800 mb-8 px-4">Latest News</h2>
-            {/* Show only 6 news articles on the homepage */}
-            <NewsGrid showViewAllButton={true} limit={6} />
-          </div>
-        </section> 
+        <div className="container mx-auto">
+           <h2 className="text-3xl font-serif text-gray-800 mb-8 px-4">Latest News</h2>
+           <NewsGrid showViewAllButton={true} limit={6} currentSlug={slug} /> {/* Pass the current slug */}
+       </div>
+      </section>
+
     </div>
   )
 }

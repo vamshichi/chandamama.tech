@@ -17,11 +17,17 @@ interface NewsArticle {
 interface NewsGridProps {
   showViewAllButton?: boolean
   limit?: number
+  currentSlug?: string // Add currentSlug to exclude the current article
 }
 
-export default function NewsGrid({ showViewAllButton = false, limit }: NewsGridProps) {
+export default function NewsGrid({ showViewAllButton = false, limit, currentSlug }: NewsGridProps) {
   // Reverse the news articles array
-  const reversedNews = [...newsArticlesWithSnippets].reverse();
+  let reversedNews = [...newsArticlesWithSnippets].reverse();
+
+  // Filter out the current article by slug if currentSlug is provided
+  if (currentSlug) {
+    reversedNews = reversedNews.filter(news => news.slug !== currentSlug);
+  }
 
   // Limit the news if the `limit` prop is provided
   const displayedNews = limit ? reversedNews.slice(0, limit) : reversedNews;
