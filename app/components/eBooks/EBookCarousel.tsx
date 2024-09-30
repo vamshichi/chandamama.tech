@@ -56,13 +56,13 @@ export default function EBookCarousel({ currentSlug }: EBookCarouselProps) {
             {sortedEBooks.map((book) => (
               <div key={book.id} className="px-2">
                 <div className="border rounded-lg shadow-md bg-white h-96 flex flex-col">
-                  <div className="relative w-full h-48">
+                  <div className="relative w-full h-48 mb-4 overflow-hidden rounded-md">
                     <Link href={book.link}>
                       <Image
                         src={book.image || "/placeholder.svg"}
                         alt={book.title}
                         fill
-                        className="rounded-t-lg object-cover"
+                        className="transition duration-300 ease-in-out hover:scale-105"
                       />
                     </Link>
                   </div>

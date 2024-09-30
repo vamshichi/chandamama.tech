@@ -29,6 +29,7 @@ export default function Navbar() {
           <NavLink href="/news">News</NavLink>
           <NavLink href="/ebooks">Courses</NavLink>
           <NavLink href="/gadgets">Gadgets</NavLink>
+          <NavLink href="/softwares">softwares</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/contact">Contact</NavLink>
         </div>
@@ -46,6 +47,7 @@ export default function Navbar() {
               <NavLink href="/news" onClick={toggleMenu}>News</NavLink>
               <NavLink href="/ebooks" onClick={toggleMenu}>Courses</NavLink>
               <NavLink href="/gadgets" onClick={toggleMenu}>Gadgets</NavLink>
+              <NavLink href="/softwares" onClick={toggleMenu}>softwares</NavLink>
               <NavLink href="/about" onClick={toggleMenu}>About</NavLink>
               <NavLink href="/contact" onClick={toggleMenu}>Contact</NavLink>
             </div>

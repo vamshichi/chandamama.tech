@@ -3,7 +3,7 @@
 import { useParams } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowLeft, Calendar, Clock } from 'lucide-react'
+import { ArrowLeft,Clock } from 'lucide-react'
 import newsArticlesData from '@/app/data/newsArticlesData'
 import NewsGrid from '@/app/components/News/NewsGrid'
 
