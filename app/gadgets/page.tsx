@@ -15,7 +15,7 @@ const GadgetsPage: React.FC = () => {
               <Image
                 src={gadget.image || "/placeholder.svg"} // Make sure placeholder is in /public
                 alt={gadget.title}
-                className="w-full h-48 object-cover mb-4"
+                className="w-full h-48 mb-4"
               />
               </Link>
               <h3 className="text-lg font-semibold">{gadget.title}</h3>

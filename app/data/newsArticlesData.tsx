@@ -7,14 +7,18 @@ import Top10 from '@/app/images/news/top10.png'
 import Adani from '@/app/images/news/Adani.jpeg'
 import Idfc from '@/app/images/news/IDFC First Bank.jpg'
 import Amazon from '@/app/images/news/Great Indian Festival Sale.jpg'
+import Gmail from '@/app/images/news/Gmail.png'
+import Dell from '@/app/images/news/Dell.png'
+import Union_Minister from '@/app/images/news/Minister for commerce.png'
+import Welspun_Enterprises from '@/app/images/news/Welspun Enterprises.png'
 
-function getFormattedDate(): string {
-  return new Date().toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
-}
+// function getFormattedDate(): string {
+//   return new Date().toLocaleDateString('en-US', {
+//     year: 'numeric',
+//     month: 'long',
+//     day: 'numeric'
+//   })
+// }
 
 function generateSnippet(content: string): string {
   const words = content.split(' ')
@@ -26,7 +30,7 @@ const newsArticlesData = [
     {
       id: 1,
       title: 'Joe Biden: The World is at an ‘Inflection Point’ in Final Address at U.N. Assembly.',
-      date: getFormattedDate(),
+      date: "septembar 28,2024",
       content:
                 `In his final address to the United Nations General Assembly in September 2024, President Joe Biden emphasized the importance of global unity in the face of conflict and aggression. Reflecting on his years in office, Biden highlighted the need to reinforce international partnerships and uphold democratic principles to ensure a more stable world.               
                 A major focus of Biden’s speech was the ongoing war in Ukraine. He urged the international community to continue supporting Ukraine against Russian aggression, stressing that Ukraine’s freedom remains paramount and that Vladimir Putin's war has failed to weaken NATO, which is now stronger with the addition of Finland and Sweden. Biden reaffirmed the U.S. commitment to Ukraine, calling for sustained efforts until a “just and durable peace” is achieved.
@@ -40,7 +44,7 @@ const newsArticlesData = [
     {
       id: 2,
       title: `Narendra Modi Addresses U.N. at 'Summit of the Future' on September 23, 2024`,
-      date: getFormattedDate(),
+      date: "septembar 28,2024",
       content: `His speech focused on critical global challenges, emphasizing a collaborative approach to tackle them. One of his key messages was that humanity’s success lies in collective strength and cooperation, rather than conflict or confrontation. Modi stressed that solutions to the world's issues should be human-centric, reflecting a philosophy that prioritizes diplomacy, peace, and multilateral cooperation.
                 Modi highlighted India's growing role on the global stage, noting that India represents one-sixth of humanity. He emphasized the need for inclusive decision-making in international institutions, calling for reforms within the UN to better reflect contemporary geopolitical realities. He argued that the current structure of international organizations, like the UN, needs to evolve to include emerging nations more fairly. The Prime Minister cited the inclusion of the African Union in the G20 as an example of positive change, advocating for similar steps in other global forums​
                 In his speech, Modi also spoke about pressing issues like climate change, terrorism, and artificial intelligence (AI). He stressed the need for urgent and sustained action on climate change, advocating for a transition toward sustainable development. He reiterated India's commitment to global environmental goals, citing its efforts to expand renewable energy production and its leadership in international initiatives like the International Solar Alliance.
@@ -52,7 +56,7 @@ const newsArticlesData = [
     {
       id: 3,
       title: 'Top 10 Gadgets of 2024',
-      date: getFormattedDate(),
+      date: "septembar 28,2024",
       content: `As technology continues to advance at a rapid pace, 2024 has brought us some truly innovative gadgets. Here are the top 10 must-have devices this year:
   
   1. Neural Interface Smartwatch: Control your devices with just your thoughts.
@@ -73,7 +77,7 @@ const newsArticlesData = [
     {
       id: 4,
       title: 'India’s Historic Double Gold Triumph at the 2024 Chess Olympiad',
-      date: getFormattedDate(),
+      date: "septembar 28,2024",
       content: `The Chess Olympiad 2024 was a major international team chess event held in Budapest, Hungary from September 10th to 23rd, 2024. It was the 45th Chess Olympiad and the first time Hungary had hosted the event since the 2nd unofficial Chess Olympiad in 1926.
 Key Highlights:
  * India's Historic Double Gold: India achieved a remarkable feat by winning gold medals in both the Open and Women's categories. This was the first time India had won both titles in the same Chess Olympiad.
@@ -92,7 +96,7 @@ The Chess Olympiad 2024 was a memorable event that showcased the incredible tale
     {
       id: 5,
       title: 'How 5G is Changing Mobile Connectivity',
-      date: getFormattedDate(),
+      date:"septembar 28,2024",
       content: "5G networks are transforming how we communicate and interact with technology, offering unprecedented speeds and lower latency. This next-generation wireless technology is not just about faster downloads; it's enabling a whole new era of connectivity. From autonomous vehicles to smart cities, 5G is powering innovations that were once thought impossible. The increased bandwidth and reduced latency are making real-time remote operations a reality, revolutionizing industries such as healthcare and manufacturing. As 5G continues to roll out globally, we can expect to see a surge in IoT devices and applications that will reshape our daily lives.",
       image: AiImage,
       slug: '5g-connectivity',
@@ -100,7 +104,7 @@ The Chess Olympiad 2024 was a memorable event that showcased the incredible tale
     {
       id:6,
       title:'$4 billion data centre expansion plan, Adani Group likely to accelerate',
-      date: getFormattedDate(),
+      date:  "septembar 28,2024",
       content:`The Adani Group is reportedly advancing its $4 billion plan to expand its data centre business in response to a surge in demand from technology giants. According to a report by Mint, this move aims to strengthen the group’s power sector by tapping into the substantial power requirements associated with data centre services.
 
       Adani ConneX Pvt. Ltd., a joint venture between Adani Enterprises Ltd. and Virginia-based EdgeConneX, currently operates 17 megawatts (MW) of data centre capacity while managing 210 MW in various stages of construction. With demand for data centre services skyrocketing, the Adani Group now aims to achieve a data centre capacity of 1 to 1.5 gigawatts (GW) within the next one to two years, significantly accelerating its original timeline from five years, the Mint report added.
@@ -116,7 +120,7 @@ The Chess Olympiad 2024 was a memorable event that showcased the incredible tale
     {
       id:7,
       title : 'IDFC to merge with IDFC FIRST Bank, effective October 1',
-      date: getFormattedDate(),
+      date:  "septembar 29,2024",
       content:`IDFC Limited on September 27 announced that its Board of Directors has approved the amalgamation of its subsidiaries. It said the Board, in its meeting has approved the effectiveness of the composite scheme of amalgamation for merging IDFC Financial Holding Company Limited (IDFC FHCL) with IDFC Limited, and subsequently, IDFC Limited with IDFC FIRST Bank Limited.
 
 IDFC further stated that the National Company Law Tribunal (NCLT), Chennai Bench, sanctioned the amalgamation scheme on September 25, 2024.
@@ -129,7 +133,7 @@ slug:'idfc'
 {
   id:8,
   title:'Amazon Great Indian Festival 2024: Check best smartphone deals under Rs 70,000',
-  date: getFormattedDate(),
+  date: "septembar 29,2024",
   image:Amazon,
   content:`The Amazon Great Indian Festival 2024 is now live for everyone. The sale comes with amazing discounts and deals across all categories. However, Smartphones get more attention as usual, as some of the hottest deals are available on them with tons of discounts. If you’ve been waiting to upgrade your phone, this could be the perfect time.
 
@@ -150,6 +154,168 @@ This is the latest foldable offering from Motorola. Launched at Rs 74,999, the M
 iPhone 15 (Buy Now)
 This is the saddest deal among all the five. Amazon has not offered any instant discount on this one currently. However, you can definitely use some bank offers on the iPhone 15 like a Rs 3000 bank discount on SBI Credit Card.`,
   slug:'Amazon_Great_Indian_Festival_2024'
+},
+{
+  id:9,
+  title:'Union Minister of Commerce & Industry Piyush Goyal: Investment Under PLI to Cross ₹2 Lakh Crore Soon; Employment Generation Set to Boost by 26%',
+  date:'septembar 30,2024',
+  image:Union_Minister,
+  content:`The Indian government’s ambitious Production-Linked Incentive (PLI) scheme has been instrumental in pushing the country towards becoming a global manufacturing hub. Recently, Union Minister of Commerce & Industry Piyush Goyal emphasized the transformative impact of this initiative. He announced that investment under the PLI scheme is set to cross ₹2 lakh crore shortly, a development that promises to fuel employment generation by 26%. This significant investment and job creation are poised to bolster India's economic landscape and enhance its global competitiveness. Below, we explore in detail the objectives, sectors, and benefits associated with this landmark initiative.
+
+PLI Scheme: An Overview
+The Production-Linked Incentive (PLI) scheme was launched to incentivize manufacturers across key sectors to enhance production capacities within India. The scheme aims to reduce import dependence, increase exports, and position India as a preferred manufacturing destination globally. With a direct focus on domestic and foreign investments, the PLI scheme is driving innovation and infrastructure development across multiple industries, including automobiles, pharmaceuticals, textiles, electronics, and telecom.
+
+According to Piyush Goyal, the PLI scheme is more than just an incentive structure—it's a cornerstone of self-reliance (Atmanirbhar Bharat). He believes that as investments under the PLI scheme exceed ₹2 lakh crore, it will lead to an exponential rise in production output across multiple sectors.
+
+Key Sectors Under the PLI Scheme
+Several critical sectors have been identified under the PLI scheme to receive benefits, each of which contributes significantly to India's economic growth. Here's a breakdown of some of the leading sectors:
+
+1. Automotive and Auto Components
+The automotive sector is one of the largest beneficiaries of the PLI scheme. Investments in electric vehicles (EVs) and traditional auto components are driving innovation in the industry. The incentive framework encourages green manufacturing, which aligns with the government’s push for environmental sustainability. With PLI funding, the EV sector alone is expected to grow at an unprecedented rate, contributing to both investment surges and job creation.
+
+2. Pharmaceuticals
+The pharmaceutical industry, a crucial sector for India’s economy, has seen a significant push under the PLI initiative. India, often referred to as the "pharmacy of the world," aims to strengthen its position as a global leader in drug manufacturing. The PLI scheme incentivizes companies to increase the domestic production of active pharmaceutical ingredients (APIs), reducing reliance on imports. With investment crossing ₹15,000 crore, this sector alone is poised to create numerous job opportunities.
+
+3. Electronics and Technology Products
+India's electronics manufacturing, particularly in mobile phone production, is undergoing a revolution under the PLI scheme. The country is expected to become the world's second-largest mobile phone manufacturer by 2025. Companies like Apple, Samsung, and Foxconn have already committed to setting up large-scale manufacturing plants in India, further boosting both investment and employment. This sector is a vital cog in the overall scheme and will play a pivotal role in meeting the investment targets.
+
+4. Textiles
+The textile sector is another key beneficiary of the PLI scheme. India's robust textile industry has the potential to serve both domestic needs and export demands. With increasing investments, the sector is witnessing modernization, leading to increased exports and employment generation. The textile sector is also pivotal in rural development as it provides employment opportunities across various skill levels.
+
+5. Telecom and Networking
+Under the PLI scheme, the telecom sector is seeing a revival, with emphasis on domestic manufacturing of critical telecom equipment. This comes in the wake of the 5G revolution, where companies are encouraged to develop advanced infrastructure and reduce dependency on imported technology. This sector, with an investment exceeding ₹12,000 crore, is expected to generate thousands of new jobs and position India as a global telecom equipment provider.
+
+Boost to Employment and Economic Growth
+Piyush Goyal's announcement regarding a 26% increase in employment generation is particularly notable. The PLI scheme is designed to not only attract investments but also stimulate massive employment opportunities across the country. The manufacturing sector, bolstered by new production capacities and technological advancements, is set to create jobs across both skilled and unskilled labor categories. This surge in employment is expected to have a ripple effect, benefitting allied sectors such as logistics, warehousing, and services.
+
+The Indian government estimates that employment generation under the PLI scheme could soon surpass 2 million direct jobs, with indirect employment adding further to this tally. As manufacturing units scale operations, ancillary businesses, small and medium enterprises (SMEs), and the services sector will also see growth in demand for labor, leading to a multiplier effect on employment.
+
+Boosting India’s Position in the Global Market
+The overarching objective of the PLI scheme is to enhance India’s export potential and strengthen its global market position. By boosting domestic production capabilities, India can significantly reduce imports and increase exports, contributing to a favorable trade balance. Sectors like electronics, textiles, and pharmaceuticals, which were previously reliant on imports, are now producing at record levels, ensuring self-reliance while also catering to global markets.
+
+Additionally, the scheme promotes the adoption of advanced technologies and infrastructure development, which further improves the quality of products manufactured in India. This is crucial as global consumers increasingly demand high-quality, cost-effective solutions. Indian manufacturers, through the PLI scheme, are now well-positioned to meet these demands and compete with established global players.
+
+PLI Scheme: The Road Ahead
+Looking forward, the PLI scheme is expected to bring further investments and foster growth across sectors not yet fully explored. With Minister Piyush Goyal’s announcement, it's clear that India's manufacturing trajectory is set on a growth path that will benefit not just the domestic economy but also its global standing as a competitive market player.
+
+The focus will now be on sustaining this momentum by further ease of doing business reforms, ensuring policy stability, and providing additional incentives to manufacturers willing to make India their global production base. As the government continues to streamline these processes, India is well on its way to becoming the next global manufacturing hub, driving both economic growth and job creation for millions.`,
+  slug:'Union_Minister_of_Commerce_&_Industry_Piyush_Goyal',
+},
+{
+  id:10,
+  title:"Welspun Enterprises contract win worth Rs 1,989.9 cr from Municipal Corporation Greater Mumbai, Shares in focus on",
+  date:'septembar 30,2024',
+  image:Welspun_Enterprises,
+  content:`Contract includes design and construction of 8.48 km tunnel with a 3,500 mm bored diameter, to be executed within a period of 93 months using a tunnel boring machine.
+
+ has been declared as L1 bidder by the Brihanmumbai Municipal Corporation for a design and build contract for design and construction of Tertiary Treated Water Conveyance Tunnel from Dharavi WWTF to Ghatkopar WWTF.
+
+The share touched a 52-week high of Rs 619.00 and a 52-week low of Rs 241.00 on 26 August, 2024 and 26 October, 2023, respectively. Currently, the stock is trading 10.07 percent below its 52-week high and 130.98 percent above its 52-week low.
+
+Welspun Enterprises share price will remain in focus on September 30 after the company received an order worth Rs 1,989.90 crore from Brihanmumbai Municipal Corporation. The share price gained nearly 100 percent in the last one-year.`,
+  slug:'Welspun_Enterprises_contract',
+},
+{
+  id:11,
+  title:'Maximizing the Potential of AI Smart Reply Feature in Gmail',
+  date:'septembar 30,2024',
+  image:Gmail,
+  content:`In the modern world of fast-paced communication, efficiency is critical. AI Smart Reply in Gmail is a powerful feature designed to help users respond quickly to emails without sacrificing quality or professionalism. By analyzing the context of an email, Gmail offers three short, relevant responses that users can send with just a tap. However, while many of us appreciate its convenience, few are fully leveraging this tool’s potential to its fullest extent. In this article, we will explore how you can get the most out of AI Smart Reply and ensure that it enhances both your productivity and email communication.
+
+Understanding AI Smart Reply in Gmail
+The AI Smart Reply feature is designed to offer suggested responses based on the content of the received email. This functionality relies on natural language processing (NLP) and machine learning algorithms, which analyze the message and provide concise replies. These suggestions are generated in real-time, ensuring that they are tailored to the specific conversation you are having.
+
+The suggestions are usually brief, consisting of a few words or a short sentence, which are designed to cover the most likely responses. For example, in a conversation discussing a meeting, AI Smart Reply might suggest, "Yes, that works for me," "I’ll be there," or "Can we reschedule?" This saves users time by eliminating the need to compose responses manually, especially for routine or repetitive communications.
+
+How AI Smart Reply Works Behind the Scenes
+At the heart of Gmail’s AI Smart Reply is the Google AI technology that powers its predictive response system. By scanning email content, the AI identifies key phrases and context, and then uses these elements to formulate quick responses. The underlying machine learning models improve over time, adapting to individual users and their email habits, which means the responses become more accurate and relevant the more you use it.
+
+These models are trained using massive datasets of email exchanges to detect common response patterns. Additionally, Google incorporates neural networks that allow the system to predict human-like responses while maintaining appropriateness and tone in various contexts. As a result, AI Smart Reply is not only efficient but also increasingly intuitive the more it is used.
+
+Advantages of Using AI Smart Reply in Gmail
+
+1. Time-Saving Efficiency
+The primary advantage of AI Smart Reply is its ability to save time, especially when dealing with high email volumes. In today’s fast-paced digital environment, responding to emails promptly is crucial. This feature is ideal for handling routine emails where a quick response is sufficient. It allows you to reply within seconds, freeing up time for more complex tasks.
+
+2. Enhanced Productivity
+By eliminating the need to manually draft responses for simple emails, users can focus their energy on more demanding tasks. Over time, the accumulated minutes spent composing emails can add up. With AI Smart Reply, productivity increases as users spend less time managing their inbox and more time on important work.
+
+3. Consistency and Professionalism
+The feature ensures that responses maintain a level of professionalism by providing polished, concise suggestions. For professionals who may struggle with drafting replies in a succinct and polite manner, AI Smart Reply ensures that emails are always on-point and polite, improving the overall tone of your communications.
+
+4. Customizable Responses
+While AI Smart Reply suggestions are pre-generated, users can quickly modify these suggestions to add a personal touch. This blend of speed and customization allows for quick replies that still feel personal and thoughtful. Modifying suggested responses is particularly useful when you want to convey a more detailed message while maintaining efficiency.
+
+Limitations of AI Smart Reply in Gmail
+Despite its numerous advantages, AI Smart Reply also has certain limitations. First, the feature is best suited for short, simple responses and may struggle to provide appropriate suggestions for more complex queries. As the system is still AI-driven, it may occasionally suggest responses that seem out of context or too generic.
+
+Additionally, while the system becomes better over time, it may not always perfectly align with your tone or personal communication style, especially in professional settings where formality is key. In such cases, taking a few moments to customize or write your own response may still be the best approach.
+
+Best Practices for Maximizing AI Smart Reply
+
+1. Leverage It for Routine Communications
+The best way to use AI Smart Reply is for routine or repetitive emails. These are emails that do not require a lot of thought but need a prompt response. For example, confirming a meeting time, acknowledging receipt of documents, or answering a straightforward yes/no question can easily be handled by the Smart Reply feature.
+
+2. Combine with Smart Compose
+For more detailed responses, you can pair AI Smart Reply with Gmail’s Smart Compose feature. Smart Compose suggests entire phrases and sentences as you type, making it an excellent companion to AI Smart Reply when a quick, yet slightly more detailed response is necessary.
+
+3. Personalize When Necessary
+Always remember that while AI Smart Reply is efficient, it’s important to maintain a human touch in your email communications. For important or sensitive matters, take the time to personalize the automated suggestions, ensuring that your email reflects your true tone and intent.
+
+4. Stay Updated on New Features
+Google continuously updates and refines its AI technology, so staying informed on new Gmail features is essential to maximizing your productivity. Google regularly releases updates that improve the AI Smart Reply functionality and its ability to predict responses in different contexts. Make sure your Gmail app is updated regularly to take full advantage of these enhancements.
+
+Privacy Considerations
+With any AI-driven technology, privacy is always a concern. AI Smart Reply works by scanning the content of your emails to provide relevant suggestions. However, Google maintains that this process is entirely automated, and no human reads your emails during this process. The technology is designed to respect user privacy, using encryption to safeguard the contents of your communications. For those who remain concerned about privacy, disabling the feature is always an option.
+
+Conclusion
+The AI Smart Reply feature in Gmail is an incredibly useful tool for anyone looking to save time and streamline their email responses. By understanding how the feature works and leveraging it for appropriate situations, users can enhance both their productivity and the quality of their email communication. While it may not be perfect for every situation, AI Smart Reply is a powerful asset when used effectively in conjunction with personalized responses and Smart Compose.`,
+  slug:'AI_Smart_Reply_Feature_in_Gmail',
+},
+{
+  id:12,
+  title:'Dell Orders Its Global Sales Team to Work Out of Office Full-Time',
+  date:'septembar 30,2024',
+  image:Dell,
+  content:`[7:21 AM, 9/30/2024] Mohan Mamma N: In a significant shift toward an evolving workplace strategy, Dell Technologies recently announced that it has ordered its global sales team to return to a full-time office-based work schedule. This decision marks a stark departure from the remote work model that has been predominant over the past few years, particularly since the onset of the COVID-19 pandemic. The move has triggered discussions around the implications for corporate culture, employee performance, and the broader trend of hybrid working environments.
+
+Why Dell's Decision Matters in Today's Workplace Landscape
+Dell's decision to bring its sales team back to the office has generated significant attention. The company's choice is reflective of a larger conversation happening within the business community about the balance between remote work and in-person collaboration. The pandemic saw a dramatic shift towards work-from-home models, with many businesses adopting remote or hybrid arrangements as permanent options. However, Dell's latest policy suggests that the tech giant sees value in physical office presence, particularly for sales roles.
+
+Sales teams are often regarded as the driving force behind revenue generation. Their roles rely heavily on building relationships, nurturing client trust, and engaging in high-stakes negotiations. Dell likely views in-office collaboration as an essential component to maximizing productivity, enhancing team dynamics, and ensuring seamless client interactions.
+
+The Impact of Office-Based Work on Sales Performance
+For a sales team, face-to-face interaction—whether with colleagues or clients—can play a crucial role in boosting performance. In-person communication fosters clearer understanding, faster decision-making, and stronger team cohesion. Dell’s move may be driven by the belief that the physical presence of its sales teams can lead to enhanced collaboration and more effective sales strategies.
+
+In an office environment, impromptu meetings, quick brainstorming sessions, and immediate feedback can fuel creativity and problem-solving in ways that virtual settings may not fully replicate. The synergy created in a shared workspace might lead to faster execution of deals and a more direct response to market changes. Moreover, in sales, the energy of a collaborative team environment can motivate individuals, increasing competitiveness and driving better results.
+
+Challenges of Transitioning Back to Full-Time Office Work
+While Dell’s decision might bring about strategic advantages, it also poses certain challenges. One of the most immediate concerns is employee morale. Many workers have grown accustomed to the flexibility of remote work, enjoying the benefits of reduced commutes, improved work-life balance, and the ability to manage personal responsibilities more effectively.
+
+A sudden shift to full-time office work could lead to dissatisfaction among employees who prefer the flexibility they have experienced over the past few years. Balancing the demands of family, health, and work can become more complex when commuting and in-office presence are reintroduced. Companies like Dell must now grapple with how to manage these employee concerns while pursuing what they believe is a more effective working model.
+
+Additionally, employee retention could become an issue. Talented workers who value flexibility may seek opportunities with competitors that continue to offer remote or hybrid work options. Companies that fail to adapt to the evolving preferences of the workforce risk losing top performers to more flexible employers.
+
+Why Some Companies Are Moving Away From Remote Work
+Dell is not the only company re-evaluating its work-from-home policies. Several large organizations, particularly in the tech industry, have initiated similar strategies. Amazon, Google, and other major corporations have begun calling employees back into the office, either full-time or part-time, to bolster collaboration, innovation, and corporate culture.
+
+The key reason for this shift lies in the belief that remote work, while convenient, may not be conducive to certain types of high-performance work. For instance, in sales, being on the ground and having spontaneous interactions with team members and clients could be seen as essential for success. Additionally, onsite leadership and managerial oversight are easier to implement in an office setting, ensuring accountability and fostering direct mentorship for new employees.
+
+Hybrid Work vs. Full-Time Office Presence
+The rise of hybrid work models has been one of the most prominent outcomes of the pandemic. Many companies are now exploring hybrid arrangements, where employees work a portion of the week in the office and the rest remotely. This model allows businesses to maintain some of the flexibility that employees enjoy while also ensuring that teams can meet in person when needed.
+
+However, for roles such as sales, which often require high levels of coordination and client interaction, Dell may have determined that a full-time office presence is the most effective solution. Unlike other departments, where employees may be able to work independently or asynchronously, sales professionals frequently need to collaborate in real-time to close deals, manage client relationships, and execute strategies swiftly.
+
+Dell’s Vision for the Future of Work
+Dell's decision is likely part of a larger strategic vision for the company’s future. By transitioning its sales team back to full-time office work, Dell may be signaling a desire to return to a more structured, performance-driven environment where collaboration is paramount. The company may also be positioning itself for long-term growth by ensuring that its sales operations are optimized for efficiency and effectiveness.
+
+Additionally, Dell’s shift may set a precedent for other tech companies reconsidering the value of remote work for certain job functions. While the work-from-home revolution is unlikely to disappear entirely, Dell’s move could indicate a growing belief that in-office work will play a key role in certain aspects of business performance, particularly in client-facing roles.
+
+Conclusion
+Dell's decision to order its global sales team to work from the office full-time represents a noteworthy development in the broader conversation about the future of work. While the benefits of remote work remain undeniable, the company appears to prioritize the tangible advantages of in-person collaboration, particularly for its high-stakes sales operations. The move may challenge the current trend toward hybrid models, sparking further debate about the best approach to balancing flexibility with productivity.
+
+The implications of this decision will be watched closely by other companies, especially in the tech industry, as they navigate their own workforce strategies. Whether Dell's choice to prioritize office-based work will lead to improved performance or employee dissatisfaction remains to be seen.`,
+  slug:'Dell_Orders_Its_Global_Sales_Team_to_Work_Out_of_Office_Full-Time', 
 }
     
   ]
