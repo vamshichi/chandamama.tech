@@ -33,6 +33,7 @@ export default function GadgetDetailPage() {
   }
 
   return (
+    <>
     <div className="min-h-screen bg-gray-100">
       <div className="container mx-auto py-12 px-4">
         <Link 
@@ -91,7 +92,8 @@ export default function GadgetDetailPage() {
 
         {/* Additional sections can be added here, such as specifications, reviews, or related gadgets */}
       </div>
-      <PopularGadgetsSection />
     </div>
+    <PopularGadgetsSection currentSlug={slug} />
+    </> 
   )
 }

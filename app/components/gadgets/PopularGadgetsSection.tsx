@@ -1,28 +1,34 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import gadgetsData from "@/app/data/gadgetsData"
+import Image from 'next/image';
+import Link from 'next/link';
+import gadgetsData from "@/app/data/gadgetsData";
 
-export default function PopularGadgetsSection() {
+interface PopularGadgetsSectionProps {
+  currentSlug: string;
+}
+
+export default function PopularGadgetsSection({ currentSlug }: PopularGadgetsSectionProps) {
+  const filteredGadgets = gadgetsData
+    .filter((gadget) => !gadget.learnMoreLink.includes(currentSlug))
+    .slice(0, 4); // Limit to 4 gadgets
+
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <Link href={"/gadgets"}>
-        <h2 className="text-3xl font-serif text-gray-800 mb-8">Popular Gadgets</h2>
+        <Link href="/gadgets">
+          <h2 className="text-3xl font-serif text-gray-800 mb-8">Popular Gadgets</h2>
         </Link>
-        
-        <div className="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
-          {gadgetsData.map((gadget) => (
-            
-            <div key={gadget.id} className="min-w-[250px] bg-white p-4 border rounded-lg shadow-md flex flex-col">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {filteredGadgets.map((gadget) => (
+            <div key={gadget.id} className="bg-white p-4 border rounded-lg shadow-md flex flex-col h-full">
               <div className="relative w-full h-48 mb-4">
-              <Link href={gadget.learnMoreLink}>
-                <Image
-                  src={gadget.image || "/placeholder.svg"}
-                  alt={gadget.title}
-                  fill
-                  // objectFit="cover"
-                  className="rounded-md"
-                />
+                <Link href={gadget.learnMoreLink}>
+                  <Image
+                    src={gadget.image || "/placeholder.svg"}
+                    alt={gadget.title}
+                    fill
+                    className="rounded-md"
+                  />
                 </Link>
               </div>
               <h3 className="text-lg font-semibold mb-2">{gadget.title}</h3>
@@ -43,19 +49,18 @@ export default function PopularGadgetsSection() {
                   Learn More
                 </Link>
               </div>
-              
             </div>
           ))}
-
         </div>
+
         <div className="flex justify-center mt-12">
-            <Link 
-              href="/news"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out"
-            >
-              View All gadgets
-            </Link>
-      </div>
+          <Link 
+            href="/gadgets"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out"
+          >
+            View All Gadgets
+          </Link>
+        </div>
       </div>
     </section>
   )
