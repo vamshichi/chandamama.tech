@@ -6,9 +6,9 @@ const AboutChandamama = () => {
   return (
     <div className="container mx-auto py-12 px-6 bg-white rounded-lg shadow-lg">
       <div className="text-center mb-10">
-        <h1 className="text-4xl font-serif text-gray-800 mb-8 ">Welcome to Chandamama.tech</h1>
+        <h1 className="text-4xl font-serif text-gray-800 mb-8">Welcome to Chandamama.tech</h1>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Chandamamma.tech is your trusted platform for staying updated with the latest in technology, discovering trending gadgets, and exploring a wide collection of eBooks across multiple genres. Our mission is to blend knowledge and entertainment to enhance your digital experience.
+          Chandamama.tech is your trusted platform for staying updated with the latest in technology, discovering trending gadgets, and exploring a wide collection of courses across multiple categories. Our mission is to blend knowledge and entertainment to enhance your digital experience.
         </p>
       </div>
 
@@ -27,17 +27,17 @@ const AboutChandamama = () => {
           </a>
         </div>
 
-        {/* eBooks Section */}
+        {/* Courses Section */}
         <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h2 className="text-2xl font-serif text-gray-800 mb-8">Explore eBooks</h2>
+          <h2 className="text-2xl font-serif text-gray-800 mb-8">Explore Courses</h2>
           <p className="text-gray-600 mb-4">
-            Discover our curated eBook library that spans genres like fiction, technology, education, self-help, and more. Whether you're looking for a great read or educational resources, we have something for everyone.
+            Discover our curated course library that spans topics like technology, education, self-help, and more. Whether you're looking for skill development or educational resources, we have something for everyone.
           </p>
           <a
-            href="/ebooks"
+            href="/courses"
             className="inline-block text-blue-600 hover:underline font-medium"
           >
-            Browse eBooks &rarr;
+            Browse Courses &rarr;
           </a>
         </div>
 
@@ -60,52 +60,77 @@ const AboutChandamama = () => {
       <div className="mt-12 text-center">
         <h2 className="text-3xl font-serif text-gray-800 mb-8">Why Choose Chandamama.tech?</h2>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
-          Our platform is designed to provide you with a seamless experience when it comes to discovering new information, exploring the latest gadgets, and enjoying a wide variety of eBooks. At Chandamama.tech, we ensure that you have access to accurate, insightful, and engaging content, all while enjoying the convenience of affiliate links for easy purchases.
+          Our platform is designed to provide you with a seamless experience when it comes to discovering new information, exploring the latest gadgets, and enjoying a wide variety of courses. At Chandamama.tech, we ensure that you have access to accurate, insightful, and engaging content, all while enjoying the convenience of affiliate links for easy purchases.
         </p>
-        <ul className="list-none text-left max-w-2xl mx-auto space-y-4">
-          <li className="flex items-start space-x-3">
-            <svg
-              className="h-6 w-6 text-green-500"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-            <span className="text-gray-600">Comprehensive reviews and expert opinions on gadgets.</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <svg
-              className="h-6 w-6 text-green-500"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-            <span className="text-gray-600">Up-to-date news and insights from the world of technology and innovation.</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <svg
-              className="h-6 w-6 text-green-500"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-            <span className="text-gray-600">A broad selection of eBooks across multiple categories to satisfy all readers.</span>
-          </li>
-        </ul>
+
+        {/* Meet the Team Section */}
+        <div className="mt-12">
+          <h3 className="text-3xl font-serif text-gray-800 mb-8">Meet the Team</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {/* Founder */}
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Vamshi CH</h4>
+              <p className="text-lg text-gray-600 mb-4">Founder</p>
+              <p className="text-gray-600">
+                Vamshi is the visionary behind Chandamama.tech, passionate about technology and digital innovation. With years of experience, he leads the platform with a focus on quality content and seamless user experience.
+              </p>
+            </div>
+
+            {/* Co-founder 1 */}
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">K Mohan Rao</h4>
+              <p className="text-lg text-gray-600 mb-4">Co-Founder</p>
+              <p className="text-gray-600">
+                Mohan Rao brings extensive expertise in business and strategy, helping to shape the growth and direction of Chandamama.tech. He ensures that the platform aligns with the needs of tech enthusiasts and learners.
+              </p>
+            </div>
+
+            {/* Co-founder 2 */}
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Jagdish</h4>
+              <p className="text-lg text-gray-600 mb-4">Co-Founder</p>
+              <p className="text-gray-600">
+                Jagdish is a tech expert with a keen eye for innovation and detail. As a co-founder, he plays a pivotal role in content development and ensuring the quality of tech reviews and news on the platform.
+              </p>
+            </div>
+
+            {/* Digital Marketing Team */}
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Chaithra</h4>
+              <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
+              <p className="text-gray-600">
+                Chaithra drives the digital marketing efforts at Chandamama.tech, ensuring the brand reaches a wider audience through strategic campaigns and social media engagement.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Vishnu</h4>
+              <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
+              <p className="text-gray-600">
+                Vishnu specializes in content marketing and SEO, helping Chandamama.tech rank higher in search engines and attract the right audience for tech news, reviews, and courses.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Hariesh S</h4>
+              <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
+              <p className="text-gray-600">
+                Hariesh manages paid advertising and partnerships, working to ensure Chandamama.tech's content is promoted effectively across multiple platforms and channels.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Jamse Vinay</h4>
+              <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
+              <p className="text-gray-600">
+                Jamse focuses on analytics and insights, helping Chandamama.tech make data-driven decisions to improve content strategy and digital growth.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutChandamama
+export default AboutChandamama;
