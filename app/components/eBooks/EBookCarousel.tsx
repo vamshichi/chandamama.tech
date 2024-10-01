@@ -49,7 +49,7 @@ export default function EBookCarousel({ currentSlug }: EBookCarouselProps) {
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <Link href={"/ebooks"}>
-          <h2 className="text-3xl font-serif text-gray-800 mb-8">Courses</h2>
+          {/* <h2 className="text-3xl font-serif text-gray-800 mb-8">Courses</h2> */}
         </Link>
         {sortedEBooks.length > 0 ? (
           <Slider {...settings}>

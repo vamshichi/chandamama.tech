@@ -7,7 +7,7 @@ const GadgetsPage: React.FC = () => {
   return (
     <section className="py-12 px-4">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-serif text-gray-800 mb-8 ">All Gadgets</h2>
+        <h2 className="text-3xl font-serif text-gray-800 mb-8 ">Gadgets</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {gadgetsData.map((gadget) => (
             <div key={gadget.id} className="border rounded-md p-4">

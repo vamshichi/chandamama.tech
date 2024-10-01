@@ -11,6 +11,8 @@ import Gmail from '@/app/images/news/Gmail.png'
 import Dell from '@/app/images/news/Dell.png'
 import Union_Minister from '@/app/images/news/Minister for commerce.png'
 import Welspun_Enterprises from '@/app/images/news/Welspun Enterprises.png'
+import Amazon_laptop from '@/app/images/news/Amazon.png'
+import Sebi from '@/app/images/news/SEBI.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -316,6 +318,78 @@ Dell's decision to order its global sales team to work from the office full-time
 
 The implications of this decision will be watched closely by other companies, especially in the tech industry, as they navigate their own workforce strategies. Whether Dell's choice to prioritize office-based work will lead to improved performance or employee dissatisfaction remains to be seen.`,
   slug:'Dell_Orders_Its_Global_Sales_Team_to_Work_Out_of_Office_Full-Time', 
+},
+{
+  id:13,
+  title:"Laptops from Apple, HP, Asus, Dell, Lenovo and other laptops at minimum 35% discount, Amazon Great Indian Festival",
+  image:Amazon_laptop,
+  date:'october 1,2024',
+  content:`
+Amazon Great India Festival sale is live for all users. During the sale, the e-commerce platform is offering deals and discounts on all products including laptops from popular brands like HP, Dell, Asus, Lenovo, Acer and Apple.
+
+If you are planning to buy a new laptop, we’ve put together a list with maximum discounts with powerful specifications.
+
+Apple MacBook Air M1
+Apple MacBook Air M1 is available at Rs 54,999 with Rs 4000 ban discount. It has 8GB RAM, 256GB storage, a backlit keyboard and is powered by M1 chip.
+
+Dell Core i3 laptop
+This laptop frmo dell has received a discount of 30% and is available at around Rs 30,000 including the bank discount. It is powered by a 12th-generation Intel Core i3 processor, 8GB RAM and 512GB storage.
+
+Asus Vivobook 15
+The laptop is listed at Rs 47,999 after 38% discount. In addition to this, there’s a Rs 2000 coupon available along with 10% bank discount. All things combined the laptop is available for purchase at Rs 41,990.`,
+  slug:`Laptops_Amazon_Great_Indian_Festival`
+},
+{
+ id:14,
+ title:"Securities and Exchange Board of India approves new asset class for HNIs, passive fund framework; rights issue timeline slashed: 5 key highlights",
+ image:Sebi,
+ date:'october 1,2024',
+ content:`[7:12 AM, 10/1/2024] Mohan Mamma N: Securities and Exchange Board of India approves new asset class for HNIs, passive fund framework; rights issue timeline slashed: 5 key highlights
+
+Capital markets regulator Securities and Exchange Board of India (SEBI) conducted its board meeting on Monday, September 30 and approved key measures for easing trading practices for regular investors and simplifying norms in the mutual funds (MF) industry. The market watchdog surprised investors by refraining from announcing measures to limit a surge in derivatives trading, as was widely expected by D-Street experts and traders.
+
+SEBI Chairperson Madhabi Puri Buch had described the surge in derivative trading as a ‘macro issue’ that diverts capital from productive use in the economy. Her warnings — and tax hikes coming into effect next month — have helped lower the volume of contracts traded from a record $6 trillion in February.
+
+1.New asset class for HNIs with higher risk appetite
+
+SEBI stated that asset management companies can now offer riskier strategies, like long-short equity, to high-risk investors with a minimum investment of ₹10 lakh. Positioned between tightly regulated MFs and lighter-touch portfolio services, this class will give high net worth (HNI) investors exposure to equity derivatives. 
+
+This is a new investment product under the existing mutual fund framework to bridge the gap between mutual funds and Portfolio Management Services (PMS) regarding flexibility in portfolio construction.
+
+“Offerings under the new product will be referred to as ‘Investment Strategies’, to maintain clear distinction from the schemes offered under the traditional MFs. The minimum investment limit for the new product will be ₹10 lakh per investor across all investment strategies of the new product in a particular AMC. The new product is intended to add depth and variety to the country's investment landscape through a new asset class,” said SEBI.
+
+2.Introduction of MF Lite framework for passive funds
+
+SEBI introduced a relaxed framework with light-touch regulations, ‘MF Lite,’ for entities desirous of launching only passive mutual fund schemes. The MF Lite framework or light-touch regulations include relaxed requirements relating to eligibility criteria for sponsors, including net worth, track record, profitability, the responsibility of trustees, approval process, and disclosures.
+
+Various provisions of the existing regulatory framework may not be relevant for passively managed schemes. A relaxed framework with light-touch regulations has been approved as MF Lite Regulations for passive MF schemes.
+
+SEBI said that existing AMCs with active and passive schemes will have the option to hive off respective passive schemes, if they so desire, to a different group entity, resulting in the management of active and passive schemes by separate AMCs under a common sponsor.
+
+If they choose to continue the passively managed schemes within the existing AMCs under the existing MF Regulations, the relaxed disclosures and other regulatory requirements for the passive schemes based on indices covered under the MF Lite framework will also apply to them.
+
+3.Rights issue timeline slashed to 23 days
+
+SEBI has approved norms to enable faster rights issues through the preferential allotment route. This new route can be completed in 23 days from the issuer's board meeting approving the rights issue, versus the present timeline of 317 days, and faster than the 40 working days needed to complete the preferential allotment.
+
+SEBI approved discontinuing the current requirement of filing a draft letter of rights offer with Sebi of its observation. Instead, it will be filed with stock exchanges for its in-principle approval, as the entity is already listed. Stock exchanges would confirm that the issuer complies with LODR disclosure requirements.
+
+SEBI called for “rationalization of the content of Letter of Offer to contain only the relevant incremental information regarding rights issue viz. object of issue, price, record date, entitlement ratio, etc.” SEBI also dispensed with the mandatory requirement that an issuer appoint a merchant banker and made it optional subject to completion of rights issue within 23 working days.
+
+"With reduced timelines, corporates can have faster access to funds through rights issues. Revised rights issue timelines would make it a preferred option for fundraising as it allows all existing shareholders to be a part of the company's growth story,” said Makarand M Joshi, Founder MMJC and Associates, a corporate compliance firm.
+
+4.Expansion of ‘connected person’ under insider trading norms
+
+SEBI expanded the definition of “connected person” and “immediate relative” under insider trading regulations to facilitate effective investigation and enforcement against insider trading. The spouse, child, parent, and sibling of the person have been added under the definition of ‘relative’.
+
+“SEBI's decision to expand the scope of connected persons would increase the scope of the prohibition of insider trading regulations,” said Makarand M Joshi.
+
+“It would bring within its ambit many more persons (viz, a person sharing a household or residence with a ‘connected person, a firm or its partner or its employee in which a ‘connected person’ is also a partner, etc). who are indirectly associated with the securities market through intermediaries, fiduciaries or distant relatives of persons working in listed companies,” he added.
+
+5.Eligibility norms for IAs, RAs relaxed; UPI options to trade
+
+Qualified stock brokers will mandatorily offer investors the option to trade in the secondary market - cash segment using a UPI block mechanism (ASBA-like for secondary markets) or a three-in-one trading facility in addition to the current trading mode. SEBI also relaxed the eligibility criteria for registration and simplified the compliance requirements for Investment Advisers (IAs) and Research Analysts (RAs).`,
+slug:'India_approves_new_asset_class_for_HNIs',
 }
     
   ]
