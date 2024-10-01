@@ -96,7 +96,7 @@ const AboutChandamama = () => {
 
             {/* Digital Marketing Team */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h4 className="text-2xl font-serif text-gray-800 mb-2">Chaithra</h4>
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Chaithra N</h4>
               <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
               <p className="text-gray-600">
                 Chaithra drives the digital marketing efforts at Chandamama.tech, ensuring the brand reaches a wider audience through strategic campaigns and social media engagement.
@@ -112,7 +112,7 @@ const AboutChandamama = () => {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h4 className="text-2xl font-serif text-gray-800 mb-2">Hariesh S</h4>
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Harish S</h4>
               <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
               <p className="text-gray-600">
                 Hariesh manages paid advertising and partnerships, working to ensure Chandamama.tech's content is promoted effectively across multiple platforms and channels.
@@ -120,7 +120,7 @@ const AboutChandamama = () => {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h4 className="text-2xl font-serif text-gray-800 mb-2">Jamse Vinay</h4>
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">James Vinay</h4>
               <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
               <p className="text-gray-600">
                 Jamse focuses on analytics and insights, helping Chandamama.tech make data-driven decisions to improve content strategy and digital growth.
