@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Chandamama.tech | Your Tech News, Gadgets, and Courses Hub',
+    title: 'About Chandamama.tech | Your Tech News, Gadgets, and Courses Hub .',
     description: 'Discover Chandamama.tech, your go-to platform for tech news, gadget reviews, and online courses. Meet our team and explore our mission.',
     images: ['https://www.chandamama.tech/images/about-chandamama-twitter.jpg'],
   },
