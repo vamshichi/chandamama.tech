@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 import BreakingNews from "@/app/images/heroScetion/news-section.png"
 import Books from "@/app/images/heroScetion/COURSES2.png"
-import gadgets from "@/app/images/heroScetion/Your paragraph text.png"
+import gadgets from "@/app/images/heroScetion/Gad-gets..._2.webp"
 
 const carouselItems = [
   { src: BreakingNews, alt: "Breaking News", link: "/news" },
