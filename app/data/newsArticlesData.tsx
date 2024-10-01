@@ -344,7 +344,7 @@ The laptop is listed at Rs 47,999 after 38% discount. In addition to this, there
  title:"Securities and Exchange Board of India approves new asset class for HNIs, passive fund framework; rights issue timeline slashed: 5 key highlights",
  image:Sebi,
  date:'october 1,2024',
- content:`[7:12 AM, 10/1/2024] Mohan Mamma N: Securities and Exchange Board of India approves new asset class for HNIs, passive fund framework; rights issue timeline slashed: 5 key highlights
+ content:`Securities and Exchange Board of India approves new asset class for HNIs, passive fund framework; rights issue timeline slashed: 5 key highlights
 
 Capital markets regulator Securities and Exchange Board of India (SEBI) conducted its board meeting on Monday, September 30 and approved key measures for easing trading practices for regular investors and simplifying norms in the mutual funds (MF) industry. The market watchdog surprised investors by refraining from announcing measures to limit a surge in derivatives trading, as was widely expected by D-Street experts and traders.
 
