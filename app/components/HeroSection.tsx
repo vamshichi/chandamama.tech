@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'  // Import Link from Next.js
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-import BreakingNews from "@/app/images/heroScetion/Chandamamma_news.webp"
+import BreakingNews from "@/app/images/heroScetion/news-section.png"
 import Books from "@/app/images/heroScetion/COURSES2.png"
 import gadgets from "@/app/images/heroScetion/Your paragraph text.png"
 

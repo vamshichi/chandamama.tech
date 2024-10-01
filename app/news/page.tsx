@@ -1,5 +1,10 @@
-// pages/news/index.tsx
+
 import NewsGrid from '@/app/components/News/NewsGrid';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'News',
+};
 
 const NewsPage: React.FC = () => {
   return (

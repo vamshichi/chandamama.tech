@@ -17,8 +17,15 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "chandamama.tech",
+  title:{
+    default : 'chandamama.tech',
+    template : '%s - chandamama.tech'
+  },
   description: "With Chandamama.tech, you&apos;ll find a blend of information, entertainment, and convenience, all while accessing affiliate links to help you make informed decisions when purchasing eBooks and gadgets.",
+  twitter:{
+    card:'summary_large_image'
+  }
+
 };
 
 export default function RootLayout({

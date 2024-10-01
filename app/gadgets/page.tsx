@@ -2,6 +2,11 @@ import React from "react";
 import gadgetsData from "@/app/data/gadgetsData"; // Assuming this is where your data is located
 import Link from "next/link"; // Corrected the Link import from next/link
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Gadgets',
+};
 
 const GadgetsPage: React.FC = () => {
   return (

@@ -1,5 +1,10 @@
 // pages/ebooks/index.tsx
 import EBookSearchFilter from '@/app/components/eBooks/EBookSearchFilter';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Courses',
+};
 
 const EBookPage: React.FC = () => {
   return (
