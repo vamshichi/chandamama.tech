@@ -13,6 +13,8 @@ import Union_Minister from '@/app/images/news/Minister for commerce.png'
 import Welspun_Enterprises from '@/app/images/news/Welspun Enterprises.png'
 import Amazon_laptop from '@/app/images/news/Amazon.png'
 import Sebi from '@/app/images/news/SEBI.png'
+import MukeshAmbani from '@/app/images/news/Mukesh Ambani.png'
+import Androided from '@/app/images/news/Androided.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -390,7 +392,81 @@ SEBI expanded the definition of “connected person” and “immediate relative
 
 Qualified stock brokers will mandatorily offer investors the option to trade in the secondary market - cash segment using a UPI block mechanism (ASBA-like for secondary markets) or a three-in-one trading facility in addition to the current trading mode. SEBI also relaxed the eligibility criteria for registration and simplified the compliance requirements for Investment Advisers (IAs) and Research Analysts (RAs).`,
 slug:'India_approves_new_asset_class_for_HNIs',
-}
+},
+{
+  id:15,
+  title:'Reliance Mukesh Ambani loses Rs 80000 crore in just 2 days due to Sensex fell over 1,000 points while Nifty fell about 300 points',
+  image:Androided,
+  date:'october 2,2024',
+  content:`Mukesh Ambani, the chairman of Reliance Industries, faced a significant financial setback recently, with his net worth dropping by approximately ₹80,000 crore in just two days. This drastic loss occurred amidst a turbulent period for the Indian stock market, where the Sensex, a major index tracking the performance of the Bombay Stock Exchange (BSE), plummeted by over 1,000 points, while the Nifty, which tracks the National Stock Exchange (NSE), fell by around 300 points.
+
+Understanding the Context
+Market Dynamics:
+
+Stock markets can be volatile, influenced by various factors such as economic indicators, global events, and investor sentiment.
+The recent drop in the Sensex and Nifty could be attributed to a combination of domestic and international concerns, including inflation, rising interest rates, and geopolitical tensions.
+Impact on Wealth:
+
+Ambani's wealth is closely tied to the performance of Reliance Industries, which is a significant player in the Indian stock market. When the market declines, shares of Reliance and other companies can also lose value, impacting the net worth of their major shareholders.
+This recent dip in the market resulted in a substantial loss for Ambani, as Reliance Industries’ stock price fell sharply during this period.
+Reasons Behind the Stock Market Decline
+Economic Factors:
+
+High inflation rates can lead to increased interest rates set by the Reserve Bank of India (RBI) to curb spending, which can negatively impact corporate profits and investor confidence.
+Investors may react by selling off shares, leading to a significant decline in stock prices.
+Global Influences:
+
+Events such as geopolitical tensions, fluctuations in oil prices, and global economic uncertainty can contribute to market volatility. Investors often pull back in uncertain times, causing markets to dip.
+Investor Sentiment:
+
+The sentiment of investors can sway market performance significantly. A negative outlook can lead to panic selling, which further exacerbates the drop in stock prices.
+Conclusion
+Mukesh Ambani's recent loss of ₹80,000 crore underscores the vulnerability of even the wealthiest individuals to fluctuations in the stock market. The decline of over 1,000 points in the Sensex and 300 points in the Nifty serves as a reminder of the interconnectedness of the economy and the stock market. As investors keep a close watch on economic indicators and global events, it remains crucial for stakeholders to navigate these turbulent waters with caution and strategy.`,
+  slug:'Mukesh_Ambani_ Rs 80000 crore',
+},
+{
+  id:17,
+  title:`Google may release Android 16 much earlier than expected
+Next year's big Android update could arrive a few months earlier than you'd guess.`,
+  image:MukeshAmbani,
+  date:'october 2,2024',
+  content:`Without fail, Google releases a new version of Android every year. This year’s version is Android 15, and its source code went public back at the beginning of the month. If you look back at the history of Android version releases, you’ll find that Google typically schedules these major releases for Q3 or Q4 of a given year. Google now looks to be significantly moving up Android’s release cycle, as evidence suggests it could launch Android 16 sometime in Q2 of 2025.
+
+Google has typically released major new Android versions during the months of August, September, or October. Android 15, for example, arrived just earlier this month. Last year’s Android 14 update came out in early October. Meanwhile, 2022’s Android 13 update showed up in August. You have to go back to 2012’s Android 4.1 Jelly Bean release to find an Android version that didn’t land in August, September, or October.
+
+Android Version	Code-name	Release Date
+Android 15	    Vanilla Ice Cream	September 3, 2024
+Android 14	Upside Down Cake	October 4, 2023
+Android 13	Tiramisu	August 15, 2022
+Android 12	Snow Cone	October 4, 2021
+Android 11	Red Velvet Cake	September 8, 2020
+Android 10	Quince Tart	September 3, 2019
+Android 9	Pie	August 6, 2018
+Android 8.0	Oreo	August 21, 2017
+Android 7.0	Nougat	August 22, 2016
+Android 6.0	Marshmallow	October 5, 2015
+Android 5.0	Lollipop	November 12, 2014
+Android 4.4	KitKat	October 31, 2013
+Android 4.1	Jelly Bean	July 9, 2012
+Android 4.0	Ice Cream Sandwich	October 18, 2011
+Android 3.0	Honeycomb	February 22, 2011
+Android 2.3	Gingerbread	December 6, 2010
+Android 2.2	Froyo	May 20, 2010
+Android 2.0	Eclair	October 27, 2009
+Android 1.6	Donut	September 15, 2009
+Android 1.5	Cupcake	April 27, 2009
+Android 1.1		February 9, 2009
+Android 1.0		September 23, 2008`,
+  slug:'Google_may_release_Android_16',
+},
+// {
+//   id:16,
+//   title:'',
+//   image:'',
+//   date:'',
+//   content:``,
+//   slug:'',
+// },
     
   ]
 
