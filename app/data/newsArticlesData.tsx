@@ -396,7 +396,7 @@ slug:'India_approves_new_asset_class_for_HNIs',
 {
   id:15,
   title:'Reliance Mukesh Ambani loses Rs 80000 crore in just 2 days due to Sensex fell over 1,000 points while Nifty fell about 300 points',
-  image:Androided,
+  image:MukeshAmbani,
   date:'october 2,2024',
   content:`Mukesh Ambani, the chairman of Reliance Industries, faced a significant financial setback recently, with his net worth dropping by approximately ₹80,000 crore in just two days. This drastic loss occurred amidst a turbulent period for the Indian stock market, where the Sensex, a major index tracking the performance of the Bombay Stock Exchange (BSE), plummeted by over 1,000 points, while the Nifty, which tracks the National Stock Exchange (NSE), fell by around 300 points.
 
@@ -428,7 +428,7 @@ Mukesh Ambani's recent loss of ₹80,000 crore underscores the vulnerability of 
   id:17,
   title:`Google may release Android 16 much earlier than expected
 Next year's big Android update could arrive a few months earlier than you'd guess.`,
-  image:MukeshAmbani,
+  image:Androided,
   date:'october 2,2024',
   content:`Without fail, Google releases a new version of Android every year. This year’s version is Android 15, and its source code went public back at the beginning of the month. If you look back at the history of Android version releases, you’ll find that Google typically schedules these major releases for Q3 or Q4 of a given year. Google now looks to be significantly moving up Android’s release cycle, as evidence suggests it could launch Android 16 sometime in Q2 of 2025.
 
