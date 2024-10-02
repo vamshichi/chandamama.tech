@@ -422,7 +422,7 @@ Investor Sentiment:
 The sentiment of investors can sway market performance significantly. A negative outlook can lead to panic selling, which further exacerbates the drop in stock prices.
 Conclusion
 Mukesh Ambani's recent loss of ₹80,000 crore underscores the vulnerability of even the wealthiest individuals to fluctuations in the stock market. The decline of over 1,000 points in the Sensex and 300 points in the Nifty serves as a reminder of the interconnectedness of the economy and the stock market. As investors keep a close watch on economic indicators and global events, it remains crucial for stakeholders to navigate these turbulent waters with caution and strategy.`,
-  slug:'Mukesh_Ambani_ Rs 80000 crore',
+  slug:'Mukesh_Ambani_Rs_80000_crore',
 },
 {
   id:17,
