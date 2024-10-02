@@ -29,6 +29,7 @@ export default function SoftwareSection({ limit = softwareData.length, currentSl
               title={software.title}
               description={software.description}
               image={software.image}
+              snippet={software.snippet}
               downloadLink={software.downloadLink}
               slug={software.slug}
             />

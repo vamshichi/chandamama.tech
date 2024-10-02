@@ -115,7 +115,7 @@ const AboutChandamama = () => {
               <h4 className="text-2xl font-serif text-gray-800 mb-2">Harish S</h4>
               <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
               <p className="text-gray-600">
-                Hariesh manages paid advertising and partnerships, working to ensure Chandamama.tech's content is promoted effectively across multiple platforms and channels.
+                Harish manages paid advertising and partnerships, working to ensure Chandamama.tech's content is promoted effectively across multiple platforms and channels.
               </p>
             </div>
 
@@ -123,7 +123,7 @@ const AboutChandamama = () => {
               <h4 className="text-2xl font-serif text-gray-800 mb-2">James Vinay</h4>
               <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
               <p className="text-gray-600">
-                Jamse focuses on analytics and insights, helping Chandamama.tech make data-driven decisions to improve content strategy and digital growth.
+                James focuses on analytics and insights, helping Chandamama.tech make data-driven decisions to improve content strategy and digital growth.
               </p>
             </div>
 
