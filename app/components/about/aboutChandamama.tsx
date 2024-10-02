@@ -104,10 +104,10 @@ const AboutChandamama = () => {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h4 className="text-2xl font-serif text-gray-800 mb-2">Vishnu</h4>
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Abhinand</h4>
               <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
               <p className="text-gray-600">
-                Vishnu specializes in content marketing and SEO, helping Chandamama.tech rank higher in search engines and attract the right audience for tech news, reviews, and courses.
+                Abhinand specializes in content marketing and SEO, helping Chandamama.tech rank higher in search engines and attract the right audience for tech news, reviews, and courses.
               </p>
             </div>
 
@@ -124,6 +124,14 @@ const AboutChandamama = () => {
               <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
               <p className="text-gray-600">
                 Jamse focuses on analytics and insights, helping Chandamama.tech make data-driven decisions to improve content strategy and digital growth.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h4 className="text-2xl font-serif text-gray-800 mb-2">Navya BKP</h4>
+              <p className="text-lg text-gray-600 mb-4">Digital Marketing</p>
+              <p className="text-gray-600">
+                Navya plays a key role in expanding Chandamama.tech's online presence through influencer marketing and brand collaborations.
               </p>
             </div>
           </div>
