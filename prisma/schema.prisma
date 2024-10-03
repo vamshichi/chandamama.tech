@@ -1,8 +1,8 @@
-// // This is your Prisma schema file,
-// // learn more about it in the docs: https://pris.ly/d/prisma-schema
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
   provider = "prisma-client-js"
@@ -23,30 +23,30 @@ model News {
   slug     String   // URL-friendly slug for the news article
 }
 
-// model Gadget {
-//   id          String  @id @default(auto()) @map("_id") @db.ObjectId // MongoDB ObjectId
-//   title       String  // Title of the gadget
-//   price       String  // Price of the gadget
-//   image       String? // Optional image URL
-//   description String  // Detailed description of the gadget
-//   buyLink     String? // Link to buy the gadget
-//   learnMoreLink String? // Link to learn more about the gadget
-// }
+model Gadget {
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId // MongoDB ObjectId
+  title       String  // Title of the gadget
+  price       String  // Price of the gadget
+  image       String? // Optional image URL
+  description String  // Detailed description of the gadget
+  buyLink     String? // Link to buy the gadget
+  learnMoreLink String? // Link to learn more about the gadget
+}
 
-// model Course {
-//   id       String  @id @default(auto()) @map("_id") @db.ObjectId // MongoDB ObjectId
-//   title    String  // Title of the course or ebook
-//   category String  // Category of the course (e.g., Fiction, Technology)
-//   image    String? // Optional image URL
-//   content  String? // Course or eBook content
-//   link     String? // Link to detailed course or eBook page
-// }
+model Course {
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId // MongoDB ObjectId
+  title    String  // Title of the course or ebook
+  category String  // Category of the course (e.g., Fiction, Technology)
+  image    String? // Optional image URL
+  content  String? // Course or eBook content
+  link     String? // Link to detailed course or eBook page
+}
 
-// model Software {
-//   id          String  @id @default(auto()) @map("_id") @db.ObjectId // MongoDB ObjectId
-//   title       String  // Title of the software
-//   description String  // Detailed description of the software
-//   image       String? // Optional image URL
-//   slug        String  // URL-friendly slug for the software page
-//   downloadLink String? // Download link for the software
-// }
+model Software {
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId // MongoDB ObjectId
+  title       String  // Title of the software
+  description String  // Detailed description of the software
+  image       String? // Optional image URL
+  slug        String  // URL-friendly slug for the software page
+  downloadLink String? // Download link for the software
+}
