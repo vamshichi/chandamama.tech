@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: '%s - Chandamama.tech'
   },
   description: "With Chandamama.tech, you'll find a blend of information, entertainment, and convenience, all while accessing affiliate links to help you make informed decisions when purchasing eBooks and gadgets.",
-  keywords: ['chandamama', 'chandamama news', 'chandamama gadgets', 'chandamama softwares', 'affiliate marketing', 'blogging', 'blogs', 'blog', 'tech news', 'articles','chandamama.in','chandamama.com','chanda','chan'],
+  keywords: ['chandamama', 'chandamama news', 'chandamama gadgets', 'chandamama softwares', 'affiliate marketing', 'blogging', 'blogs', 'blog', 'tech news', 'articles','chandamama.in','chandamama.com','chanda','chan','chand'],
   openGraph: {
     type: 'website',
     locale: 'en_US',

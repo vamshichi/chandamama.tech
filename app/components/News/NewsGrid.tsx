@@ -17,10 +17,16 @@ interface NewsArticle {
 interface NewsGridProps {
   showViewAllButton?: boolean
   limit?: number
-  currentSlug?: string // Add currentSlug to exclude the current article
+  currentSlug?: string
+  titleLimit?: number
 }
 
-export default function NewsGrid({ showViewAllButton = false, limit, currentSlug }: NewsGridProps) {
+export default function NewsGrid({ 
+  showViewAllButton = false, 
+  limit, 
+  currentSlug,
+  titleLimit = 60 // Default title limit
+}: NewsGridProps) {
   // Reverse the news articles array
   let reversedNews = [...newsArticlesWithSnippets].reverse();
 
@@ -32,16 +38,21 @@ export default function NewsGrid({ showViewAllButton = false, limit, currentSlug
   // Limit the news if the `limit` prop is provided
   const displayedNews = limit ? reversedNews.slice(0, limit) : reversedNews;
 
+  // Function to truncate title
+  const truncateTitle = (title: string, limit: number) => {
+    if (title.length <= limit) return title;
+    return title.slice(0, limit) + '...';
+  };
+
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        {/* <h2 className="text-3xl font-bold text-gray-800 mb-8">Latest News</h2> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayedNews.map((news: NewsArticle) => (
             <NewsCard 
               key={news.id}
               id={news.id}
-              title={news.title}
+              title={truncateTitle(news.title, titleLimit)}
               date={news.date}
               snippet={news.snippet}
               image={news.image}

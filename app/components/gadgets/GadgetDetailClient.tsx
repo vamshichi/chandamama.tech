@@ -52,7 +52,7 @@ export default function GadgetDetailClient({ slug }: GadgetDetailClientProps) {
                     src={gadget.image || "/placeholder.svg"}
                     alt={gadget.title}
                     fill
-                    className="rounded-t-lg md:rounded-l-lg md:rounded-t-none object-cover"
+                    className="rounded-t-lg md:rounded-l-lg md:rounded-t-none"
                   />
                 </div>
               </div>

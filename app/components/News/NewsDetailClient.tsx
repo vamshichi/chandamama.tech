@@ -51,7 +51,7 @@ export default function NewsDetailClient({ slug }: NewsDetailClientProps) {
                   src={article.image || '/placeholder.svg'}
                   alt={article.title}
                   fill
-                  className="rounded-t-lg md:rounded-l-none md:rounded-t-none object-cover"
+                  className="rounded-t-lg md:rounded-l-none md:rounded-t-none "
                 />
               </div>
             </div>
