@@ -4,24 +4,24 @@
 // // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
-// generator client {
-//   provider = "prisma-client-js"
-// }
+generator client {
+  provider = "prisma-client-js"
+}
 
-// datasource db {
-//   provider = "mongodb"
-//   url      = env("DATABASE_URL")
-// }
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
 
 
-// model News {
-//  id       String    @id @default(auto()) @map("_id") @db.ObjectId // MongoDB uses String IDs by default
-//  title    String   // Title of the news article
-//   image    String?  // Image URL or reference for the article
-//   date     DateTime @default(now())  // Automatically set the current date and time
-//   content  String   // The content of the news article
-//   slug     String   // URL-friendly slug for the news article
-// }
+model News {
+ id       String    @id @default(auto()) @map("_id") @db.ObjectId // MongoDB uses String IDs by default
+ title    String   // Title of the news article
+  image    String?  // Image URL or reference for the article
+  date     DateTime @default(now())  // Automatically set the current date and time
+  content  String   // The content of the news article
+  slug     String   // URL-friendly slug for the news article
+}
 
 // model Gadget {
 //   id          String  @id @default(auto()) @map("_id") @db.ObjectId // MongoDB ObjectId
