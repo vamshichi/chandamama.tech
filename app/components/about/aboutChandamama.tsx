@@ -34,7 +34,7 @@ const AboutChandamama = () => {
             Discover our curated course library that spans topics like technology, education, self-help, and more. Whether you're looking for skill development or educational resources, we have something for everyone.
           </p>
           <a
-            href="/courses"
+            href="/ebooks"
             className="inline-block text-blue-600 hover:underline font-medium"
           >
             Browse Courses &rarr;
