@@ -1,91 +1,90 @@
-'use client'
-
-import { useParams } from 'next/navigation'
-import Image from 'next/image'
-import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
+import { Metadata } from 'next'
+import EBookDetailClient from '@/app/components/eBooks/EBookDetailClient'
 import eBooksData from '@/app/data/eBooksData'
-import EBookCarousel from '@/app/components/eBooks/EBookCarousel'
-import EBookMetaTags from '@/app/components/eBooks/EBookMetaTags'
+import Script from 'next/script'
 
-export default function EBookDetailClient() {
-  const params = useParams()
-  const slug = params.slug as string
+type Props = {
+  params: { slug: string }
+}
 
-  const book = eBooksData.find((b) => b.link.split('/').pop() === slug)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const book = eBooksData.find((b) => b.link.split('/').pop() === params.slug)
 
   if (!book) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Book Not Found</h1>
-          <p className="text-gray-600 mb-8">Sorry, we couldn't find the book you're looking for.</p>
-          <Link 
-            href="/ebooks" 
-            className="text-blue-500 hover:text-blue-700 transition duration-300 flex items-center justify-center"
-          >
-            <ArrowLeft className="mr-2" size={20} />
-            Back to eBooks
-          </Link>
-        </div>
-      </div>
-    )
+    return {
+      title: 'eBook Not Found',
+      description: 'The requested eBook could not be found.',
+    }
   }
 
-  const fullUrl = `https://www.chandamama.tech${book.link}`
+  const imageUrl = typeof book.image === 'string' 
+    ? book.image 
+    : book.image.src
+
+  return {
+    title: `${book.title} - Chandamama.tech`,
+    description: book.content.slice(0, 160) + '...',
+    openGraph: {
+      title: book.title,
+      description: book.content.slice(0, 160) + '...',
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: book.title,
+        },
+      ],
+      type: 'book',
+      url: `https://www.chandamama.tech${book.link}`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: book.title,
+      description: book.content.slice(0, 160) + '...',
+      images: [imageUrl],
+    },
+  }
+}
+
+export default function EBookDetail({ params }: Props) {
+  const book = eBooksData.find((b) => b.link.split('/').pop() === params.slug)
+
+  if (!book) {
+    return <EBookDetailClient slug={params.slug} />
+  }
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Book',
+    name: book.title,
+    author: 'Chandamama.tech',
+    description: book.content.slice(0, 160) + '...',
+    image: typeof book.image === 'string' ? book.image : book.image.src,
+    url: `https://www.chandamama.tech${book.link}`,
+    publisher: {
+      '@type': 'Organization',
+      name: 'Chandamama.tech',
+      url: 'https://www.chandamama.tech',
+    },
+    genre: book.category,
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      price: '0',
+      priceCurrency: 'INR',
+      url: book.pdfLink,
+    },
+  }
 
   return (
     <>
-      <EBookMetaTags
-        title={book.title}
-        category={book.category}
-        image={book.image}
-        content={book.content}
-        url={fullUrl}
+      <Script
+        id="book-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="min-h-screen bg-gray-100">
-        <div className="container mx-auto py-12 px-4">
-          <Link 
-            href="/ebooks" 
-            className="text-blue-500 hover:text-blue-700 transition duration-300 flex items-center mb-8"
-          >
-            <ArrowLeft className="mr-2" size={20} />
-            Back to eBooks
-          </Link>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="md:flex">
-              <div className="md:flex-shrink-0">
-                <div className="relative w-full md:min-w-96 h-96">
-                  <Image
-                    src={book.image || '/placeholder.svg'}
-                    alt={book.title}
-                    fill
-                    className="rounded-t-lg md:rounded-l-lg md:rounded-t-none"
-                  />
-                </div>
-              </div>
-              <div className="p-8">
-                <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{book.category}</div>
-                <h1 className="mt-2 text-3xl leading-8 font-serif tracking-tight text-gray-900 sm:text-4xl">{book.title}</h1>
-                <p className="mt-4 max-w-2xl text-xl text-gray-500 whitespace-pre-wrap">
-                  {book.content}
-                </p>
-                <div className="mt-6 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                  <a
-                    href={book.pdfLink}
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Pass the current slug to the EBookCarousel to exclude the current book */}
-        <EBookCarousel currentSlug={slug} />
-      </div>
+      <EBookDetailClient slug={params.slug} />
     </>
   )
 }

@@ -1,5 +1,5 @@
-import AdbeRdr11010 from '@/app/images/softwares/AdbeRdr11010.png'
-import CuteWriter from '@/app/images/softwares/CuteWriter.png'
+import AdbeRdr11010 from '@/app/images/softwares/Adbobe Reader 11.png'
+import CuteWriter from '@/app/images/softwares/Cute PDF Writer.png'
 import PIXresizer from '@/app/images/softwares/PIXresizer.png'
 import Nero from '@/app/images/softwares/Nero.png'
 import GoogleinputTools from '@/app/images/softwares/Google Telugu Input Tool.png'

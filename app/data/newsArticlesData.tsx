@@ -15,6 +15,8 @@ import Amazon_laptop from '@/app/images/news/Amazon.png'
 import Sebi from '@/app/images/news/SEBI.png'
 import MukeshAmbani from '@/app/images/news/Mukesh Ambani.png'
 import Androided from '@/app/images/news/Androided.png'
+import iPhoneSE from '@/app/images/news/I Phone SE.png'
+import AccentureandNvidia from '@/app/images/news/Accenture and Nvidia.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -459,7 +461,31 @@ Android 1.1		February 9, 2009
 Android 1.0		September 23, 2008`,
   slug:'Google_may_release_Android_16',
 },
-// {
+{
+  id:18,
+  title:`With no home button, Apple may launch new iPhone SE in 2025 : Bloomberg's Mark Gurman`,
+  image:iPhoneSE,
+  date:'october 3,2024',
+  content:`Mark Gurman: Apple plans to release a new, home button-free iPhone SE in 2025.Gurman: Apple plans to release a new, home button-free iPhone SE in 2025. 
+
+Apple is developing a new iPhone SE, which it plans to release in early 2025 at a low cost. The information was provided by Mark Gurman of Bloomberg, who also mentioned that an upgraded Magic Keyboard will be included with two new iPad Air versions.
+
+Based on the iPhone 14, the fourth iPhone SE will be released. This implies that Apple will integrate Face ID instead of the home button. Given that the phone is expected to sport one of the company's most recent chipsets, Apple Intelligence may also be included.
+
+Redesigned Mac minis, updated MacBook Pros, and iMacs with an M4 chip are also planned for 2025. New MacBook Airs, Mac Studio, and Mac Pro devices will also be able to access the platform. The journalist did note, though, that since the current iPad Pro is already "a generation ahead," it's possible that we won't see a new model in 2025.`,
+  slug:`Bloomberg's_Mark_Gurman`,
+},
+{
+    id:19,
+    title:'30,000 Professionals Will Get Training from Accenture and NVIDIA to Scale Agentic AI for Businesses. Using the whole NVIDIA AI stack, the Accenture AI Refinery platform will assist businesses in starting their unique agentic AI journeys.',
+    image:AccentureandNvidia,
+    date:'october 3,2024',
+    content:`With the establishment of a new Accenture NVIDIA Business Group, Accenture and NVIDIA have strengthened their collaboration with the goal of assisting businesses in scaling the adoption of AI. As part of this program, 30,000 people will receive training throughout the world to help clients extend the usage of corporate AI systems and rethink processes. The AI Refinery at Accenture, a new business group called Scaling Agentic AI Systems, is poised to push AI forward to new heights. 
+
+artificial intelligence with agents. Julie Sweet, chair and CEO of Accenture, said, "With our partnership with NVIDIA, we are breaking significant new ground and enabling our clients to be at the forefront of using generative AI as a catalyst for reinvention." Accenture is launching a worldwide network of AI Refinery Engineering Hubs in strategic locations like Singapore, Tokyo, Malaga, and London to support this strategy. The large-scale development of AI operations and models will be the main emphasis of these hubs. NVIDIA's creator and CEO, Jensen Huang, continued, saying that artificial intelligence (AI) will enable businesses to scale innovation more quickly. Successful use examples of this partnership have already been observed, such as the employment of agentic AI by Indonesia's Indosat Group to create financial services industry-specific solutions. Furthermore, Accenture is introducing the NVIDIA NIM Agent Blueprint, which integrates NVIDIA Omniverse and Isaac software, for virtual manufacturing simulations. Accenture's marketing team has also started to optimize campaigns utilizing the AI Refinery platform with autonomous agents, resulting in a 25–55% faster time to market. Accenture has been actively implementing generative AI across their platform by offering their staff members opportunities for training and skill development. Agentic AI has been a prominent topic of conversation across major tech companies over the previous few weeks. Major Saas providers, like Oracle and Salesforce, have released several AI agentic technologies in their extensive product range. Additionally, the number of clients receiving independent databases has been steadily rising.`,
+    slug:'Accenture_and_Nvidia',
+  },
+  // {
 //   id:16,
 //   title:'',
 //   image:'',
