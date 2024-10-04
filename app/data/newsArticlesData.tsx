@@ -494,7 +494,7 @@ artificial intelligence with agents. Julie Sweet, chair and CEO of Accenture, sa
   title:`Making the promise of AI real for individuals, society and the economy: Google for India 2024 Roma Datta Chobey
 Managing Director, Google India`,
   image:googleforIndia,
-  date:'october 3,2024',
+  date:'october 4,2024',
   content:`Google for India's Tenth Edition: Honoring a Decade of Change
 As we host the tenth edition of Google for India today, we are reminded of the extraordinary transformation of the Indian IT ecosystem over the last 10 years, which makes this event an important milestone. India has established itself as a worldwide digital powerhouse, exhibiting inventiveness that sets trends both locally and internationally. From ground-breaking inventions to revolutionary financial systems.
 
@@ -539,7 +539,7 @@ India's potential in the tech sector has been demonstrated by its journey over t
     id:21,
     title:'OpenAI introduces a new "Canvas" Customized ChatGPT interface for writing and coding tasks',
     image:openAi,
-    date:'october 3,2024',
+    date:'october 4,2024',
     content:`On Thursday, OpenAI unveiled a brand-new interface for using ChatGPT that it calls "canvas." The software opens a workspace for writing and coding tasks in a separate window that opens next to the standard chat window. Users can write directly on the canvas or use code, then highlight specific areas of their work to have the model make edits. On Thursday, Canvas will go live in beta for ChatGPT Plus and Teams users; Enterprise and Edu users will get it the following week.
 
 A number of consumer AI companies are coming together around editable workspaces as a useful application of generative AI. Similar functionalities are available in ChatGPT's new interface as in Anthropic's Artifacts, which was released in June, and Cursor, the popular coding companion. To expand its paid user base, OpenAI is rushing to match rival services and introduce whole new features in ChatGPT.
@@ -559,7 +559,7 @@ The coding canvas has a few somewhat distinct features. Levine gave ChatGPT inst
       id:22,
       title:'In under sixty minutes, Mahindra Thar ROXX received 1.76 lakh reservations; delivery began on Dussehra.',
       image:Mahendra,
-      date:'october 3,2024',
+      date:'october 4,2024',
       content:`M&M described the response as "unprecedented" and stated that it will gradually notify consumers about the estimated delivery schedules over the course of the following three weeks.
 Leading SUV manufacturer Mahindra & Mahindra received 1.76 lakh reservations for its recently released Thar ROXX in less than 60 minutes after the window opened. Delivery will start on October 12, which is Dussehra.
 
