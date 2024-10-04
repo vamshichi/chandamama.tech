@@ -17,6 +17,10 @@ import MukeshAmbani from '@/app/images/news/Mukesh Ambani.png'
 import Androided from '@/app/images/news/Androided.png'
 import iPhoneSE from '@/app/images/news/I Phone SE.png'
 import AccentureandNvidia from '@/app/images/news/Accenture and Nvidia.png'
+import Mahendra from '@/app/images/news/Mahendra.png'
+import openAi from '@/app/images/news/Open AI.png'
+import googleforIndia from '@/app/images/news/Google for India.png'
+
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -485,14 +489,92 @@ Redesigned Mac minis, updated MacBook Pros, and iMacs with an M4 chip are also p
 artificial intelligence with agents. Julie Sweet, chair and CEO of Accenture, said, "With our partnership with NVIDIA, we are breaking significant new ground and enabling our clients to be at the forefront of using generative AI as a catalyst for reinvention." Accenture is launching a worldwide network of AI Refinery Engineering Hubs in strategic locations like Singapore, Tokyo, Malaga, and London to support this strategy. The large-scale development of AI operations and models will be the main emphasis of these hubs. NVIDIA's creator and CEO, Jensen Huang, continued, saying that artificial intelligence (AI) will enable businesses to scale innovation more quickly. Successful use examples of this partnership have already been observed, such as the employment of agentic AI by Indonesia's Indosat Group to create financial services industry-specific solutions. Furthermore, Accenture is introducing the NVIDIA NIM Agent Blueprint, which integrates NVIDIA Omniverse and Isaac software, for virtual manufacturing simulations. Accenture's marketing team has also started to optimize campaigns utilizing the AI Refinery platform with autonomous agents, resulting in a 25–55% faster time to market. Accenture has been actively implementing generative AI across their platform by offering their staff members opportunities for training and skill development. Agentic AI has been a prominent topic of conversation across major tech companies over the previous few weeks. Major Saas providers, like Oracle and Salesforce, have released several AI agentic technologies in their extensive product range. Additionally, the number of clients receiving independent databases has been steadily rising.`,
     slug:'Accenture_and_Nvidia',
   },
-  // {
-//   id:16,
-//   title:'',
-//   image:'',
-//   date:'',
-//   content:``,
-//   slug:'',
-// },
+  {
+  id:20,
+  title:`Making the promise of AI real for individuals, society and the economy: Google for India 2024 Roma Datta Chobey
+Managing Director, Google India`,
+  image:googleforIndia,
+  date:'october 3,2024',
+  content:`Google for India's Tenth Edition: Honoring a Decade of Change
+As we host the tenth edition of Google for India today, we are reminded of the extraordinary transformation of the Indian IT ecosystem over the last 10 years, which makes this event an important milestone. India has established itself as a worldwide digital powerhouse, exhibiting inventiveness that sets trends both locally and internationally. From ground-breaking inventions to revolutionary financial systems.
+
+India's Growing Digital Connectivity
+In the last ten years, India has witnessed an incredible revolution in digital connectivity. Millions more Indians have accessed the internet for the first time because to the lowest data pricing in the world, frequently through watching videos. The increase of connection has significantly altered how People use technology, which changes the story from traditional media consumption to a more dynamic and participatory digital environment.
+
+Video: India's Digital Gateway
+For many Indians, video has been a potent gateway into the digital world. Video material has become widely available on platforms, and many people use it for the first time when they visit the internet. Users who interact with video material develop their online navigation skills, which paves the way for greater in-depth internet involvement.
+
+Using UPI to Revolutionize Financial Networks
+The Unified Payments Interface is among the most innovative technological advancements in India (UPI). Since its launch in 2016, UPI has revolutionized the way Indians do financial transactions. It has made digital payments frictionless and done away with the need for currency, enabling real-time money transfers directly between bank accounts.
+
+Boosting the Digital Economy
+The success of UPI has democratized access to financial services while also streamlining transactions. It has given countless small businesses a reliable digital payment solution, which has allowed them to grow. Furthermore, the convenience of transactions has promoted a cashless economy, in line with India's goal of developing a financial system that is more inclusive.
+
+Innovations in Health: Digital Health Passports and CoWIN
+The epidemic made it clear how crucial digital solutions are to handling emergencies involving public health. India is a prime example of using technology to manage health, as demonstrated by the CoWIN platform. CoWIN has made sure that millions of Indians may safely and conveniently access their immunization records and health data by offering digital health passports.
+
+Strengthening Google's Presence in India
+Google has become more deeply committed to India as the country has embraced technology. Since its founding in 2004 in Bengaluru and Hyderabad, Google has spread throughout five main cities, consistently investing in the creativity and skill of the region.
+
+Encouraging International Product Development
+This expansion is part of a larger plan to use India's abundant tech talent pool. India has evolved into a crucial center for international product development, serving as much than just Google's market. Google can ensure relevance in a variety of markets by developing products that appeal with users through partnerships with local developers and inventors.
+
+Exploiting Artificial Intelligence's Potential
+Artificial Intelligence (AI) is going to play a bigger role in technology in the future, and India is leading this change. The thriving startup scene in the nation is humming with AI-driven projects that both solve regional problems and follow international technical trends.
+
+AI: Revolutionizing Economies and Lives
+Across India, AI technologies are transforming industries from healthcare to agriculture. Not only are these advances increasing productivity, but they are also raising millions of people's standards of living. India is positioned to take the lead in creating inclusive and moral AI solutions as it continues to improve its AI capabilities.
+
+The Path Forward: Establishing a Sustainable Technology Future
+It's important to keep an eye on the future as we at Google for India celebrate this milestone. There will be fresh chances and difficulties in the upcoming ten years. Government agencies, tech firms, and entrepreneurs should all work together to create a sustainable tech ecosystem that puts diversity, creativity, and resilience first.
+
+Promoting Creativity via Cooperation
+It will take cooperation to maintain momentum. India can remain a hotbed of cutting-edge technology by interacting with a variety of cultures and encouraging an innovative culture. It is imperative that we concentrate on creating solutions that not only serve the local market but also have the capacity to impact worldwide technology trends.
+
+In conclusion, a promising future
+India's potential in the tech sector has been demonstrated by its journey over the last ten years. We recognize the progress made and the potential of what lies ahead as we commemorate the tenth anniversary of Google for India. The subsequent phase of this revolutionary expedition necessitates sustained cooperation, ingenuity, and a mutually beneficial digital future vision.`,
+  slug:'',
+},
+{
+    id:21,
+    title:'OpenAI introduces a new "Canvas" Customized ChatGPT interface for writing and coding tasks',
+    image:openAi,
+    date:'october 3,2024',
+    content:`On Thursday, OpenAI unveiled a brand-new interface for using ChatGPT that it calls "canvas." The software opens a workspace for writing and coding tasks in a separate window that opens next to the standard chat window. Users can write directly on the canvas or use code, then highlight specific areas of their work to have the model make edits. On Thursday, Canvas will go live in beta for ChatGPT Plus and Teams users; Enterprise and Edu users will get it the following week.
+
+A number of consumer AI companies are coming together around editable workspaces as a useful application of generative AI. Similar functionalities are available in ChatGPT's new interface as in Anthropic's Artifacts, which was released in June, and Cursor, the popular coding companion. To expand its paid user base, OpenAI is rushing to match rival services and introduce whole new features in ChatGPT.
+
+Even if AI chatbots nowadays aren't able to do complex tasks with just one instruction, they can frequently provide a useful beginning point. Editable workspaces, such as canvas, let users make corrections to incorrect portions of an AI chatbot's output without requiring them to carefully examine their prompt and write a new section of code.
+
+In a demo with TechCrunch, OpenAI product manager Daniel Levine stated, "This is just a more natural interface for collaborating with ChatGPT."
+
+Levine was required to choose "GPT-4o with canvas" from ChatGPT's model picker drop-down menu during our demonstration. But according to OpenAI, ChatGPT will only display canvas windows when it determines that having a separate workspace could be useful—for example, for lengthy outputs or intricate coding jobs. To open a project window automatically, you may alternatively just write "use canvas."
+
+Levine demonstrated to TechCrunch how the new features of ChatGPT could facilitate email writing. An email generated by ChatGPT can be requested by users, and it will appear in the canvas window. Next, users have the option to change the writing's length by toggling a slider. Additionally, you can highlight particular lines and instruct ChatGPT to add emojis or make changes like "make this sound friendlier." Additionally, users can request that ChatGPT translate the entire email into a different language.
+
+The coding canvas has a few somewhat distinct features. Levine gave ChatGPT instructions to launch a Python API web server, which materialized on the canvas window. ChatGPT allows users to add in-line documentation explaining the code in simple terms by clicking the "add comments" button. Furthermore, you may ask the chatbot to explain anything to you or ask questions about it by highlighting a line of code that ChatGPT produced. Additionally, ChatGPT will gain a new "review code" button that will offer specific revision suggestions for any user-written or automatically generated code in the window for the user to accept, reject, or modify themselves. Should they click "approve," ChatGPT will attempt to resolve the issues on its own.  OpenAI states that it intends to make canvas available to free users as well as it exits beta.`,
+    slug:'',
+  },
+  {
+      id:22,
+      title:'In under sixty minutes, Mahindra Thar ROXX received 1.76 lakh reservations; delivery began on Dussehra.',
+      image:Mahendra,
+      date:'october 3,2024',
+      content:`M&M described the response as "unprecedented" and stated that it will gradually notify consumers about the estimated delivery schedules over the course of the following three weeks.
+Leading SUV manufacturer Mahindra & Mahindra received 1.76 lakh reservations for its recently released Thar ROXX in less than 60 minutes after the window opened. Delivery will start on October 12, which is Dussehra.
+
+There is discussion over this being the highest first-day booking of any car from the Mahindra Group.
+
+M&M described the response as "unprecedented" and stated that it will gradually notify consumers about the estimated delivery schedules over the course of the following three weeks. The SUV manufacturer stated that reservations for Thar ROXX are still available at all dealerships and on Mahindra's website.
+With almost 51,000 SUVs sold in September, M&M reported a 24% YoY increase in SUV sales. At 3,027 units, exports increased by 25% YoY in September as well.
+
+The starting price of the five-door Thar SUV, ROXX, is Rs 12.99 lakh. It comes in both petrol and diesel variants.
+The Thar Roxx will be equipped with either a 2.0-litre mStallion turbo petrol engine that provides 160 bhp of maximum power and 330 Nm of torque, or a 2.0-litre mHawk diesel engine that puts out 150 horsepower and 330 Nm. Either a six-speed manual or six-speed automatic transmission is attached to each engine.
+The Thar ROXX has been built as a mainstream SUV, taking into consideration the wants and requirements of purchasers in the market, rather than as a niche product, according to Rajesh Jejurikar, ED and CEO for the auto and farm company. Even with the three-door model, it has grown to be a significant volume player in its current configuration. Jejurikar has previously stated, "We didn't want to stop at that and we think that we can make this brand bigger."
+
+Initial pricing for the 4x4 versions of the new Thar ROXX from Mahindra & Mahindra ranges from Rs 18.79 lakh to Rs 22.49 lakh (ex-showroom).`,
+      slug:'',
+    },
     
   ]
 
