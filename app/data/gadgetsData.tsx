@@ -1,4 +1,3 @@
-import Gadgets from '@/app/images/heroScetion/Your paragraph text.png'
 import Galaxy from '@/app/images/gadgets/Galaxy S24.png'
 import OnePlus12 from '@/app/images/gadgets/One Plus 12.png'
 import Xiaomi from '@/app/images/gadgets/Xiaomi 14 .png'
@@ -262,7 +261,41 @@ For those looking to invest in a foldable phone that offers a premium experience
       buyLink: "https://www.amazon.in/Motorola-Spritz-Storage-External-Display/dp/B0DF2YB1T8/ref=s9_acsd_al_ot_c2_x_0_t?_encoding=UTF8&pf_rd_m=A21TJRUUN4KGV&pf_rd_s=merchandised-search-1&pf_rd_r=7EQMDKKXXXVNXN6HRFKD&pf_rd_p=61345262-881b-4fa5-929d-850083979113&pf_rd_t=&pf_rd_i=100578573031",
       learnMoreLink: "/gadgets/motorola-Razr-50",
     },
-    // {
+    {
+      id: 6,
+      title: "HP 15s-fq5330TU | 15-fd0111TU: Versatile Laptop for Everyday Computing",
+      price: " ₹49,990",
+      image : 'https://m.media-amazon.com/images/I/61TIgpyjxPL._SX569_.jpg',
+      description :`The HP 15s-fq5330TU | 15-fd0111TU is a beautiful compact laptop that can be used for working as well as leisure. Further, it is powered by the Intel Core i5 12th Gen 1235U processor that strikes a nice balance for very demanding tasks such as multi-tasking, productivity, and casual gaming. It has 16 GB of RAM and a 512 GB SSD which are sufficient for fast booting, quick access to applications, and even for many files, projects and media.
+      
+      Brand	HP
+      Model Name	HP Laptop
+      Screen Size	39.6 Centimetres
+      Colour	Silver i5 12th Gen - 16GB+512GB
+      Hard Disk Size	512 GB
+      CPU Model	Intel Core i5
+      RAM Memory Installed Size	16 GB
+      Operating System	Windows 11 Home
+      Special Feature	Anti Glare Screen
+      Graphics Card Description	Integrated
+
+
+In addition, for all the movie buffs out there, the visuals delivered by the 15.6-inch Full HD display are bound to offer clarity whether watching a movie or working on complicated documents. The laptop is equipped with Windows 11 Home, the completeness brings all necessary tools and characteristics, making the workflow simple. Besides, it has Microsoft Office installed which allows users to start working immediately.
+
+It weighs just 1.69 kg making it very much lightweight for an HP laptop, making it very suitable for business people or students who have to keep moving. The exterior comes in a mute Star Black making it sophisticated. With many ports and a powerful battery, the HP 15s series proves not only to look good but also be very effective for daily use.`,
+      buyLink: "https://amzn.to/3Nkn0aV",
+      learnMoreLink: "/gadgets/HP_15s-fq5330TU",
+    },
+     // {
+    //   id: 5,
+    //   title: "",
+    //   price: "",
+    //   image : '',
+    //   description :``,
+    //   buyLink: "https://affiliate-link.com/headphones",
+    //   learnMoreLink: "/gadgets/wireless-headphones",
+    // },
+     // {
     //   id: 5,
     //   title: "",
     //   price: "",

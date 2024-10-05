@@ -9,6 +9,9 @@ import WinRAR_x64 from '@/app/images/softwares/winrar-x64-601b1.png'
 import JRE_8u121 from '@/app/images/softwares/JRE 8u121.png'
 import MeesevaSigner from '@/app/images/softwares/meeseva signer.png'
 import GIST_TT from '@/app/images/softwares/GIST-TT-TypingTool Telugu.png'
+import emBridge from '@/app/images/softwares/emBridge.png'
+import NICDsign from '@/app/images/softwares/NICDsign.png'
+import TeluguFonts from '@/app/images/softwares/Telugu Fonts.png'
 
 function generateSnippet(description: string): string {
   const words = description.split(' ')
@@ -223,8 +226,49 @@ Educational Resource: Serves as a valuable resource for students, educators, and
 GIST-TT Typing Tool (Telugu) empowers users to effectively communicate in their native language, promoting the use of Telugu in digital platforms and enhancing accessibility to information and resources. It plays a crucial role in preserving and promoting regional languages in the digital age.`,
           image:GIST_TT,
           slug:'/softwares/GIST_TT',
-          downloadLink:'',
-        }
+          downloadLink:'https://drive.google.com/file/d/1vZOvxtdVap8rx6PwGPNByQlu_EbaWgS0/view?usp=sharing',
+        },
+        {
+          id:13,
+          title:'emBridge',
+          description:`Facilitates signing experience using keys from client system on different OSs.
+Facilitates to expedite signing experience using our restful APIs on your favoured development platforms.
+Facilitates to use different types of certificates for various types of signing.
+Facilitates facile user experience in numerous type of web, desktop and network applications.`,
+image:emBridge,
+slug:'/softwares/emBridge',
+downloadLink:'https://drive.google.com/file/d/1vFDQeD0SDkMwc3VM8cZ2Ncpl9-Nkcdc7/view?usp=sharing',
+        },
+        {
+          id:14,
+          title:'Telugu Fonts',
+          description:`Welcome to free Telugu Fonts. elegant and artistic fonts in Telugu Language.  get the list of most downloaded and preferred Telugu fonts. Download fonts is very easy using this You can search for the desired Fonts Folder using the Telugu fonts and copy and paste in to that folder using this Telugu Fonts, use this in documents, download the desired Telugu fonts.`,
+          image:TeluguFonts,
+          slug:'/softwares/Telugu_Fonts',
+          downloadLink:'https://drive.google.com/file/d/19FxDkBdBbqSCOG2juwP09q7I7nDUbkko/view?usp=sharing'
+        },
+        {
+          id:15,
+          title:'NICDsign 1.9.8 Needs Jdk-8u202 vesion and put Installation Instructions',
+          image:NICDsign,
+          description:`NICDSign
+A cross-platform, browser-independent Digital Signature Solution
+
+RROnline is enhanced with NICDSign facility. Clicking 'Apply DSC' will show 2 signing options:
+
+1) Sign using Java Applet
+
+Users who are already using Java Applet may continue with it. But the restrictions of browser and its version (Firefox version 48.0.2) have to be followed.
+
+2) Sign using NICDSign
+
+Users will have to install NICDSign service (ONE TIME) in their respective client machines. Follow the installation guidelines`,
+          slug:'/softwares/NICDSign',
+          downloadLink:'https://drive.google.com/file/d/1pcmwfX03MsF-cFLYloQdGd-RKlryc5_6/view?usp=sharing'
+              
+},
+      
+
 
     // Add more software items as needed
   ];

@@ -111,7 +111,7 @@ export default function ContactPage() {
             <a href="mailto:chandamamadreams@gmail.com" className="text-blue-500 hover:underline"> chandamamadreams@gmail.com</a>
           </p>
           <p className="mt-2 text-gray-700">
-            <strong>Phone:</strong> 9886603072
+            <strong>Phone:</strong>+91 9886603072
           </p>
           <p className="mt-2 text-gray-700">
             <strong>Address:</strong> #11 KG Halli, Bengaluru, Karnataka, 560015
