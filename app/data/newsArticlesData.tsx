@@ -32,6 +32,7 @@ const newsArticlesData = [
   title:'Reliance Mukesh Ambani loses Rs 80000 crore in just 2 days due to Sensex fell over 1,000 points while Nifty fell about 300 points',
   image:MukeshAmbani,
   date:'october 2,2024',
+  readTime:'2m',
   content:`Mukesh Ambani, the chairman of Reliance Industries, faced a significant financial setback recently, with his net worth dropping by approximately ₹80,000 crore in just two days. This drastic loss occurred amidst a turbulent period for the Indian stock market, where the Sensex, a major index tracking the performance of the Bombay Stock Exchange (BSE), plummeted by over 1,000 points, while the Nifty, which tracks the National Stock Exchange (NSE), fell by around 300 points.
 
 Understanding the Context
