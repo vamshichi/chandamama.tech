@@ -629,7 +629,7 @@ Apple Trade In: Get up to ₹67500.00 when you exchange your current device and 
 
 Entertainment: Get 3 months of Apple Music free with the purchase of your new iPhone.⁺ Also get 3 months of Apple TV+ and Apple Arcade free.`,
     image:iPhone,
-    slug:'Enjoy_up_to_₹10000.00_instant_cashback',
+    slug:'Enjoy_up_to_10000.00_instant_cashback',
 
 },
     
