@@ -20,6 +20,9 @@ import AccentureandNvidia from '@/app/images/news/Accenture and Nvidia.png'
 import Mahendra from '@/app/images/news/Mahendra.png'
 import openAi from '@/app/images/news/Open AI.png'
 import googleforIndia from '@/app/images/news/Google for India.png'
+import NextComputing from '@/app/images/news/Next Computing.png'
+import iPhone from '@/app/images/news/iPhone.png'
+import YouTube from '@/app/images/news/YouTube.png'
 
 
 // function getFormattedDate(): string {
@@ -575,6 +578,60 @@ The Thar ROXX has been built as a mainstream SUV, taking into consideration the 
 Initial pricing for the 4x4 versions of the new Thar ROXX from Mahindra & Mahindra ranges from Rs 18.79 lakh to Rs 22.49 lakh (ex-showroom).`,
       slug:'Mahindra_Thar_ROXX_received_1.76_lakh_reservations',
     },
+    {
+      id:23,
+      title:`The "Fly-Away Kit" from NextComputing Goes Anywhere You Go.`,
+      date:'october 5,2024',
+      content:`NextComputing unveiled their Nexus “Fly-Away Kit” that delivers multiple Ampere Altra servers for a total of 512 cores and a petabyte of storage. The kit includes a rolling functional hard case and different system designs. Its many 2U or 1U systems (nodes) are fit into a 22" x 14" x 9" IATA and TSA approved rolling carry-on that suits overhead bins. For strong edge AI and computing applications, users obtain high bandwidth, multi-node, and cloud native capabilities.
+The kit makes use of the numerous applications for which Ampere processors are optimized in addition to NextComputing's software integration capabilities. Software can be tested and pre-installed to provide a system that is operational from the start. For installations like Kubernetes clusters or edge computing solutions, the Nexus with Ampere is appropriate.
+
+Possible Setups:
+8 terabytes of memory and 4 x 1U nodes with 512 Ampere Altra cores
+One petabyte of high-speed NVMe storage
+8x 25GbE SPF28 or 8x 10GbE
+NVIDIA GPU options
+An affordable base configuration is offered.
+Applications: Cybersecurity reaction, broadcasting
+Use cases for portable mini data centers
+
+Additional solutions for edge computing
+NextComputing has been able to increase compute capacity in the carry-on form factor by four times thanks to Ampere's dense computation and power efficiency. We were at our limit with x86 and couldn't proceed any further, according to Bob Labadini, CTO of NextComputing.`,
+      image:NextComputing,
+      slug:'The_Fly-Away_Kit'    
+    },
+    {
+      id:24,
+      title:'Many modifications have been made to YouTube Shorts. Videos can now have a maximum duration of three minutes. Additionally',
+      date:'october 5,2024',
+      content:`YouTube has stated that short form content will now get its own Trends page and that creators will soon be able to create Shorts up to three minutes in length. Recently, YouTube announced a number of enhancements and additions to Youtube Shorts, claiming that these will increase the utility and engagement of short form content.
+
+In a blog post, YouTube revealed that starting October 15, producers can submit Shorts that are up to three minutes long. But none of your earlier films will be impacted by the modification; it only applies to square or tall aspect ratio recordings. YouTube also introduced some improvements to its Shorts player, which it says would let creators take the center stage and allow users to focus on the content they love.
+According to the company, producers will have access to a massive collection of your most cherished videos, music videos, and even clips from various platforms in the upcoming months. You may now visit the Shorts Trends page on YouTube mobile, where you can also get a preview of the Shorts comment area directly from the feed.
+As the name implies, the "Show fewer Shorts" button will let you see less Shorts in your feed, but YouTube claims it is working on adding it. The three dots menu seen in the upper right corner of every Short on the home feed can be clicked to enable this.`,
+      image:YouTube,
+      slug:'Many_modifications_have_been_made_to_YouTube_Shorts',
+    },
+    {
+      id:25,
+      title:'Customers of the Apple iPhone, Celebrate great savings this festive season.',
+      Date:'october 5,2024',
+      content:`Enjoy up to ₹10000.00 instant cashback with eligible American Express, Axis Bank and ICICI Bank cards.§§ Plus up to 12 months of No Cost EMI from most leading banks.
+
+Instant Savings: See how much you can save on iPhone with eligible American Express, Axis Bank and ICICI Bank cards.
+iPhone 16 Pro and iPhone 16 Pro Max - ₹5000.00
+iPhone 16 and iPhone 16 Plus - ₹5000.00
+iPhone 15 and iPhone 15 Plus - ₹4000.00
+iPhone 14 and iPhone 14 Plus - ₹3000.00
+iPhone SE - ₹2000.00
+No Cost EMI: Get up to 12 months No Cost EMI from most leading banks.
+
+Apple Trade In: Get up to ₹67500.00 when you exchange your current device and apply it towards your new iPhone. And you can do it all online.
+
+Entertainment: Get 3 months of Apple Music free with the purchase of your new iPhone.⁺ Also get 3 months of Apple TV+ and Apple Arcade free.`,
+    image:iPhone,
+    slug:'Enjoy_up_to_₹10000.00_instant_cashback',
+
+}
     
   ]
 
