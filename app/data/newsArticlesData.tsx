@@ -631,7 +631,7 @@ Entertainment: Get 3 months of Apple Music free with the purchase of your new iP
     image:iPhone,
     slug:'Enjoy_up_to_₹10000.00_instant_cashback',
 
-}
+},
     
   ]
 
