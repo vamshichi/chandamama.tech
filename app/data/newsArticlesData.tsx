@@ -614,7 +614,7 @@ As the name implies, the "Show fewer Shorts" button will let you see less Shorts
     {
       id:25,
       title:'Customers of the Apple iPhone, Celebrate great savings this festive season.',
-      Date:'october 5,2024',
+      date:'october 5,2024',
       content:`Enjoy up to ₹10000.00 instant cashback with eligible American Express, Axis Bank and ICICI Bank cards.§§ Plus up to 12 months of No Cost EMI from most leading banks.
 
 Instant Savings: See how much you can save on iPhone with eligible American Express, Axis Bank and ICICI Bank cards.
