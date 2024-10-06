@@ -9,6 +9,9 @@ import googleforIndia from '@/app/images/news/Google for India.png'
 import NextComputing from '@/app/images/news/Next Computing.png'
 import iPhone from '@/app/images/news/iPhone.png'
 import YouTube from '@/app/images/news/YouTube.png'
+import Meta from '@/app/images/news/Meta.png'
+import Infinix from '@/app/images/news/Infinix Zero.png'
+import Railway from '@/app/images/news/Railway Minister Ashwini Vaishnaw.png'
 
 
 // function getFormattedDate(): string {
@@ -257,7 +260,52 @@ Entertainment: Get 3 months of Apple Music free with the purchase of your new iP
     image:iPhone,
     slug:'Enjoy_up_to_10000.00_instant_cashback',
 
+},{
+ id: 26,
+ title:'The Infinix Zero Flip is expected to launch in India on October 17; anticipated features and specifications',
+ date:'october 6,2024',
+ image:Infinix,
+ content:`India will soon see the release of the Infinix Zero Flip. The Transsion-owned company has revealed that its first foldable phone in the clamshell design will launch in the nation by mid-October, having debuted in international markets last month. The MediaTek Dimensity 8020 chipset powers the 6.9-inch inner screen and 3.64-inch cover display of the Infinix Zero Flip. A third 50-megapixel camera is housed in a hole-punch cutout on the inner screen, and it also has a 50-megapixel twin outer camera arrangement.
+Launch Date of the Infinix Zero Flip in India Announced
+October 17 is the launch date for the Infinix Zero Flip in India, according a microsite on the company's website. The phone was only shown on the website in the Rock Black and Blossom Glow colorways, while both were available at launch worldwide. It's expected that more information, like availability and price, will become public in the days preceding its national release.
+Specifications of the Infinix Zero Flip (Anticipated)
+It is anticipated that the Infinix Zero Flip would come with the same specs as the model that was introduced to international markets last month. This indicates that it will probably run on a MediaTek Dimensity 8020 processor with up to 512GB of internal storage and up to 16GB of RAM. It is anticipated to operate on the Android 14-based XOS 14.
+The business claims that the 3.64-inch AMOLED cover display and the 6.9-inch full-HD+ AMOLED screen inside the Infinix Zero Flip both have 120Hz refresh rates. 
+The 50-megapixel primary camera with optical image stabilization (OIS) and 50-megapixel ultrawide camera on the Zero Flip are situated on the cover display and are used for taking pictures and recording videos. The interior display has a 50-megapixel camera, and both the inner and exterior cameras are capable of recording 4K films. The business claims that the phone also has GoPro integration.
+The dual stereo speakers of the Infinix Zero Flip are tuned by JBL. According to the business, it will get two OS updates, up to Android 16. With the accompanying charging adapter, the 4,720mAh battery may be charged at 70W.`,
+slug:'The_Infinix_Zero_Flip',
 },
+{
+  id:27,
+  title:'The text-to-video and sound generator Movie Gen is introduced by Meta.',
+  image:Meta,
+  date:'october 6,2024',
+  content:`With Meta's Movie Gen, you can edit and make text-based videos, produce short video clips from photographs, and even create or expand soundtracks.
+We think that everyone should have access to resources that support their creativity, regardless of whether they are an aspiring filmmaker seeking to break into Hollywood or a creator who enjoys creating videos for their audience. We are thrilled to present Meta Movie Gen, our ground-breaking generative AI study for media, encompassing picture, video, and audio modalities. Our most recent study shows how to create original films and audio, alter pre-existing videos, and turn your own photo into a personalized video using just basic language inputs. When assessed by humans, Movie Gen performs better on these tasks than comparable models in the market.
+
+This endeavor is a continuation of our extensive and well-established history of disseminating basic AI research to the public. The Make-A-Scene set of models, which allowed for the generation of image, audio, video, and 3D animation, marked the beginning of our first wave of generative AI development. Diffusion models led to a second phase of development with Llama Image foundation models, enabling image modification and higher quality picture and video creation. Our third wave, Movie Gen, combines all of these modalities to provide users of the models even more precise control in a manner that has never been feasible before. As with earlier iterations, we expect these models to facilitate a range of new products that may spur innovation.
+
+These foundation models have a lot of fascinating applications, but it's crucial to remember that generative AI cannot take the place of artists' and animators' labor. We are disseminating this information because we are convinced of the ability of technology to foster new forms of self-expression and to open doors for those who might not otherwise have them. It is our dream that everyone will eventually be able to use Movie Gen to produce high-quality videos and audio and realize their artistic dreams.`,
+slug:'The_text-to-video',
+
+},
+{
+  id:28,
+  title:'The railway line from the airport in Bengaluru to Yelahanka will be doubled: Rail Minister  Vaishnaw Ashwini',
+  date:'october 6,2024',
+  image:Railway,
+  content:`Prime Minister Narendra Modi recently unveiled the NaMo Bharat Rapid Rail, and Vaishnaw stated that the railways are considering introducing similar trains for small distances, such Bengaluru to Mysuru and Bengaluru to Tumakuru.
+In order to move the railway station closer to the arrival and departure locations, Ashwini Vaishnaw announced that he would collaborate with the Bengaluru Airport officials.
+The railway line from Bengaluru Airport to Yelahanka would be doubled, according to Railway Minister Ashwini Vaishnaw, on Saturday, in order to handle more traffic.
+The railway line from Bengaluru Airport to Yelahanka would be doubled, according to Railway Minister Ashwini Vaishnaw, on Saturday, in order to handle more traffic.
+
+In addition, he declared that he would collaborate with the officials at Bengaluru Airport to move the railway station closer to the arrival and departure areas.The minister announced that the railways will shortly start producing Amrit Bharat trains version 2.0 on a wide scale, with enhancements. He was in the city to assess the status of the redevelopment work of Bengaluru Cantonment railway station.We have made the decision to collaborate with the Bengaluru Airport Authority in an effort to get the station as near to the airport's arrival and departure times as we can.
+Vaishnaw, who carried out window trailing inspection between Kempegowda International Airport Railway Station (halt) - Bengaluru Cantonment, told reporters here following a meeting with railway officials, "We will start the discussions.""In order to create a lot of capacity for traffic, we will double the railway line from the airport to Yelahanka. After that, the metro will be built very quickly," he continued.According to Vaishnaw, the Bengaluru Suburban Railway Project (BSRP) is progressing quickly on both corridors.
+
+Commuters will have more options with the BSRP and Metro Rail, he claimed, greatly increasing Bengaluru's traffic capacity.Prime Minister Narendra Modi recently unveiled the NaMo Bharat Rapid Rail, and Vaishnaw stated that the railways are considering introducing similar trains for small distances, such Bengaluru to Mysuru and Bengaluru to Tumakuru.These trains are intended for nearby cities, such as Bengaluru and Mysuru. The 135 km route between Bengaluru and Mysuru is perfect for rapid rail, allowing us to run at a very high frequency. A Namo Bharat Rapid rail will be perfect for cities like Bengaluru and Mysuru, Bengaluru and Tumakuru, he stated.
+He states that there would be subterranean parking for 250 automobiles and an equal number of two-wheelers.The minister also discussed the development of Circular Rail, which he said would alter the city's whole transit system. The Detailed Project Report (DPR) is coming along nicely, and ideally it will be finished by the end of December. The next action will then be taken, he stated.`,
+slug:'The_railway_line_from_the_airport_in_Bengaluru_to_Yelahanka',
+}
     
   ]
 
