@@ -46,27 +46,27 @@ export default function HeroSection() {
           <div className="relative h-56 overflow-hidden md:h-96">
             {carouselItems.map((item, index) => (
               <div
-                key={index}
-                className={`absolute w-full h-full transition-opacity duration-700 ease-in-out ${
-                  index === currentSlide ? 'opacity-100' : 'opacity-0'
-                }`}
-                data-carousel-item
-              >
-                <Link href={item.link}>
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{
-                      // objectFit: 'cover',
-                      objectPosition: 'center',
-                    }}
-                    priority={index === 0}
-                    quality={90}
-                  />
-                </Link>
-              </div>
+              key={index}
+              className={`absolute w-full h-full transition-opacity duration-700 ease-in-out ${
+                index === currentSlide ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+              }`}
+              data-carousel-item
+            >
+              <Link href={item.link}>
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{
+                    objectPosition: 'center',
+                  }}
+                  priority={index === 0}
+                  quality={90}
+                />
+              </Link>
+            </div>
+            
             ))}
           </div>
           {/* Slider indicators */}
