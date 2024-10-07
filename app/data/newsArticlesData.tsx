@@ -12,7 +12,9 @@ import YouTube from '@/app/images/news/YouTube.png'
 import Meta from '@/app/images/news/Meta.png'
 import Infinix from '@/app/images/news/Infinix Zero.png'
 import Railway from '@/app/images/news/Railway Minister Ashwini Vaishnaw.png'
-
+import ChannaiAirShow from '@/app/images/news/Chennai Air Show.png'
+import PakistanInternet from '@/app/images/news/Pakistan Internet.png'
+import Paytm from '@/app/images/news/PayTM.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -30,73 +32,6 @@ function generateSnippet(content: string): string {
 
 const newsArticlesData = [ 
 
-{
-  id:15,
-  title:'Reliance Mukesh Ambani loses Rs 80000 crore in just 2 days due to Sensex fell over 1,000 points while Nifty fell about 300 points',
-  image:MukeshAmbani,
-  date:'october 2,2024',
-  readTime:2,
-  content:`Mukesh Ambani, the chairman of Reliance Industries, faced a significant financial setback recently, with his net worth dropping by approximately ₹80,000 crore in just two days. This drastic loss occurred amidst a turbulent period for the Indian stock market, where the Sensex, a major index tracking the performance of the Bombay Stock Exchange (BSE), plummeted by over 1,000 points, while the Nifty, which tracks the National Stock Exchange (NSE), fell by around 300 points.
-
-Understanding the Context
-Market Dynamics:
-
-Stock markets can be volatile, influenced by various factors such as economic indicators, global events, and investor sentiment.
-The recent drop in the Sensex and Nifty could be attributed to a combination of domestic and international concerns, including inflation, rising interest rates, and geopolitical tensions.
-Impact on Wealth:
-
-Ambani's wealth is closely tied to the performance of Reliance Industries, which is a significant player in the Indian stock market. When the market declines, shares of Reliance and other companies can also lose value, impacting the net worth of their major shareholders.
-This recent dip in the market resulted in a substantial loss for Ambani, as Reliance Industries’ stock price fell sharply during this period.
-Reasons Behind the Stock Market Decline
-Economic Factors:
-
-High inflation rates can lead to increased interest rates set by the Reserve Bank of India (RBI) to curb spending, which can negatively impact corporate profits and investor confidence.
-Investors may react by selling off shares, leading to a significant decline in stock prices.
-Global Influences:
-
-Events such as geopolitical tensions, fluctuations in oil prices, and global economic uncertainty can contribute to market volatility. Investors often pull back in uncertain times, causing markets to dip.
-Investor Sentiment:
-
-The sentiment of investors can sway market performance significantly. A negative outlook can lead to panic selling, which further exacerbates the drop in stock prices.
-Conclusion
-Mukesh Ambani's recent loss of ₹80,000 crore underscores the vulnerability of even the wealthiest individuals to fluctuations in the stock market. The decline of over 1,000 points in the Sensex and 300 points in the Nifty serves as a reminder of the interconnectedness of the economy and the stock market. As investors keep a close watch on economic indicators and global events, it remains crucial for stakeholders to navigate these turbulent waters with caution and strategy.`,
-  slug:'Mukesh_Ambani_Rs_80000_crore',
-},
-{
-  id:17,
-  title:`Google may release Android 16 much earlier than expected
-Next year's big Android update could arrive a few months earlier than you'd guess.`,
-  image:Androided,
-  date:'october 2,2024',
-  content:`Without fail, Google releases a new version of Android every year. This year’s version is Android 15, and its source code went public back at the beginning of the month. If you look back at the history of Android version releases, you’ll find that Google typically schedules these major releases for Q3 or Q4 of a given year. Google now looks to be significantly moving up Android’s release cycle, as evidence suggests it could launch Android 16 sometime in Q2 of 2025.
-
-Google has typically released major new Android versions during the months of August, September, or October. Android 15, for example, arrived just earlier this month. Last year’s Android 14 update came out in early October. Meanwhile, 2022’s Android 13 update showed up in August. You have to go back to 2012’s Android 4.1 Jelly Bean release to find an Android version that didn’t land in August, September, or October.
-
-Android Version	Code-name	Release Date
-Android 15	    Vanilla Ice Cream	September 3, 2024
-Android 14	Upside Down Cake	October 4, 2023
-Android 13	Tiramisu	August 15, 2022
-Android 12	Snow Cone	October 4, 2021
-Android 11	Red Velvet Cake	September 8, 2020
-Android 10	Quince Tart	September 3, 2019
-Android 9	Pie	August 6, 2018
-Android 8.0	Oreo	August 21, 2017
-Android 7.0	Nougat	August 22, 2016
-Android 6.0	Marshmallow	October 5, 2015
-Android 5.0	Lollipop	November 12, 2014
-Android 4.4	KitKat	October 31, 2013
-Android 4.1	Jelly Bean	July 9, 2012
-Android 4.0	Ice Cream Sandwich	October 18, 2011
-Android 3.0	Honeycomb	February 22, 2011
-Android 2.3	Gingerbread	December 6, 2010
-Android 2.2	Froyo	May 20, 2010
-Android 2.0	Eclair	October 27, 2009
-Android 1.6	Donut	September 15, 2009
-Android 1.5	Cupcake	April 27, 2009
-Android 1.1		February 9, 2009
-Android 1.0		September 23, 2008`,
-  slug:'Google_may_release_Android_16',
-},
 {
   id:18,
   title:`With no home button, Apple may launch new iPhone SE in 2025 : Bloomberg's Mark Gurman`,
@@ -305,7 +240,69 @@ Vaishnaw, who carried out window trailing inspection between Kempegowda Internat
 Commuters will have more options with the BSRP and Metro Rail, he claimed, greatly increasing Bengaluru's traffic capacity.Prime Minister Narendra Modi recently unveiled the NaMo Bharat Rapid Rail, and Vaishnaw stated that the railways are considering introducing similar trains for small distances, such Bengaluru to Mysuru and Bengaluru to Tumakuru.These trains are intended for nearby cities, such as Bengaluru and Mysuru. The 135 km route between Bengaluru and Mysuru is perfect for rapid rail, allowing us to run at a very high frequency. A Namo Bharat Rapid rail will be perfect for cities like Bengaluru and Mysuru, Bengaluru and Tumakuru, he stated.
 He states that there would be subterranean parking for 250 automobiles and an equal number of two-wheelers.The minister also discussed the development of Circular Rail, which he said would alter the city's whole transit system. The Detailed Project Report (DPR) is coming along nicely, and ideally it will be finished by the end of December. The next action will then be taken, he stated.`,
 slug:'The_railway_line_from_the_airport_in_Bengaluru_to_Yelahanka',
-}
+},
+{
+  id:29,
+  title:'Pakistan: As PTI protests continue in Islamabad and Rawalpindi, mobile services have been banned for the third day.',
+  date:'october 7,2024',
+  image:PakistanInternet,
+  content:`Due to continuous violence resulting from protests by the Pakistan Tehreek-e-Insaf (PTI) in the federal capital, mobile phone services in Rawalpindi and Islamabad remained banned for a third straight day on Sunday, according to Geo News. 
+
+At strategic points like the Sri Nagar Highway, Zero Point, and Faisal Avenue, containers are positioned, and the Faizabad Interchange has partially reopened. Maintaining a robust presence across the garrison town, Punjab police officials are strengthening security protocols. Residents of Islamabad now face difficult commutes due to these road closures, which have also impacted trade and economic activity.
+
+During the PTI rallies in Islamabad on Saturday, 120 Afghan nationals and 11 members of the Khyber Pakhtunkhwa police force were taken into custody, according to Federal Interior Minister Mohsin Naqvi. 
+
+564 people were detained during the crackdown, including Khyber Pakhtunkhwa police personnel who were allegedly participated in the protests, according to ARY News. The PTI, led by former prime minister Imran Khan, has been calling for nationwide rallies beginning on October 1 to support judicial independence. The party has been organising anti-government protests in Islamabad and Lahore.`,
+  slug:'As_PTI_protests_continue_in_Islamabad_and_Rawalpindi',
+},
+
+  {
+    id:30,
+    title:'Five people pass away from heatstroke following an IAF air display at the marina.',
+    date:'october 7,2024',
+    image:ChannaiAirShow,
+    content:`On Sunday, the program was viewed by about 15 lakh people.
+large group of people watching the Sunday air display at Marina Beach
+
+About 15 lakh spectators saw the amazing success of the IAF Air display at the Marina, however at the end of the display, two individuals were admitted to the hospital and five people died, while about 100 people had outpatient treatment at the government hospitals.
+As early as 8 a.m., hundreds of people began to swarm Marina. People flocked to the beach to see the display, packing the buses, trains, and Metro for hours at a time.
+Before long, the famous beach was clogged with traffic, and visitors had to walk a great distance to reach the marina.
+Many had arrived with water and umbrellas in hand to shield themselves from the intense sun, following the advise. Thousands more had arrived unprepared as well. A senior police officer stated that five people who had come to see the air show fainted and died on Sunday afternoon after the event ended, when the crowd was enthralled by the numerous planes and their aerobatic skills. V. Karthikeyan, 34, of Thiruvottiyur's RMV Nagar neighborhood, had driven a two-wheeler with his wife and two-year-old son to the air show, according to the police. Following the occurrence, Karthikeyan passed out in the vicinity of the INS Adyar main gate while they were strolling down Rajaji Road. After being sent to the Rajiv Gandhi Government Hospital (RGGH), he was declared dead.
+
+In a another incidence, D. John, 56, a resident of Korukkupet, passed out next to the Parthasarathy arch on Kamarajar Salai. He had come for the air show with his wife Elisamma and nephew. At the same location, Srinivasan from Perungalathur passed out as well. According to the police, both were taken in an ambulance to the Government Omandurar Multispeciality hospital, but to no avail.
+On the Marina's dunes, a second gentleman in his late thirtys was discovered deceased. 
+He was recognized by the police as Dinesh Kumar, and a post-mortem would be conducted on his body at Government Royapettah Hospital. 
+Due to dizziness, around 100 patients were hospitalized to the government hospitals near the Marina. Forty-five patients were treated at the Government Royapettah Hospital, 43 at Omandurar Hospital, and seven at Rajiv Gandhi Government General Hospital (RGGGH). 
+
+According to RGGGH Dean E. Therani Rajan, only two patients were admitted; the other patients received outpatient care. One patient was pronounced "dead on arrival" upon arriving at the hospital. The 34-year-old had no known medical conditions, but more details could only be obtained during a post-mortem, according to the Dean. 
+
+Patients' main complaints were of extreme heat, humidity, and giddiness. "We received 43 complaints of giddiness from the same person. Increased temperature impairs the hypothalamus's ability to operate. The same is true for systemic inflammatory response syndrome (SIRS), which impairs key organ function. According to Dr. Therani Rajan, some persons have arrhythmia, or abnormal heartbeats, which can result in cardiac arrest and even death.
+
+long though the audience was well-behaved and under control, thousands of people remained stranded for several hours long after the event ended because the public transportation systems malfunctioned. Many in the throng also expressed dissatisfaction with the government for failing to plan for facilities, particularly clean drinking water, for the sizable gathering.`,
+    slug:'five_people_pass_away_from_heatstroke',
+  },
+  {
+    id:31,
+    title:'Chief Executive Officer Vijay Shekhar Sharma of Paytm focuses on consumer payments',
+    date:'october 7,2024',
+    image:Paytm,
+    content:`The RBI had prohibited Paytm Payments Bank from enabling credit transactions in client accounts, including prepaid cards and wallets, or taking deposits.
+
+According to a top company official on Sunday, Paytm's top focus right now is investing in its consumer payments business in an attempt to make up for lost user base as a result of RBI regulatory actions.
+The RBI had prohibited Paytm Payments Bank from enabling credit transactions in client accounts, including prepaid cards and wallets, or taking deposits.
+
+In order to concentrate on its primary business of financial services distribution and payment processing, Paytm sold its ticketing division to foodtech company Zomato in August for a sum of Rs 2,048 crore.
+"Our major business is still processing payments, and the merchant side is still robust. Regulating restrictions, however, caused us to lose a sizable portion of our consumer base. During an interactive event hosted by the Calcutta Chapter of Young Indians, the youth wing of the Confederation of Indian Industry (CII), Paytm CEO Vijay Shekhar Sharma stated, "Going forward, we aim to reinvest in the consumer payments business area."
+
+UPI payments are made by consumers, whereas QR code transactions are made by merchants.
+The amount of monthly transactional users (MTU) dropped sharply from 10.4 crore in January to 7.7 crore in May, based on corporate data that is currently accessible. In June, the amount was 7.8 crore.
+On the other hand, Paytm witnessed gradual expansion in the merchant segment, as seen by the rise in merchant numbers from 79 lakh during the June 2023 quarter to 109 lakh during the June 2024 quarter.
+
+The company is utilizing the Third-Party Application Provider (TPAP) business model, according to Sharma.
+
+It entails providing consumers with digital payment services through a range of platforms and apps. In order to streamline transactions and offer a user-friendly interface for services like bill payment, UPI payments, and other financial transactions, TPAPs work with banks and other financial institutions.`,
+    slug:'Chief_Executive_Officer_Vijay_Shekhar_Sharma',
+  }
     
   ]
 
