@@ -35,6 +35,7 @@ const newsArticlesData = [
 {
   id:18,
   title:`With no home button, Apple may launch new iPhone SE in 2025 : Bloomberg's Mark Gurman`,
+  readTime:2,
   image:iPhoneSE,
   date:'october 3,2024',
   content:`Mark Gurman: Apple plans to release a new, home button-free iPhone SE in 2025.Gurman: Apple plans to release a new, home button-free iPhone SE in 2025. 
