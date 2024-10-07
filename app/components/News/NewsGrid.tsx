@@ -1,6 +1,7 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { StaticImageData } from 'next/image'
-import newsArticlesWithSnippets from '@/app/data/newsArticlesData'
 import NewsCard from './NewsCard'
 
 interface NewsArticle {
@@ -8,7 +9,7 @@ interface NewsArticle {
   title: string
   date: string
   content: string
-  image: string | StaticImageData
+  image: string
   slug: string
   readTime?: number
   snippet: string
@@ -27,22 +28,66 @@ export default function NewsGrid({
   currentSlug,
   titleLimit = 60 // Default title limit
 }: NewsGridProps) {
-  // Reverse the news articles array
-  let reversedNews = [...newsArticlesWithSnippets].reverse();
+  const [newsArticles, setNewsArticles] = useState<NewsArticle[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        const response = await fetch('/api/news');
+        if (!response.ok) {
+          throw new Error('Failed to fetch news');
+        }
+        const data = await response.json();
+        
+        // Sort articles by date (newest first)
+        const sortedArticles = data.sort((a: NewsArticle, b: NewsArticle) => {
+          return new Date(b.date).getTime() - new Date(a.date).getTime();
+        });
+
+        setNewsArticles(sortedArticles);
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error fetching news:', error);
+        setError('Failed to load news articles. Please try again later.');
+        setIsLoading(false);
+      }
+    };
+
+    fetchNews();
+  }, []);
 
   // Filter out the current article by slug if currentSlug is provided
-  if (currentSlug) {
-    reversedNews = reversedNews.filter(news => news.slug !== currentSlug);
-  }
+  let displayedNews = currentSlug 
+    ? newsArticles.filter(news => news.slug !== currentSlug) 
+    : newsArticles;
 
   // Limit the news if the `limit` prop is provided
-  const displayedNews = limit ? reversedNews.slice(0, limit) : reversedNews;
+  displayedNews = limit ? displayedNews.slice(0, limit) : displayedNews;
+
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+  };
 
   // Function to truncate title
   const truncateTitle = (title: string, limit: number) => {
     if (title.length <= limit) return title;
     return title.slice(0, limit) + '...';
   };
+
+  if (isLoading) {
+    return <div className="py-12 bg-gray-50 text-center">Loading news articles...</div>;
+  }
+
+  if (error) {
+    return <div className="py-12 bg-gray-50 text-center text-red-500">{error}</div>;
+  }
 
   return (
     <section className="py-12 bg-gray-50">
@@ -53,10 +98,11 @@ export default function NewsGrid({
               key={news.id}
               id={news.id}
               title={truncateTitle(news.title, titleLimit)}
-              date={news.date}
+              date={formatDate(news.date)} // Apply your formatDate function here
               snippet={news.snippet}
               image={news.image}
               slug={news.slug}
+              readTime={news.readTime}
             />
           ))}
         </div>

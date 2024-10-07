@@ -21,6 +21,7 @@ model News {
   date     DateTime @default(now())  // Automatically set the current date and time
   content  String   // The content of the news article
   slug     String   // URL-friendly slug for the news article
+  readTime  Int?
 }
 
 model Gadget {

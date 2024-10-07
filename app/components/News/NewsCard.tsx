@@ -1,88 +1,44 @@
-'use client'
-
-import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
-import { NewspaperIcon } from 'lucide-react'
+import Link from 'next/link'
 import { StaticImageData } from 'next/image'
 
 interface NewsCardProps {
   id: number
   title: string
-  date : string
+  date: string
   snippet: string
   image: string | StaticImageData
   slug: string
+  readTime?: number
 }
 
-const NewsCard: React.FC<NewsCardProps> = ({ title, date, snippet, image, slug }) => {
-  const [imageError, setImageError] = useState(false)
-
-  const handleImageError = () => {
-    setImageError(true)
-  }
-
-  const getFormattedDate = (dateString: string): string => {
-    const dateToFormat = new Date(dateString)
-    return dateToFormat.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    })
-  }
-
-  const isExternalImage = typeof image === 'string' && (image.startsWith('http') || image.startsWith('data:'))
-
+export default function NewsCard({title, date, snippet, image, slug, readTime }: NewsCardProps) {
+  // const encodedSlug = encodeURIComponent(slug);
   return (
-    <article className="border rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-xl flex flex-col h-full">
-     
-      <div className="relative w-full h-48 bg-gray-200">
-       <Link href={`/news/${slug}`} >
-        {image && !imageError ? (
-          isExternalImage ? (
-            <Image
-              src={image}
-              alt={title}
-              className="w-full h-full object-cover"
-              onError={handleImageError}
-            />
-          ) : (
-            <Image
-              src={image}
-              alt={title}
-              fill
-              className="transition duration-300 ease-in-out hover:scale-105"
-              // objectFit="cover"
-              onError={handleImageError}
-            />
-          )
-        ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <NewspaperIcon className="w-12 h-12 text-gray-400" aria-hidden="true" />
-          </div>
-        )}
+    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+      <Link href={`/news/${slug}`}>
+        <div className="relative h-48">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            // style={{ objectFit: "cover" }}
+          />
+        </div>
+      </Link>
+      <div className="p-4">
+        <Link href={`/news/${slug}`}>
+          <h3 className="text-xl font-semibold mb-2">{title}</h3>
         </Link>
-      </div>
-      <div className="p-4 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-          <Link href={`/news/${slug}`} className="hover:underline">
-            {title}
-          </Link>
-        </h3>
-        <time dateTime={date} className="text-sm text-gray-500 mb-2">
-          {getFormattedDate(date)}
-        </time> 
-        <p className="text-gray-700 flex-grow">{snippet}</p>
-        <Link 
-          href={`/news/${slug}`}
-          className="inline-block mt-4 text-blue-600 hover:text-blue-800 transition-colors duration-200"
-        >
+        <div className="flex justify-between items-center text-sm text-gray-600 mb-2">
+          <p>{date}</p>
+          {readTime && <p>{readTime} min read</p>}
+        </div>
+        <p className="text-gray-700 mb-4">{snippet}</p>
+        <Link href={`/news/${slug}`} className="text-blue-500 hover:text-blue-700 font-semibold">
           Read More
-          <span className="sr-only"> about {title}</span>
         </Link>
       </div>
-    </article>
+    </div>
   )
 }
-
-export default NewsCard

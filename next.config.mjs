@@ -9,6 +9,10 @@ const nextConfig = {
       },
     ],
   },
+  env: {
+    NEWS_USERNAME: process.env.NEWS_USERNAME,
+    NEWS_PASSWORD: process.env.NEWS_PASSWORD,
+  },
 }
 
 export default nextConfig

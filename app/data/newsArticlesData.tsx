@@ -1,6 +1,4 @@
 
-import MukeshAmbani from '@/app/images/news/Mukesh Ambani.png'
-import Androided from '@/app/images/news/Androided.png'
 import iPhoneSE from '@/app/images/news/I Phone SE.png'
 import AccentureandNvidia from '@/app/images/news/Accenture and Nvidia.png'
 import Mahendra from '@/app/images/news/Mahendra.png'
