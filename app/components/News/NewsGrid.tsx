@@ -37,9 +37,9 @@ export default function NewsGrid({ showViewAllButton = false, limit, currentSlug
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        {showHeading && (
+        {/* {showHeading && (
           <div className="flex justify-between items-center mb-8">
-            {/* <h2 className="text-3xl font-serif text-gray-800">Latest News</h2> */}
+            {/* <h2 className="text-3xl font-serif text-gray-800">Latest News</h2> 
             {showViewAllButton && (
               <Link 
                 href="/news"
@@ -50,7 +50,7 @@ export default function NewsGrid({ showViewAllButton = false, limit, currentSlug
               </Link>
             )}
           </div>
-        )}
+        )} */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayedNews.map((news: NewsArticle) => (
             <NewsCard 
