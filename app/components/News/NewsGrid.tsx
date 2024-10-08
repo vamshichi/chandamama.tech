@@ -39,7 +39,7 @@ export default function NewsGrid({ showViewAllButton = false, limit, currentSlug
       <div className="container mx-auto px-4">
         {showHeading && (
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-serif text-gray-800">Latest News</h2>
+            {/* <h2 className="text-3xl font-serif text-gray-800">Latest News</h2> */}
             {showViewAllButton && (
               <Link 
                 href="/news"
