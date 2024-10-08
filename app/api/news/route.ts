@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
-import { writeFile } from 'fs/promises';
-import { join } from 'path';
+import { put } from '@vercel/blob';
 import { prisma } from '@/lib/prisma';
 
 export async function GET() {
@@ -22,19 +21,13 @@ export async function POST(request: Request) {
     const content = formData.get('content') as string;
     const slug = formData.get('slug') as string;
     const readTime = formData.get('readTime') ? parseInt(formData.get('readTime') as string) : null;
-    const image = formData.get('image') as File;
+    const image = formData.get('image') as File | null;
 
     let imageUrl = '';
 
     if (image) {
-      const bytes = await image.arrayBuffer();
-      const buffer = Buffer.from(bytes);
-
-      const fileName = `${Date.now()}-${image.name}`;
-      const path = join(process.cwd(), 'public', 'uploads', fileName);
-
-      await writeFile(path, buffer);
-      imageUrl = `/uploads/${fileName}`;
+      const { url } = await put(image.name, image, { access: 'public' });
+      imageUrl = url;
     }
 
     const newsArticle = await prisma.news.create({
@@ -68,14 +61,8 @@ export async function PUT(request: Request) {
     let imageUrl = formData.get('imageUrl') as string | null;
 
     if (image) {
-      const bytes = await image.arrayBuffer();
-      const buffer = Buffer.from(bytes);
-
-      const fileName = `${Date.now()}-${image.name}`;
-      const path = join(process.cwd(), 'public', 'uploads', fileName);
-
-      await writeFile(path, buffer);
-      imageUrl = `/uploads/${fileName}`;
+      const { url } = await put(image.name, image, { access: 'public' });
+      imageUrl = url;
     }
 
     const updatedNews = await prisma.news.update({

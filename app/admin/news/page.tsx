@@ -274,7 +274,7 @@ export default function AdminNews() {
                   onChange={() => setImageUploadMethod('url')}
                   className="form-radio"
                 />
-                <span className="ml-2">Image URL</span>
+                <span className="ml-2">Image  URL</span>
               </label>
             </div>
           </div>
