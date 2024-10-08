@@ -333,7 +333,7 @@ slug:'India_will_give-the-Maldives' ,
     id:33,
     title:'The most powerful McLaren road car ever,',
     date:'october 8,2024',
-    content:`[8:33 AM, 10/8/2024] Mohan Mamma N: The W1 hybrid hyper car, was unveiled. Priced at a whopping GBP 2 million each, the cars are already assigned to clients.
+    content:`The W1 hybrid hyper car, was unveiled. Priced at a whopping GBP 2 million each, the cars are already assigned to clients.
 Highlights
 The W1, McLaren's replacement for the P1, has been revealed. 
 
