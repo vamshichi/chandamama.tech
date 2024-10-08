@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, FormEvent } from 'react'
+import { useState, useEffect, FormEvent, ChangeEvent } from 'react'
 import { useDropzone } from 'react-dropzone'
 import Image from 'next/image'
 import AdminLogin from '@/app/components/AdminLogin'
@@ -11,12 +11,20 @@ interface NewsArticle {
   image: string
   content: string
   slug: string
+  date: string
+  readTime?: number
 }
 
 export default function AdminNews() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [newsList, setNewsList] = useState<NewsArticle[]>([])
-  const [newNews, setNewNews] = useState<Omit<NewsArticle, 'id'>>({ title: '', image: '', content: '', slug: '' })
+  const [newNews, setNewNews] = useState<Omit<NewsArticle, 'id' | 'date'>>({ 
+    title: '', 
+    image: '', 
+    content: '', 
+    slug: '',
+    readTime: undefined
+  })
   const [isEditing, setIsEditing] = useState(false)
   const [currentId, setCurrentId] = useState<string | null>(null)
   const [imageFile, setImageFile] = useState<File | null>(null)
@@ -47,6 +55,7 @@ export default function AdminNews() {
       formData.append('title', newNews.title)
       formData.append('content', newNews.content)
       formData.append('slug', newNews.slug)
+      if (newNews.readTime) formData.append('readTime', newNews.readTime.toString())
       
       if (imageUploadMethod === 'file' && imageFile) {
         formData.append('image', imageFile)
@@ -66,8 +75,7 @@ export default function AdminNews() {
 
       const addedNews = await response.json()
       setNewsList([...newsList, addedNews])
-      setNewNews({ title: '', image: '', content: '', slug: '' })
-      setImageFile(null)
+      resetForm()
       setError(null)
       alert('News article added successfully.')
       fetchNews()
@@ -84,6 +92,7 @@ export default function AdminNews() {
       formData.append('title', newNews.title)
       formData.append('content', newNews.content)
       formData.append('slug', newNews.slug)
+      if (newNews.readTime) formData.append('readTime', newNews.readTime.toString())
       
       if (imageUploadMethod === 'file' && imageFile) {
         formData.append('image', imageFile)
@@ -103,9 +112,7 @@ export default function AdminNews() {
 
       const updatedNews = await response.json()
       setNewsList(newsList.map(news => (news.id === currentId ? updatedNews : news)))
-      setIsEditing(false)
-      setNewNews({ title: '', image: '', content: '', slug: '' })
-      setImageFile(null)
+      resetForm()
       setError(null)
       alert('News article updated successfully.')
     } catch (error) {
@@ -115,6 +122,8 @@ export default function AdminNews() {
   }
 
   const handleDeleteNews = async (id: string) => {
+    if (!window.confirm('Are you sure you want to delete this news article?')) return
+
     try {
       const response = await fetch(`/api/news?id=${id}`, {
         method: 'DELETE',
@@ -135,7 +144,13 @@ export default function AdminNews() {
   }
 
   const handleEditClick = (news: NewsArticle) => {
-    setNewNews(news)
+    setNewNews({
+      title: news.title,
+      content: news.content,
+      slug: news.slug,
+      image: news.image,
+      readTime: news.readTime
+    })
     setCurrentId(news.id)
     setIsEditing(true)
     setImageUploadMethod('url')
@@ -153,6 +168,14 @@ export default function AdminNews() {
     }
   }
 
+  const resetForm = () => {
+    setIsEditing(false)
+    setNewNews({ title: '', image: '', content: '', slug: '', readTime: undefined })
+    setImageFile(null)
+    setCurrentId(null)
+    setImageUploadMethod('file')
+  }
+
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     accept: {
@@ -161,26 +184,36 @@ export default function AdminNews() {
     maxFiles: 1,
   })
 
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setNewNews(prev => ({ ...prev, [name]: value }))
+  }
+
   if (!isLoggedIn) {
     return <AdminLogin onLogin={setIsLoggedIn} />
   }
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Admin - Manage News</h1>
+      <h1 className="text-3xl font-bold mb-6">Admin - Manage News</h1>
 
-      {error && <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4" role="alert">{error}</div>}
+      {error && (
+        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4" role="alert">
+          <p>{error}</p>
+        </div>
+      )}
 
       <div className="mb-8 p-4 border rounded">
-        <h2 className="text-xl font-semibold mb-4">{isEditing ? 'Edit News' : 'Add News'}</h2>
+        <h2 className="text-2xl font-semibold mb-4">{isEditing ? 'Edit News' : 'Add News'}</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="title" className="block mb-1">Title</label>
             <input
               type="text"
               id="title"
+              name="title"
               value={newNews.title}
-              onChange={(e) => setNewNews({ ...newNews, title: e.target.value })}
+              onChange={handleInputChange}
               required
               className="w-full px-3 py-2 border rounded"
             />
@@ -190,8 +223,9 @@ export default function AdminNews() {
             <input
               type="text"
               id="slug"
+              name="slug"
               value={newNews.slug}
-              onChange={(e) => setNewNews({ ...newNews, slug: e.target.value })}
+              onChange={handleInputChange}
               required
               className="w-full px-3 py-2 border rounded"
             />
@@ -200,15 +234,27 @@ export default function AdminNews() {
             <label htmlFor="content" className="block mb-1">Content</label>
             <textarea
               id="content"
+              name="content"
               value={newNews.content}
-              onChange={(e) => setNewNews({ ...newNews, content: e.target.value })}
+              onChange={handleInputChange}
               required
               className="w-full px-3 py-2 border rounded"
               rows={4}
             />
           </div>
           <div>
-            <label className="block mb-1">Image Upload Method</label>
+            <label htmlFor="readTime" className="block mb-1">Read Time (minutes)</label>
+            <input
+              type="number"
+              id="readTime"
+              name="readTime"
+              value={newNews.readTime || ''}
+              onChange={handleInputChange}
+              className="w-full px-3 py-2 border rounded"
+            />
+          </div>
+          <div>
+            <p className="mb-1">Image Upload Method</p>
             <div className="flex space-x-4">
               <label className="inline-flex items-center">
                 <input
@@ -247,8 +293,9 @@ export default function AdminNews() {
               <input
                 type="url"
                 id="imageUrl"
+                name="image"
                 value={newNews.image}
-                onChange={(e) => setNewNews({ ...newNews, image: e.target.value })}
+                onChange={handleInputChange}
                 className="w-full px-3 py-2 border rounded"
               />
             </div>
@@ -259,7 +306,7 @@ export default function AdminNews() {
         </form>
       </div>
 
-      <h2 className="text-xl font-semibold mb-4">All News</h2>
+      <h2 className="text-2xl font-semibold mb-4">All News</h2>
       <div className="space-y-4">
         {newsList.map((news) => (
           <div key={news.id} className="p-4 border rounded">

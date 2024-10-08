@@ -9,9 +9,14 @@ const nextConfig = {
       },
     ],
   },
-  env: {
-    NEWS_USERNAME: process.env.NEWS_USERNAME,
-    NEWS_PASSWORD: process.env.NEWS_PASSWORD,
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+      };
+    }
+    return config;
   },
 }
 

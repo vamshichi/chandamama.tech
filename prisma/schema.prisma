@@ -15,13 +15,14 @@ datasource db {
 
 
 model News {
- id       String    @id @default(auto()) @map("_id") @db.ObjectId // MongoDB uses String IDs by default
- title    String   // Title of the news article
-  image    String?  // Image URL or reference for the article
-  date     DateTime @default(now())  // Automatically set the current date and time
-  content  String   // The content of the news article
-  slug     String   // URL-friendly slug for the news article
-  readTime  Int?
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  title    String
+  image    String?
+  date     DateTime @default(now())
+  content  String
+  slug     String
+  readTime Int?
+  createdAt DateTime? // Make createdAt optional
 }
 
 model Gadget {

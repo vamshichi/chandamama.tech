@@ -1,69 +1,60 @@
 import { NextResponse } from 'next/server';
+import { writeFile } from 'fs/promises';
+import { join } from 'path';
 import { prisma } from '@/lib/prisma';
-import { writeFile, mkdir } from 'fs/promises';
-import path from 'path';
 
-// Helper function to handle errors
-function handleError(error: unknown, message: string) {
-  console.error(message, error);
-  return NextResponse.json({ error: message }, { status: 500 });
-}
-
-// Helper function to handle file upload
-async function saveFile(file: File): Promise<string> {
-  const bytes = await file.arrayBuffer();
-  const buffer = Buffer.from(bytes);
-
-  const filename = file.name.replace(/\s/g, '-');
-  const uploadDir = path.join(process.cwd(), 'public', 'uploads');
-  const filepath = path.join(uploadDir, filename);
-
+export async function GET() {
   try {
-    await mkdir(uploadDir, { recursive: true });
-    await writeFile(filepath, buffer);
-    return `/uploads/${filename}`;
+    const news = await prisma.news.findMany({
+      orderBy: { date: 'desc' },
+    });
+    return NextResponse.json(news);
   } catch (error) {
-    console.error('Error saving file:', error);
-    throw new Error('Failed to save file');
+    console.error('Error fetching news:', error);
+    return NextResponse.json({ error: 'Failed to fetch news' }, { status: 500 });
   }
 }
 
-// POST method to create a new news article
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();
     const title = formData.get('title') as string;
     const content = formData.get('content') as string;
     const slug = formData.get('slug') as string;
-    const imageFile = formData.get('image') as File | null;
+    const readTime = formData.get('readTime') ? parseInt(formData.get('readTime') as string) : null;
+    const image = formData.get('image') as File;
 
-    let image = '';
-    if (imageFile) {
-      image = await saveFile(imageFile);
+    let imageUrl = '';
+
+    if (image) {
+      const bytes = await image.arrayBuffer();
+      const buffer = Buffer.from(bytes);
+
+      const fileName = `${Date.now()}-${image.name}`;
+      const path = join(process.cwd(), 'public', 'uploads', fileName);
+
+      await writeFile(path, buffer);
+      imageUrl = `/uploads/${fileName}`;
     }
 
-    const newNews = await prisma.news.create({
-      data: { title, image, content, slug },
+    const newsArticle = await prisma.news.create({
+      data: {
+        title,
+        content,
+        slug,
+        image: imageUrl,
+        readTime,
+        date: new Date(),
+      },
     });
-    return NextResponse.json(newNews, { status: 201 });
+
+    return NextResponse.json(newsArticle);
   } catch (error) {
-    return handleError(error, 'Failed to create news article');
+    console.error('Error creating news article:', error);
+    return NextResponse.json({ error: 'Failed to create news article' }, { status: 500 });
   }
 }
 
-// GET method to retrieve all news articles
-export async function GET() {
-  try {
-    const newsArticles = await prisma.news.findMany({
-      orderBy: { date: 'desc' },
-    });
-    return NextResponse.json(newsArticles);
-  } catch (error) {
-    return handleError(error, 'Failed to retrieve news articles');
-  }
-}
-
-// PUT method to update a news article by ID
 export async function PUT(request: Request) {
   try {
     const formData = await request.formData();
@@ -71,41 +62,56 @@ export async function PUT(request: Request) {
     const title = formData.get('title') as string;
     const content = formData.get('content') as string;
     const slug = formData.get('slug') as string;
-    const imageFile = formData.get('image') as File | null;
+    const readTime = formData.get('readTime') ? parseInt(formData.get('readTime') as string) : null;
+    const image = formData.get('image') as File | null;
 
-    let image;
-    if (imageFile) {
-      image = await saveFile(imageFile);
+    let imageUrl = formData.get('imageUrl') as string | null;
+
+    if (image) {
+      const bytes = await image.arrayBuffer();
+      const buffer = Buffer.from(bytes);
+
+      const fileName = `${Date.now()}-${image.name}`;
+      const path = join(process.cwd(), 'public', 'uploads', fileName);
+
+      await writeFile(path, buffer);
+      imageUrl = `/uploads/${fileName}`;
     }
 
     const updatedNews = await prisma.news.update({
       where: { id },
-      data: { 
-        title, 
-        content, 
+      data: {
+        title,
+        content,
         slug,
-        ...(image && { image })
+        image: imageUrl,
+        readTime,
       },
     });
+
     return NextResponse.json(updatedNews);
   } catch (error) {
-    return handleError(error, 'Failed to update news article');
+    console.error('Error updating news article:', error);
+    return NextResponse.json({ error: 'Failed to update news article' }, { status: 500 });
   }
 }
 
-// DELETE method to delete a news article by ID
 export async function DELETE(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get('id');
+
     if (!id) {
-      return NextResponse.json({ error: 'ID is required' }, { status: 400 });
+      return NextResponse.json({ error: 'News ID is required' }, { status: 400 });
     }
-    const deletedNews = await prisma.news.delete({
+
+    await prisma.news.delete({
       where: { id },
     });
-    return NextResponse.json(deletedNews);
+
+    return NextResponse.json({ message: 'News article deleted successfully' });
   } catch (error) {
-    return handleError(error, 'Failed to delete news article');
+    console.error('Error deleting news article:', error);
+    return NextResponse.json({ error: 'Failed to delete news article' }, { status: 500 });
   }
 }
