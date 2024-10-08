@@ -1,15 +1,15 @@
-'use client'
-
-import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { StaticImageData } from 'next/image'
+import newsArticlesWithSnippets from '@/app/data/newsArticlesData'
 import NewsCard from './NewsCard'
+import { ChevronRight } from 'lucide-react'
 
 interface NewsArticle {
   id: number
   title: string
   date: string
   content: string
-  image: string
+  image: string | StaticImageData
   slug: string
   readTime?: number
   snippet: string
@@ -19,101 +19,60 @@ interface NewsGridProps {
   showViewAllButton?: boolean
   limit?: number
   currentSlug?: string
-  titleLimit?: number
+  showHeading?: boolean
 }
 
-export default function NewsGrid({ 
-  showViewAllButton = false, 
-  limit, 
-  currentSlug,
-  titleLimit = 60 // Default title limit
-}: NewsGridProps) {
-  const [newsArticles, setNewsArticles] = useState<NewsArticle[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchNews = async () => {
-      try {
-        const response = await fetch('/api/news');
-        if (!response.ok) {
-          throw new Error('Failed to fetch news');
-        }
-        const data = await response.json();
-        
-        // Sort articles by date (newest first)
-        const sortedArticles = data.sort((a: NewsArticle, b: NewsArticle) => {
-          return new Date(b.date).getTime() - new Date(a.date).getTime();
-        });
-
-        setNewsArticles(sortedArticles);
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Error fetching news:', error);
-        setError('Failed to load news articles. Please try again later.');
-        setIsLoading(false);
-      }
-    };
-
-    fetchNews();
-  }, []);
+export default function NewsGrid({ showViewAllButton = false, limit, currentSlug, showHeading = true }: NewsGridProps) {
+  // Reverse the news articles array
+  let reversedNews = [...newsArticlesWithSnippets].reverse();
 
   // Filter out the current article by slug if currentSlug is provided
-  let displayedNews = currentSlug 
-    ? newsArticles.filter(news => news.slug !== currentSlug) 
-    : newsArticles;
+  if (currentSlug) {
+    reversedNews = reversedNews.filter(news => news.slug !== currentSlug);
+  }
 
   // Limit the news if the `limit` prop is provided
-  displayedNews = limit ? displayedNews.slice(0, limit) : displayedNews;
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-  };
-
-  // Function to truncate title
-  const truncateTitle = (title: string, limit: number) => {
-    if (title.length <= limit) return title;
-    return title.slice(0, limit) + '...';
-  };
-
-  if (isLoading) {
-    return <div className="py-12 bg-gray-50 text-center">Loading news articles...</div>;
-  }
-
-  if (error) {
-    return <div className="py-12 bg-gray-50 text-center text-red-500">{error}</div>;
-  }
+  const displayedNews = limit ? reversedNews.slice(0, limit) : reversedNews;
 
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
+        {showHeading && (
+          <div className="flex justify-between items-center mb-8">
+            <h2 className="text-3xl font-serif text-gray-800">Latest News</h2>
+            {showViewAllButton && (
+              <Link 
+                href="/news"
+                className="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out flex items-center"
+              >
+                View All
+                <ChevronRight className="ml-1" size={20} />
+              </Link>
+            )}
+          </div>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayedNews.map((news: NewsArticle) => (
             <NewsCard 
               key={news.id}
               id={news.id}
-              title={truncateTitle(news.title, titleLimit)}
-              date={formatDate(news.date)} // Apply your formatDate function here
+              title={news.title}
+              date={news.date}
               snippet={news.snippet}
               image={news.image}
               slug={news.slug}
-              readTime={news.readTime}
             />
           ))}
         </div>
 
-        {showViewAllButton && (
+        {showViewAllButton && !showHeading && (
           <div className="flex justify-center mt-12">
             <Link 
               href="/news"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out flex items-center"
             >
               View All News
+              <ChevronRight className="ml-2" size={20} />
             </Link>
           </div>
         )}

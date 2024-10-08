@@ -1,41 +1,28 @@
 'use client'
 
 import { useState, useEffect, FormEvent, ChangeEvent } from 'react'
-import { useDropzone } from 'react-dropzone'
+import { useDropzone, Accept } from 'react-dropzone'
 import Image from 'next/image'
-import AdminLogin from '@/app/components/AdminLogin'
 
 interface NewsArticle {
-  id: string
+  id: number
   title: string
   image: string
   content: string
   slug: string
-  date: string
-  readTime?: number
 }
 
 export default function AdminNews() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [newsList, setNewsList] = useState<NewsArticle[]>([])
-  const [newNews, setNewNews] = useState<Omit<NewsArticle, 'id' | 'date'>>({ 
-    title: '', 
-    image: '', 
-    content: '', 
-    slug: '',
-    readTime: undefined
-  })
+  const [newNews, setNewNews] = useState<Omit<NewsArticle, 'id'>>({ title: '', image: '', content: '', slug: '' })
   const [isEditing, setIsEditing] = useState(false)
-  const [currentId, setCurrentId] = useState<string | null>(null)
+  const [currentId, setCurrentId] = useState<number | null>(null)
   const [imageFile, setImageFile] = useState<File | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const [imageUploadMethod, setImageUploadMethod] = useState<'file' | 'url'>('file')
 
   useEffect(() => {
-    if (isLoggedIn) {
-      fetchNews()
-    }
-  }, [isLoggedIn])
+    fetchNews()
+  }, [])
 
   const fetchNews = async () => {
     try {
@@ -49,121 +36,120 @@ export default function AdminNews() {
     }
   }
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    const formData = new FormData()
-    formData.append('title', newNews.title)
-    formData.append('content', newNews.content)
-    formData.append('slug', newNews.slug)
-    if (newNews.readTime) formData.append('readTime', newNews.readTime.toString())
-
-    if (imageUploadMethod === 'file' && imageFile) {
-      formData.append('image', imageFile)
-    } else if (imageUploadMethod === 'url') {
-      formData.append('imageUrl', newNews.image)
-    }
-
-    if (isEditing && currentId) {
-      formData.append('id', currentId)
-    }
-
+  const handleAddNews = async () => {
     try {
-      const response = await fetch('/api/news', {
-        method: isEditing ? 'PUT' : 'POST',
-        body: formData,
-      })
-
-      if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.error || 'Failed to submit news')
+      const formData = new FormData()
+      formData.append('title', newNews.title)
+      formData.append('content', newNews.content)
+      formData.append('slug', newNews.slug)
+      if (imageFile) {
+        formData.append('image', imageFile)
+      } else if (newNews.image) {
+        formData.append('imageUrl', newNews.image)
       }
 
-      const result = await response.json()
-      setNewsList(prevList => 
-        isEditing 
-          ? prevList.map(item => item.id === result.id ? result : item)
-          : [...prevList, result]
-      )
+      const response = await fetch('/api/news', {
+        method: 'POST',
+        body: formData,
+      })
+      if (!response.ok) throw new Error('Failed to add news')
+      const addedNews = await response.json()
+      setNewsList([...newsList, addedNews])
       resetForm()
       setError(null)
-      alert(`News article ${isEditing ? 'updated' : 'added'} successfully.`)
-      fetchNews()
     } catch (error) {
-      console.error('Failed to submit news', error)
-      setError(`Failed to ${isEditing ? 'update' : 'add'} news article: ${error instanceof Error ? error.message : 'Unknown error'}`)
+      console.error('Failed to add news', error)
+      setError('Failed to add news article.')
     }
   }
 
-  const handleDeleteNews = async (id: string) => {
+  const handleUpdateNews = async () => {
+    try {
+      const formData = new FormData()
+      formData.append('id', currentId!.toString())
+      formData.append('title', newNews.title)
+      formData.append('content', newNews.content)
+      formData.append('slug', newNews.slug)
+      if (imageFile) {
+        formData.append('image', imageFile)
+      } else if (newNews.image) {
+        formData.append('imageUrl', newNews.image)
+      }
+
+      const response = await fetch('/api/news', {
+        method: 'PUT',
+        body: formData,
+      })
+      if (!response.ok) throw new Error('Failed to update news')
+      const updatedNews = await response.json()
+      setNewsList(newsList.map(news => (news.id === currentId ? updatedNews : news)))
+      resetForm()
+      setError(null)
+    } catch (error) {
+      console.error('Failed to update news', error)
+      setError('Failed to update news article.')
+    }
+  }
+
+  const handleDeleteNews = async (id: number) => {
     if (!window.confirm('Are you sure you want to delete this news article?')) return
 
     try {
       const response = await fetch(`/api/news?id=${id}`, {
         method: 'DELETE',
       })
-
-      if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.error || 'Failed to delete news')
-      }
-
+      if (!response.ok) throw new Error('Failed to delete news')
       setNewsList(newsList.filter(news => news.id !== id))
       setError(null)
-      alert('News article deleted successfully.')
     } catch (error) {
       console.error('Failed to delete news', error)
-      setError(`Failed to delete news article: ${error instanceof Error ? error.message : 'Unknown error'}`)
+      setError('Failed to delete news article.')
     }
   }
 
   const handleEditClick = (news: NewsArticle) => {
-    setNewNews({
-      title: news.title,
-      content: news.content,
-      slug: news.slug,
-      image: news.image,
-      readTime: news.readTime
-    })
+    setNewNews(news)
     setCurrentId(news.id)
     setIsEditing(true)
-    setImageUploadMethod('url')
   }
 
-  const onDrop = (acceptedFiles: File[]) => {
-    if (acceptedFiles.length > 0) {
-      setImageFile(acceptedFiles[0])
-      setNewNews({ ...newNews, image: URL.createObjectURL(acceptedFiles[0]) })
-    }
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    isEditing ? handleUpdateNews() : handleAddNews()
   }
-
-  const resetForm = () => {
-    setIsEditing(false)
-    setNewNews({ title: '', image: '', content: '', slug: '', readTime: undefined })
-    setImageFile(null)
-    setCurrentId(null)
-    setImageUploadMethod('file')
-  }
-
-  const { getRootProps, getInputProps } = useDropzone({
-    onDrop,
-    accept: {
-      'image/*': ['.jpeg', '.jpg', '.png']
-    },
-    maxFiles: 1,
-  })
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setNewNews(prev => ({ ...prev, [name]: value }))
   }
 
-  if (!isLoggedIn) {
-    return <AdminLogin onLogin={setIsLoggedIn} />
+  const resetForm = () => {
+    setNewNews({ title: '', image: '', content: '', slug: '' })
+    setImageFile(null)
+    setIsEditing(false)
+    setCurrentId(null)
   }
+
+  const onDrop = (acceptedFiles: File[]) => {
+    if (acceptedFiles.length > 0) {
+      setImageFile(acceptedFiles[0])
+      setNewNews(prev => ({ ...prev, image: URL.createObjectURL(acceptedFiles[0]) }))
+    }
+  }
+
+  const acceptedFileTypes: Accept = {
+    'image/*': ['.jpeg', '.jpg', '.png', '.gif']
+  }
+
+  const { getRootProps, getInputProps } = useDropzone({
+    onDrop,
+    accept: acceptedFileTypes,
+    maxFiles: 1,
+  })
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6">Admin - Manage News</h1>
+      <h1 className="text-2xl font-bold mb-4">Admin - Manage News</h1>
 
       {error && (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4" role="alert">
@@ -172,7 +158,7 @@ export default function AdminNews() {
       )}
 
       <div className="mb-8 p-4 border rounded">
-        <h2 className="text-2xl font-semibold mb-4">{isEditing ? 'Edit News' : 'Add News'}</h2>
+        <h2 className="text-xl font-semibold mb-4">{isEditing ? 'Edit News' : 'Add News'}</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="title" className="block mb-1">Title</label>
@@ -210,64 +196,14 @@ export default function AdminNews() {
               rows={4}
             />
           </div>
-          <div>
-            <label htmlFor="readTime" className="block mb-1">Read Time (minutes)</label>
-            <input
-              type="number"
-              id="readTime"
-              name="readTime"
-              value={newNews.readTime || ''}
-              onChange={handleInputChange}
-              className="w-full px-3 py-2 border rounded"
-            />
+          <div {...getRootProps()} className="border-dashed border-2 p-4 rounded cursor-pointer text-center">
+            <input {...getInputProps()} />
+            {newNews.image ? (
+              <Image src={newNews.image} alt="Preview" width={128} height={128} className="object-cover mx-auto" />
+            ) : (
+              <p>Drag and drop an image here, or click to select an image</p>
+            )}
           </div>
-          <div>
-            <p className="mb-1">Image Upload Method</p>
-            <div className="flex space-x-4">
-              <label className="inline-flex items-center">
-                <input
-                  type="radio"
-                  value="file"
-                  checked={imageUploadMethod === 'file'}
-                  onChange={() => setImageUploadMethod('file')}
-                  className="form-radio"
-                />
-                <span className="ml-2">File Upload</span>
-              </label>
-              <label className="inline-flex items-center">
-                <input
-                  type="radio"
-                  value="url"
-                  checked={imageUploadMethod === 'url'}
-                  onChange={() => setImageUploadMethod('url')}
-                  className="form-radio"
-                />
-                <span className="ml-2">Image URL</span>
-              </label>
-            </div>
-          </div>
-          {imageUploadMethod === 'file' ? (
-            <div {...getRootProps()} className="border-dashed border-2 p-4 rounded cursor-pointer text-center">
-              <input {...getInputProps()} />
-              {imageFile ? (
-                <Image src={newNews.image} alt="Preview" width={128} height={128} className="object-cover mx-auto" />
-              ) : (
-                <p>Drag and drop an image here, or click to select an image</p>
-              )}
-            </div>
-          ) : (
-            <div>
-              <label htmlFor="imageUrl" className="block mb-1">Image URL</label>
-              <input
-                type="url"
-                id="imageUrl"
-                name="image"
-                value={newNews.image}
-                onChange={handleInputChange}
-                className="w-full px-3 py-2 border rounded"
-              />
-            </div>
-          )}
           <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
             {isEditing ? 'Update News' : 'Add News'}
           </button>
@@ -279,13 +215,15 @@ export default function AdminNews() {
         </form>
       </div>
 
-      <h2 className="text-2xl font-semibold mb-4">All News</h2>
+      <h2 className="text-xl font-semibold mb-4">All News</h2>
       <div className="space-y-4">
         {newsList.map((news) => (
           <div key={news.id} className="p-4 border rounded">
             <h3 className="text-lg font-semibold mb-2">{news.title}</h3>
             <p className="mb-4 text-sm text-gray-600">{news.content.substring(0, 100)}...</p>
-            <Image src={news.image} alt={news.title} width={100} height={100} className="object-cover mb-2" />
+            {news.image && (
+              <Image src={news.image} alt={news.title} width={100} height={100} className="object-cover mb-2" />
+            )}
             <div className="flex space-x-2">
               <button onClick={() => handleEditClick(news)} className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">
                 Edit

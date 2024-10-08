@@ -13,6 +13,9 @@ import Railway from '@/app/images/news/Railway Minister Ashwini Vaishnaw.png'
 import ChannaiAirShow from '@/app/images/news/Chennai Air Show.png'
 import PakistanInternet from '@/app/images/news/Pakistan Internet.png'
 import Paytm from '@/app/images/news/PayTM.png'
+import Maldeevs from '@/app/images/news/Maldeevs.png'
+import googledetecter from '@/app/images/news/Google detecter.png'
+import w1 from '@/app/images/news/W1.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -301,7 +304,73 @@ The company is utilizing the Third-Party Application Provider (TPAP) business mo
 
 It entails providing consumers with digital payment services through a range of platforms and apps. In order to streamline transactions and offer a user-friendly interface for services like bill payment, UPI payments, and other financial transactions, TPAPs work with banks and other financial institutions.`,
     slug:'Chief_Executive_Officer_Vijay_Shekhar_Sharma',
-  }
+  },
+  {
+    id:32,
+    title:'India will give the Maldives a ₹6.3K-cr aid package.',
+    image:Maldeevs,
+    content:`Maldivian President Mohamed Muizzu met with Prime Minister Narendra Modi on Monday to discuss a potential trade deal, and the two sides decided to support each other financially with over ₹6,300 crore. This agreement comes as the Maldives faced a foreign exchange crisis.
+
+The two parties unveiled a new vision document for an all-encompassing economic and maritime security partnership, which includes important measures to increase trade, digitization, and financial cooperation as well as strengthen the Maldives' maritime surveillance capabilities through the supply of Indian radar systems and other equipment.
+
+Following their discussions, Modi addressed a joint media conference with Muizzu to state that India is the Maldives' "closest neighbour and steadfast friend" and that it will continue to provide support in a variety of areas, including infrastructure development, defines, and development cooperation. 
+
+The State Bank of India (SBI) has rolled over $100 million in Treasury bills for the Maldives this year. Speaking in Hindi, Modi stated that a currency exchange arrangement worth $400 million and ₹3,000 crore (₹30 billion) had been reached today in response to the Maldives' needs.
+
+Muizzu, who took several measures to bring his nation closer to Beijing and lessen its reliance on New Delhi after winning the "India Out" election campaign last year, acknowledged India as a crucial ally for the development of infrastructure and socioeconomic conditions that "has stood by the Maldives during our times of need." 
+
+"The Maldives will continue to be a true friend, dedicated to our shared vision of peace and development in our countries and our region," he continued.
+As per Muizzu, the currency swap arrangement will play a crucial role in mitigating the current foreign exchange problems. Additionally, there was a consensus to "continue to be involved in initiatives that will strengthen the Maldives' economic stability and resilience." He said, not providing any specifics.
+
+The Maldives side raised "a number of other points and requests" related financial aid, which will be looked into by New Delhi, according to Foreign Secretary Vikram Misri during a media conference. 
+
+The results of the two-way meeting signalled a dramatic break from a particularly contentious period in New Delhi and Male's relationship. Ties plunged to an all-time low after Muizzu demanded India evacuate more than 80 Indian military personnel deployed in the archipelago to operate three aircraft and subsequently made moves to enhance defence and military cooperation with Turkey and China.`,
+date:'october 8,2024',
+slug:'India_will_give-the-Maldives' ,
+
+  },
+  {
+    id:33,
+    title:'The most powerful McLaren road car ever,',
+    date:'october 8,2024',
+    content:`[8:33 AM, 10/8/2024] Mohan Mamma N: The W1 hybrid hyper car, was unveiled. Priced at a whopping GBP 2 million each, the cars are already assigned to clients.
+Highlights
+The W1, McLaren's replacement for the P1, has been revealed. 
+
+399 units only, each costing GBP 2 million. 
+
+driven by an electric motor coupled to a 4.0-liter V8 engine. 
+
+Finally, McLaren Automotive has shown the eagerly anticipated P1 replacement. The British supercar manufacturer's most potent road-going vehicle to date is called the W1. According to McLaren, only 399 of the W1's high-priced, GBP 2 million vehicles will be produced; these vehicles have already been assigned to clients.
+The W1 is the replacement for the P1, which was the F1's legendary heir. 
+
+The RWD hyper car’s hybrid engine system combines a twin-turbocharged 4.0-liter V8 with an E-module, which is made up of an electric motor and a motor control unit with motorsport roots. The highest power output of any McLaren engine, 915 bhp, is produced by the flat-plane crank V8 alone, which can reach 9,200 rpm. An eight-speed dual-clutch transmission is used to transfer power to the back wheels. The 342 bhp electric motor, according to McLaren, weighs only 20 kg and has a particular output that is directly comparable to Formula 1 electric motors. The overall output is at 1258 horsepower and 1340 Nm of peak torque. 
+The W1 can sprint from 0 to 100 kmph in 2.7 seconds, go from 0 to 200 kmph in 5.8 seconds, and go from 0 to 300 kmph in less than 12.7 seconds, with a maximum speed restriction of 350 kmph. 
+The W1's design differs greatly from the rest of McLaren's line-up in terms of appearance. Its shape is less curved and more upright than that of the P1, its predecessor. The headlamps on the front end have an aggressive appearance, and there are several air vents to improve aerodynamic efficiency. Anhedral doors that are hinged to the roof and rotate upward are standard on the W1. The enormous rear haunches with air intakes that gather air from the outlets on the front wheel arches are among the other design features. 
+The large diffuser and the slender, flowing tail lamps make up the majority of the back end.
+The W1 has lightweight upholstery and movable pedals inside. Additional features include a Bowers & Wilkins sound system and an 8-inch touchscreen with Apple Carplay and Android auto compatibility.
+
+The W1's advanced aerodynamic characteristics, which combine to produce a noteworthy 1000 kg of downforce, are another talking point. The pushrod and inboard damper system's lower wishbones have been increased considerably to add to the suspension's aerodynamic efficiency and maintain the car's rear-wheel drive's clean air flow. The ride height is decreased by 37 mm in the front and 17 mm in the back when Race mode is engaged.`,
+    image:w1,
+    slug:'The_W1_hybrid_hyper_car',
+  },
+    {
+      id:34,
+      title:'Google begins releasing new features for Android phones that prevent theft.',
+      date:'october 8,2024',
+      content:`According to Google, these features are intended to improve security and protect user information in the event that a phone is stolen.
+Announced at the I/O 2024 developer conference in May this year, Google has now begun rolling out its new enhanced theft protection capabilities for Android phones. According to Google, these features are intended to improve security and protect user information in the event that a phone is stolen. Android 10 or later versions of phones will support the three new functionalities.
+
+Three new capabilities to prevent theft are available: Remote Lock, Offline Device Lock, and Theft Detection Lock.
+Using Google AI, the Theft Detection Lock feature detects when someone snatches your phone out of your hand and tries to ride, drive, or run away with it. It will be promptly locked down to prevent your information from falling into the wrong hands if a theft motion is detected. 
+
+When a thief attempts to disconnect your phone for an extended length of time, the Offline Device Lock function activates. The feature automatically locks your screen to help protect your data even while your device is off the grid. Android may also identify additional signals that your device may be in the wrong hands. 
+
+The Remote Lock option can be useful if your phone has been stolen. Using just your phone number and a brief security challenge, you will be able to lock the screen of any device. Google writes in a blog post that "this buys you time to recover your account details and access additional helpful options in Find My Device, including sending a full factory reset command to completely wipe the device."
+The features are being rolled out globally, albeit gradually. While some users may receive the features later, others may already have them. We checked on two Android phones but couldn’t see them, so it may take some time until the theft protection capabilities reach all Android users.`,
+      image:googledetecter,
+      slug:'Google_begins_releasing_new_features',
+    }
     
   ]
 
