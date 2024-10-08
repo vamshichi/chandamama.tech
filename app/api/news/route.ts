@@ -14,6 +14,7 @@ export async function GET() {
   }
 }
 
+
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();
@@ -22,12 +23,15 @@ export async function POST(request: Request) {
     const slug = formData.get('slug') as string;
     const readTime = formData.get('readTime') ? parseInt(formData.get('readTime') as string) : null;
     const image = formData.get('image') as File | null;
+    const imageUrl = formData.get('imageUrl') as string | null;
 
-    let imageUrl = '';
+    let finalImageUrl = '';
 
-    if (image) {
+    if (image instanceof File) {
       const { url } = await put(image.name, image, { access: 'public' });
-      imageUrl = url;
+      finalImageUrl = url;
+    } else if (imageUrl) {
+      finalImageUrl = imageUrl;
     }
 
     const newsArticle = await prisma.news.create({
@@ -35,7 +39,7 @@ export async function POST(request: Request) {
         title,
         content,
         slug,
-        image: imageUrl,
+        image: finalImageUrl,
         readTime,
         date: new Date(),
       },
@@ -57,12 +61,15 @@ export async function PUT(request: Request) {
     const slug = formData.get('slug') as string;
     const readTime = formData.get('readTime') ? parseInt(formData.get('readTime') as string) : null;
     const image = formData.get('image') as File | null;
+    const imageUrl = formData.get('imageUrl') as string | null;
 
-    let imageUrl = formData.get('imageUrl') as string | null;
+    let finalImageUrl = '';
 
-    if (image) {
+    if (image instanceof File) {
       const { url } = await put(image.name, image, { access: 'public' });
-      imageUrl = url;
+      finalImageUrl = url;
+    } else if (imageUrl) {
+      finalImageUrl = imageUrl;
     }
 
     const updatedNews = await prisma.news.update({
@@ -71,7 +78,7 @@ export async function PUT(request: Request) {
         title,
         content,
         slug,
-        image: imageUrl,
+        image: finalImageUrl,
         readTime,
       },
     });

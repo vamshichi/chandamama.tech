@@ -49,75 +49,48 @@ export default function AdminNews() {
     }
   }
 
-  const handleAddNews = async () => {
-    try {
-      const formData = new FormData()
-      formData.append('title', newNews.title)
-      formData.append('content', newNews.content)
-      formData.append('slug', newNews.slug)
-      if (newNews.readTime) formData.append('readTime', newNews.readTime.toString())
-      
-      if (imageUploadMethod === 'file' && imageFile) {
-        formData.append('image', imageFile)
-      } else if (imageUploadMethod === 'url') {
-        formData.append('imageUrl', newNews.image)
-      }
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const formData = new FormData()
+    formData.append('title', newNews.title)
+    formData.append('content', newNews.content)
+    formData.append('slug', newNews.slug)
+    if (newNews.readTime) formData.append('readTime', newNews.readTime.toString())
 
+    if (imageUploadMethod === 'file' && imageFile) {
+      formData.append('image', imageFile)
+    } else if (imageUploadMethod === 'url') {
+      formData.append('imageUrl', newNews.image)
+    }
+
+    if (isEditing && currentId) {
+      formData.append('id', currentId)
+    }
+
+    try {
       const response = await fetch('/api/news', {
-        method: 'POST',
+        method: isEditing ? 'PUT' : 'POST',
         body: formData,
       })
 
       if (!response.ok) {
         const errorData = await response.json()
-        throw new Error(errorData.error || 'Failed to add news')
+        throw new Error(errorData.error || 'Failed to submit news')
       }
 
-      const addedNews = await response.json()
-      setNewsList([...newsList, addedNews])
+      const result = await response.json()
+      setNewsList(prevList => 
+        isEditing 
+          ? prevList.map(item => item.id === result.id ? result : item)
+          : [...prevList, result]
+      )
       resetForm()
       setError(null)
-      alert('News article added successfully.')
+      alert(`News article ${isEditing ? 'updated' : 'added'} successfully.`)
       fetchNews()
     } catch (error) {
-      console.error('Failed to add news', error)
-      setError(`Failed to add news article: ${error instanceof Error ? error.message : 'Unknown error'}`)
-    }
-  }
-
-  const handleUpdateNews = async () => {
-    try {
-      const formData = new FormData()
-      formData.append('id', currentId as string)
-      formData.append('title', newNews.title)
-      formData.append('content', newNews.content)
-      formData.append('slug', newNews.slug)
-      if (newNews.readTime) formData.append('readTime', newNews.readTime.toString())
-      
-      if (imageUploadMethod === 'file' && imageFile) {
-        formData.append('image', imageFile)
-      } else if (imageUploadMethod === 'url') {
-        formData.append('imageUrl', newNews.image)
-      }
-
-      const response = await fetch('/api/news', {
-        method: 'PUT',
-        body: formData,
-      })
-
-      if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.error || 'Failed to update news')
-      }
-
-      const updatedNews = await response.json()
-      setNewsList(newsList.map(news => (news.id === currentId ? updatedNews : news)))
-      resetForm()
-      setError(null)
-      alert('News article updated successfully.')
-    } catch (error) {
-      console.error('Failed to update news', error)
-      setError(`Failed to update news article: ${error instanceof Error ? error.message : 'Unknown error'}`)
+      console.error('Failed to submit news', error)
+      setError(`Failed to ${isEditing ? 'update' : 'add'} news article: ${error instanceof Error ? error.message : 'Unknown error'}`)
     }
   }
 
@@ -154,11 +127,6 @@ export default function AdminNews() {
     setCurrentId(news.id)
     setIsEditing(true)
     setImageUploadMethod('url')
-  }
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    isEditing ? handleUpdateNews() : handleAddNews()
   }
 
   const onDrop = (acceptedFiles: File[]) => {
@@ -274,7 +242,7 @@ export default function AdminNews() {
                   onChange={() => setImageUploadMethod('url')}
                   className="form-radio"
                 />
-                <span className="ml-2">Image  URL</span>
+                <span className="ml-2">Image URL</span>
               </label>
             </div>
           </div>
@@ -303,6 +271,11 @@ export default function AdminNews() {
           <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
             {isEditing ? 'Update News' : 'Add News'}
           </button>
+          {isEditing && (
+            <button type="button" onClick={resetForm} className="ml-2 px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">
+              Cancel Edit
+            </button>
+          )}
         </form>
       </div>
 
