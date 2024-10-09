@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { GoogleAnalytics } from './components/GoogleAnalytics'
 import Navbar from "@/app/components/Header";
 import Footer from "./components/Footer";
+import GoogleAdsense from './components/GoogleAdsense'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -72,6 +73,9 @@ export default function RootLayout({
   const gaId = process.env.NEXT_PUBLIC_GA_ID
   return (
     <html lang="en">
+      <head>
+        <GoogleAdsense />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
