@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import SoftwareSection from '../components/softwares/SoftwareSection';
+import SoftwareSection from '@/app/components/softwares/SoftwareSection';
 
 export const metadata: Metadata = {
   title: 'Softwares',
