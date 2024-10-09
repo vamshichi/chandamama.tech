@@ -7,8 +7,6 @@ import NewsGrid from "@/app/components/News/NewsGrid"
 import EBookCarousel from "@/app/components/eBooks/EBookCarousel"
 import SoftwareSection from "@/app/components/softwares/SoftwareSection"
 
-
-
 export const metadata: Metadata = {
   title: 'Chandamama.tech - Your Tech News, Gadgets, and Courses Hub',
   description: 'Discover the latest in technology, gadget reviews, and online courses at Chandamama.tech. Stay informed and enhance your digital experience.',
@@ -19,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'Chandamama.tech',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://www.chandamama.tech/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Chandamama.tech - Your Tech Hub',
@@ -32,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Chandamama.tech - Your Tech News, Gadgets, and Courses Hub',
     description: 'Discover the latest in technology, gadget reviews, and online courses at Chandamama.tech. Stay informed and enhance your digital experience.',
-    images: ['/og-image.png'],
+    images: ['https://www.chandamama.tech/og-image.png'],
   },
 }
 
