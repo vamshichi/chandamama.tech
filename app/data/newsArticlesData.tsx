@@ -409,15 +409,15 @@ The PULSE Elite headset, which is ideal for gamers who want extended gaming sess
       slug:'New_PS5_audio_accessories',
  
      },
-     {
-      id:37,
-      title:'',
-      date:'',
-      content:``,
-      image:'',
-      slug:'',
+    //  {
+    //   id:37,
+    //   title:'',
+    //   date:'',
+    //   content:``,
+    //   image:'',
+    //   slug:'',
  
-     }
+    //  }
      
      
     
