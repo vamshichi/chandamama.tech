@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
+import GoogleAnalytics from '@/app/components/GoogleAnalytics'
 import Navbar from "@/app/components/Header";
 import Footer from "./components/Footer";
 
@@ -75,6 +76,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );
