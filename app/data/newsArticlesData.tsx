@@ -16,6 +16,8 @@ import Paytm from '@/app/images/news/PayTM.png'
 import Maldeevs from '@/app/images/news/Maldeevs.png'
 import googledetecter from '@/app/images/news/Google detecter.png'
 import w1 from '@/app/images/news/W1.png'
+import Ps5 from '@/app/images/news/PS5.png'
+import Hyundai from '@/app/images/news/Hyundai.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -370,7 +372,54 @@ The Remote Lock option can be useful if your phone has been stolen. Using just y
 The features are being rolled out globally, albeit gradually. While some users may receive the features later, others may already have them. We checked on two Android phones but couldn’t see them, so it may take some time until the theft protection capabilities reach all Android users.`,
       image:googledetecter,
       slug:'Google_begins_releasing_new_features',
-    }
+    },
+    {
+     id:35,
+     title:'On October 14, Hyundai Motors India will use anchor bidding to fund Rs 8,315 crore.',
+     date:'october 9,2024',
+     content:`Hyundai Motors India Ltd. plans to offer 42.42 million shares, generating around Rs 8,315 crore from anchor investors. Subscriptions for the company's Initial Public Offering (IPO), which has a price range of Rs 1,866 to Rs 1,960 per share, will be accepted from October 15 to October 17.
+
+
+In order to raise a total of Rs 27,870 crore, the promoters would sell approximately 142.19 million shares in this pure offer-for-sale IPO. The non-institutional portion will be worth Rs 4,158 crore, while the Qualified Institutional Buyers (QIB) share would be around Rs 5,543 crore, The retail portion would comprise 49.5 million shares, valued at around Rs 9,701 crore, while the non-institutional segment will be worth Rs 4,158 crore.
+
+The company's market capitalization is estimated to be approximately Rs 1.60 lakh crore based on the higher pricing band. On October 18, the basis of allocation for Hyundai Motors India's initial public offering (IPO) would be finalized. The company will list on stock exchanges on October 22 after refunds and equity shares are paid to investors' accounts on October 21. 
+
+Since 2009, Hyundai Motors India, a division of the Hyundai Motor Group, has been the second-largest passenger vehicle manufacturer in India and the third-largest carmaker in the world by 2023 passenger vehicle sales. 
+Hyundai Motors India recorded revenue of Rs 17,344 crore for the quarter ending June 2024, up from Rs 16,624 crore for the same time the previous year. The domestic market accounted for 76% of overall income, with exports making up the remaining 24%. In comparison to Rs 1,329.19 crore in the prior year, the company's net profit for the quarter was Rs 1,489.65 crore. 
+
+The issue's principal managers are Morgan Stanley India, JP Morgan India, HSBC Securities and Capital Markets, Citigroup Global Markets, and Kotak Institutional Equities.`,
+     image:Hyundai,
+     slug:'On_October_14',
+
+    },
+    {
+      id:36,
+      title:'New PS5 audio accessories are being released by PlayStation India; prices start at Rs 12,990.',
+      date:'october 9,2024',
+      content:`The PULSE Explore wireless earphones and the PULSE Elite wireless headset are two new audio accessories that PlayStation India has introduced to improve the gaming experience for PlayStation 5 owners. On October 11, 2024, these products—which provide gamers with cutting-edge audio technology designed for immersive gameplay—will be available at major outlets throughout India.
+
+Whether at home or on the move, the PULSE Explore wireless earbuds are made to deliver a remarkable sound experience. With its authentic sound quality and planar magnetic drivers, these earphones let gamers experience every aspect of their favourite games. A quick, lossless audio experience is ensured with the PlayStation Link wireless connection. 
+
+removing any lag that can interfere with gaming. Two concealed microphones that use AI-enhanced noise rejection technology are also included with the earbuds, guaranteeing that voice communications are crystal clear even in noisy settings.
+With up to five hours of use on a single charge, the PULSE Explore earphones' battery life is yet another plus. These earbuds are perfect for prolonged gaming sessions or vacation because the supplied charging case extends the battery life by 10 hours. The earphones, a charging case, a PlayStation Link USB adaptor, six earbud tips for a customized fit, and a USB cord are all included in the Rs 18,990 bundle.
+To further improve the audio experience, PlayStation India has unveiled the PULSE Elite wireless headset in addition to the earbuds. Similar to the earbuds, the headset uses the PlayStation Link wireless connection and has planar magnetic speakers for high-quality sound. Additionally, it has an AI-enhanced noise rejection microphone that is fully retractable, guaranteeing that teammates can hear all commands during multiplayer games without any background noise. 
+
+The PULSE Elite headset, which is ideal for gamers who want extended gaming sessions, has a remarkable 30-hour battery life and fast charging features to reduce downtime. At Rs 12,990, this high-end headset includes all necessary attachments, such as a USB cable, a mounting plate, a PULSE Elite charging hook, and a PlayStation Link USB converter.`,
+      image:Ps5,
+      slug:'New_PS5_audio_accessories',
+ 
+     },
+     {
+      id:37,
+      title:'',
+      date:'',
+      content:``,
+      image:'',
+      slug:'',
+ 
+     }
+     
+     
     
   ]
 
