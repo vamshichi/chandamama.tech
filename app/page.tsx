@@ -1,16 +1,13 @@
-import { useEffect } from 'react';
-import Script from 'next/script';
-import { useRouter } from 'next/router';
-import { Metadata } from 'next';
-import Link from "next/link";
-import { ChevronRight } from 'lucide-react';
-import HeroSection from "@/app/components/HeroSection";
-import PopularGadgetsSection from "@/app/components/gadgets/PopularGadgetsSection";
-import NewsGrid from "@/app/components/News/NewsGrid";
-import EBookCarousel from "@/app/components/eBooks/EBookCarousel";
-import SoftwareSection from "@/app/components/softwares/SoftwareSection";
+import { Metadata } from 'next'
+import Link from "next/link"
+import { ChevronRight } from 'lucide-react'
+import HeroSection from "@/app/components/HeroSection"
+import PopularGadgetsSection from "@/app/components/gadgets/PopularGadgetsSection"
+import NewsGrid from "@/app/components/News/NewsGrid"
+import EBookCarousel from "@/app/components/eBooks/EBookCarousel"
+import SoftwareSection from "@/app/components/softwares/SoftwareSection"
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || '';
+
 
 export const metadata: Metadata = {
   title: 'Chandamama.tech - Your Tech News, Gadgets, and Courses Hub',
@@ -40,46 +37,8 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-  const router = useRouter();
-
-  // Handle pageview tracking with Google Analytics
-  useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      if (typeof window.gtag !== 'undefined') {
-        window.gtag('config', GA_ID, {
-          page_path: url,
-        });
-      }
-    };
-
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
-
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Google Analytics Script */}
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
-
       <main>
         <HeroSection />
         
@@ -134,5 +93,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-  );
+  )
 }
