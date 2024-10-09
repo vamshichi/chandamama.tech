@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Metadata } from "next";
 import AboutChandamama from "@/app/components/about/aboutChandamama";
 
@@ -9,7 +10,9 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main>
-      <AboutChandamama />
+      <Suspense fallback={<div>Loading...</div>}>
+        <AboutChandamama />
+      </Suspense>
     </main>
   );
 }
