@@ -1,39 +1,19 @@
-// 'use client'
+'use client'
 
-// import { usePathname, useSearchParams } from 'next/navigation'
-// import Script from 'next/script'
-// import { useEffect } from 'react'
-// import * as gtag from '@/lib/gtag'
+import { useEffect } from 'react'
+import { usePathname, useSearchParams } from 'next/navigation'
+import { GoogleTagManager } from '@next/third-parties/google'
 
-// export default function GoogleAnalytics() {
-//   const pathname = usePathname()
-//   const searchParams = useSearchParams()
+export const GoogleAnalytics = ({ gaId }: { gaId: string }) => {
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
 
-//   useEffect(() => {
-//     const url = pathname + searchParams.toString()
-//     gtag.pageview(url)
-//   }, [pathname, searchParams])
+  useEffect(() => {
+    const url = pathname + searchParams.toString()
+    window.gtag('config', gaId, {
+      page_path: url,
+    })
+  }, [pathname, searchParams, gaId])
 
-//   return (
-//     <>
-//       <Script
-//         strategy="afterInteractive"
-//         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-//       />
-//       <Script
-//         id="gtag-init"
-//         strategy="afterInteractive"
-//         dangerouslySetInnerHTML={{
-//           __html: `
-//             window.dataLayer = window.dataLayer || [];
-//             function gtag(){dataLayer.push(arguments);}
-//             gtag('js', new Date());
-//             gtag('config', '${gtag.GA_TRACKING_ID}', {
-//               page_path: window.location.pathname,
-//             });
-//           `,
-//         }}
-//       />
-//     </>
-//   )
-// }
+  return <GoogleTagManager gtmId={gaId} />
+}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
-// import GoogleAnalytics from '@/app/components/GoogleAnalytics'
+import { GoogleAnalytics } from './components/GoogleAnalytics'
 import Navbar from "@/app/components/Header";
 import Footer from "./components/Footer";
 
@@ -69,6 +69,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
@@ -76,7 +77,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Analytics />
-        {/* <GoogleAnalytics /> */}
+        {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>
   );

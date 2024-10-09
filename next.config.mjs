@@ -8,6 +8,7 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    domains: ['www.google-analytics.com'],
   },
   env: {
     NEWS_USERNAME: process.env.NEWS_USERNAME,

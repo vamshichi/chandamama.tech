@@ -1,3 +1,7 @@
+'use client'
+
+import { useEffect } from 'react'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { Metadata } from 'next'
 import Link from "next/link"
 import { ChevronRight } from 'lucide-react'
@@ -35,6 +39,27 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+
+  useEffect(() => {
+    const url = pathname + searchParams.toString()
+    const gaId = process.env.NEXT_PUBLIC_GA_ID
+
+    if (gaId) {
+      window.gtag('config', gaId, {
+        page_path: url,
+      })
+
+      // Track page view
+      window.gtag('event', 'page_view', {
+        page_title: 'Home Page',
+        page_location: window.location.href,
+        page_path: url,
+      })
+    }
+  }, [pathname, searchParams])
+  
   return (
     <div className="min-h-screen bg-gray-50">
       <main>
@@ -47,6 +72,12 @@ export default function Home() {
               <Link 
                 href="/news"
                 className="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out flex items-center"
+                onClick={() => {
+                  window.gtag('event', 'view_all_click', {
+                    event_category: 'engagement',
+                    event_label: 'News View All',
+                  })
+                }}
               >
                 View All
                 <ChevronRight className="ml-1" size={20} />
@@ -63,6 +94,12 @@ export default function Home() {
               <Link 
                 href="/ebooks"
                 className="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out flex items-center"
+                onClick={() => {
+                  window.gtag('event', 'view_all_click', {
+                    event_category: 'engagement',
+                    event_label: 'Courses View All',
+                  })
+                }}
               >
                 View All
                 <ChevronRight className="ml-1" size={20} />
@@ -81,6 +118,12 @@ export default function Home() {
               <Link 
                 href="/softwares"
                 className="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out flex items-center"
+                onClick={() => {
+                  window.gtag('event', 'view_all_click', {
+                    event_category: 'engagement',
+                    event_label: 'Software View All',
+                  })
+                }}
               >
                 View All
                 <ChevronRight className="ml-1" size={20} />
