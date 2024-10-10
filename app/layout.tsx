@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
-import { GoogleAnalytics } from './components/GoogleAnalytics'
+// import { GoogleAnalytics } from './components/GoogleAnalytics'
 import Navbar from "@/app/components/Header";
 import Footer from "./components/Footer";
 import GoogleAdsense from './components/GoogleAdsense'
@@ -81,7 +81,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Analytics />
-        {gaId && <GoogleAnalytics gaId={gaId} />}
+        {/* {gaId && <GoogleAnalytics gaId={gaId} />} */}
       </body>
     </html>
   );

@@ -14,23 +14,23 @@ export default function HomePageContent() {
     const pathname = usePathname()
     const searchParams = useSearchParams()
   
-    useEffect(() => {
-      const url = pathname + searchParams.toString()
-      const gaId = process.env.NEXT_PUBLIC_GA_ID
+    // useEffect(() => {
+    //   const url = pathname + searchParams.toString()
+    //   const gaId = process.env.NEXT_PUBLIC_GA_ID
   
-      if (gaId && typeof window !== 'undefined' && window.gtag) {
-        window.gtag('config', gaId, {
-          page_path: url,
-        })
+    //   if (gaId && typeof window !== 'undefined' && window.gtag) {
+    //     window.gtag('config', gaId, {
+    //       page_path: url,
+    //     })
   
-        // Track page view
-        window.gtag('event', 'page_view', {
-          page_title: 'Home Page',
-          page_location: window.location.href,
-          page_path: url,
-        })
-      }
-    }, [pathname, searchParams])
+    //     // Track page view
+    //     window.gtag('event', 'page_view', {
+    //       page_title: 'Home Page',
+    //       page_location: window.location.href,
+    //       page_path: url,
+    //     })
+    //   }
+    // }, [pathname, searchParams])
     
     return (
       <div className="min-h-screen bg-gray-50">
