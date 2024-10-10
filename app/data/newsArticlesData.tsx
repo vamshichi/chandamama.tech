@@ -480,7 +480,7 @@ The iQOO 13, the company's upcoming flagship smartphone, is anticipated to go on
  
     //  }
     
-     
+    // }
      
     
   ]
