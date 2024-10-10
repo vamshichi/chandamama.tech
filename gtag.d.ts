@@ -5,4 +5,4 @@ interface Window {
       targetId: string,
       config?: Record<string, any>
     ) => void
-  }
+  } 

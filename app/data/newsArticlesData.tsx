@@ -18,6 +18,9 @@ import googledetecter from '@/app/images/news/Google detecter.png'
 import w1 from '@/app/images/news/W1.png'
 import Ps5 from '@/app/images/news/PS5.png'
 import Hyundai from '@/app/images/news/Hyundai.png'
+import iQ13 from '@/app/images/news/IQ 13.png'
+import MediaTek from '@/app/images/news/MediaTek Chip.png'
+import Ratan from '@/app/images/news/Ratan TATA.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -409,15 +412,74 @@ The PULSE Elite headset, which is ideal for gamers who want extended gaming sess
       slug:'New_PS5_audio_accessories',
  
      },
+     {
+      id:38,
+      title:'Death of Ratan Tata: A giant leaves, and India is devastated.',
+      date:'october 10,2024',
+      content:`At 86, Ratan Tata passes away: The 86-year-old Tata oversaw the company for more than 20 years and presided over Tata Sons from 1991 to 2012. On Monday, he was brought to the hospital.
+With his passing, former Tata Sons chairman Ratan Tata left an enduring impression on India and the world of business.
+
+A nation that held the visionary industrialist in high regard was rocked by his death on Wednesday night. 
+
+At the age of 86, Tata's legendary legacy changed the face of Indian industry forever by transforming the Tata Group from a reputable Indian conglomerate into a global powerhouse.
+Ratan Tata was named chairman emeritus of Tata Sons, Tata Motors, Tata Steel, and Tata Chemicals after he resigned as chairman of Tata Sons in 2012.
+Tata was hospitalized to Mumbai's Breach Candy Hospital on Monday for a number of medical examinations. Tata oversaw the company for more than 20 years, from 1991 to 2012. He attempted to calm the public in a statement issued soon after social media allegations of his hospitalization went viral, stating, "There is no cause for concern." I'm still feeling upbeat. However, by Wednesday, the situation had deteriorated to the point where a loss would be felt profoundly throughout India and beyond.
+We say goodbye to Mr. Ratan Naval Tata, a remarkable leader whose efforts have influenced the Tata Group and the country, with deep sadness. He served as a friend, mentor, and advisor in addition to being the chairperson. The Tata Group grew internationally under his leadership while staying true to its core values of innovation, excellence, and integrity. Millions were impacted by his commitment to generosity, which had a long-lasting effect on fields including healthcare and education. He will be remembered for his sincere humility in every encounter. In a statement, Tata Sons chairman N Chandrasekaran stated, "We offer our sincere condolences to his loved ones on behalf of the Tata family, and his legacy will continue to inspire us."
+With his death, an era comes to an end—a man who left behind a legacy of fortitude, development, and unparalleled vision. 
+
+Ratan Tata, the great-grandson of Jamsetji Tata, the founder of the Tata Group, was born on December 28, 1937, and came from the prestigious Tata family. Before relocating to the US and graduating from Cornell University with a degree in architecture in 1962, he finished his early schooling in Mumbai. Later, in 1975, he enrolled in Harvard Business School's Advanced Management Program.`,
+      image:Ratan,
+      slug:'Death_of_Ratan_Tata',
+ 
+     },
+     {
+      id:39,
+      title:`The Dimensity 9400 chipset, the company's new flagship smartphone chipset geared for edge-AI apps, immersive gaming, amazing photography, and more, was introduced today.`,
+      date:'october 10,2024',
+      content:`The Dimensity 9400 chipset, the company's new flagship smartphone chipset geared for edge-AI apps, immersive gaming, amazing photography, and more, was introduced today.
+
+Taiwanese semiconductor manufacturer MediaTek. With its second-generation All Big Core design built on Arm's v9.2 CPU architecture and the most cutting-edge GPU and NPU for extreme performance in a super power-efficient design, MediaTek's flagship mobile SoC line-up’s fourth and most recent model, the Dimensity 9400, offers a massive performance boost. 
+
+
+The Dimensity 9400 uses MediaTek's second-generation All Big Core architecture, which combines three Cortex-X4 and four Cortex-A720 cores with an Arm Cortex-X925 core running at 3.62GHz. Compared to the Dimensity 9300, MediaTek's previous flagship chipset, this design promises 28% faster multi-core performance and 35% faster single-core performance. The Dimensity 9400, which is based on TSMC's second-generation 3nm technology, is up to 40% more power-efficient than its predecessor, giving customers greater battery life. 
+
+"With on-device LoRA training and video generation, the MediaTek Dimensity 9400 will continue to advance our mission to be the enablers of AI, supporting powerful applications that anticipate users’ needs and adapt to their preferences, while also fueling generative AI technology," stated Joe Chen, President at MediaTek. "The Dimensity 9400, the fourth-generation flagship chipset, builds on MediaTek's history of providing flagship performance in the most efficient design for the best user experiences, as well as our momentum of consistent market share growth."
+
+The Dimensity 940feature0, which houses MediaTek's 8th production NPU, is the first mobile chipset to provide developer support for Agentic AI, on-device LoRA training, and high-quality on-device video production. It also boasts several industry firsts for outstanding generative AI performance. The Dimensity 9400 provides up to 80% quicker large language model (LLM) prompt performance and up to 35% higher power efficiency than the Dimensity 9300, enabling customers to benefit from the newest agentic and generative AI applications.
+
+The new Dimensity Agentic AI Engine (DAE) from MediaTek, which is intended to transform conventional AI applications into complex agentic AI applications, is also integrated into the Dimensity 9400. In order to provide a uniform interface between AI agents, third-party APKs, and models that effectively operates both edge AI and cloud services, MediaTek is collaborating with developers. A new ecosystem of agentic AI apps will be ushered in by this simplified method, which enables models to function with a wide variety of third-party APKs, cutting down on development time.`,
+      image:MediaTek,
+      slug:'The_Dimensity_9400_chipset',
+ 
+     },
+     {
+      id:40,
+      title:`Launch of iQoo 13: Vivo's subsidiary will release its most potent smartphone in 2024 at this time.`,
+      date:'october 9,2024',
+      content:`The next flagship smartphone from iQOO, the iQOO 13, is expected to launch in China shortly before going on sale worldwide at the end of this year. Important data about the new iQOO phone have also been revealed by the device's appearance on a number of certification websites. Experience More, a Chinese tipster on Weibo, has now disclosed potential iQOO 13 specs.
+
+It is anticipated that the smartphone would have an IP68-rated construction for resistance to water and dust. Additionally, the tipster disclosed that it will feature an ultrasonic fingerprint sensor. But in contrast to the iQOO 12, which debuted in November of last year and supports 120W cable charging, 
+
+The iQOO 13, its replacement, will only support 100W wired charging.
+Power Delivery (PD) charging will also be supported by the iQOO 13. The box will include a USB-C to USB-C connection, similar to the Vivo X100 series. Additionally, according to the tipster, the display is a "better panel than BOE X2 Oriental screen." Additionally, it should include a USB 3.0 connector for improved data transfer and an updated IP68 architecture.
+
+Additionally, a 6.7-inch AMOLED screen with 2K resolution and a refresh rate of 144 Hz is anticipated for the iQOO 13. With up to 16GB of RAM and 512GB of storage, the forthcoming Snapdragon 8 Gen 4 SoC may power it. 
+
+The iQOO 13, the company's upcoming flagship smartphone, is anticipated to go on sale in China in the upcoming weeks. It is anticipated to have an IP68-rated construction and the Qualcomm Snapdragon 8 Gen 4 chipset. It may also have a large 6,150mAh battery`,
+      image:iQ13,
+      slug:'Launch_of_iQoo_13',
+ 
+     },
     //  {
-    //   id:37,
+    //   id:41,
     //   title:'',
-    //   date:'',
+    //   date:'october 10,2024',
     //   content:``,
     //   image:'',
     //   slug:'',
  
     //  }
+    
      
      
     
