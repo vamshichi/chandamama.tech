@@ -21,6 +21,9 @@ import Hyundai from '@/app/images/news/Hyundai.png'
 import iQ13 from '@/app/images/news/IQ 13.png'
 import MediaTek from '@/app/images/news/MediaTek Chip.png'
 import Ratan from '@/app/images/news/Ratan TATA.png'
+import Intel from '@/app/images/news/Intel.png'
+import Tcs from '@/app/images/news/TCS.png'
+import Geminai from '@/app/images/news/Geminai.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -470,8 +473,73 @@ The iQOO 13, the company's upcoming flagship smartphone, is anticipated to go on
       slug:'Launch_of_iQoo_13',
  
      },
+     {
+      id:41,
+      title:'TCS announces a dividend and reports a Q2 FY25 net profit of Rs 11,909 crore, below projections.',
+      date:'october 11,2024',
+      content:`Results for Tata Consultancy Services' Q2 of FY25: Analysts had anticipated that the IT behemoth owned by the Tata group would see strong deal execution support net profit and that the ramp-up of important deals, notably its ongoing relationship with BSNL, would fuel Q2 revenue.
+For the second quarter that ended in September, Tata Consultancy Services (TCS) reported a 1.1 percent quarter-over-quarter (QoQ) decline in net profit to Rs 11,909 crore, falling short of Street estimates. According to the stock exchange filing, the largest IT service provider in India saw an increase in operational revenue to Rs 64,259 crore in Q2 FY24.
+
+TCS generated revenue of Rs 63,938 crore and a net profit of Rs 12,420 crore during July to September.
+Additionally, TCS announced the payment of a Rs. 10 interim dividend per share. The record date to ascertain if stockholders are eligible for the corporate action is set for Friday, October 18, 2024, by the IT bellwether. Previously, on July 19, 2024, the business distributed an interim dividend of Rs 10. 
+
+The company said in a statement that the Energy, Resources, and Utilities sectors drove revenue growth. 
+
+"This quarter, like in the previous several, we observed the cautious patterns holding true. In the midst of an unpredictable geopolitical environment, BFSI, our largest vertical, began to rebound. TCS CEO and Managing Director K Krithivasan stated, "We also observed a significant result in our Growth Markets.
+
+The operating margin for the big IT company in the second quarter decreased to 24.1 percent from 24.7 percent in the previous quarter. There was an 18.5 percent net margin. During the quarter, TCS added a net 5,726 employees. Following a year of decreased recruiting, TCS added about 11,000 colleagues as of H1FY25. 
+
+Analysts had predicted that the ramp-up of significant acquisitions, especially its ongoing relationship with BSNL, would drive the IT giant Tata Group's Q2 revenue. They also predicted that strong deal execution and the company's expansion in North America, BFSI, and retail would support the net profit.
+While continental Europe increased by 1.8 percent and the UK grew by 4.6 percent YoY in CC terms, North America continued to slow down by 2.1 percent YoY. 
+
+TCS's total order book was $8.6 billion, representing a 23.2% YoY decrease and a 3.61% sequential gain. TCS closed a number of retail deals this quarter, including, to mention a few, Primark, McDonald's, and Croma. There are presently 600 AI/Gen AI projects being worked on by the business. 
+
+TCS's share price decreased by 0.6 percent today to close at Rs 4227.9 on the NSE ahead of the results.`,
+      image:Tcs,
+      slug:'TCS_announces_a_dividend',
+ 
+     },
+     {
+      id:42,
+      title:`Intel's new flagship CPUs will operate more effectively and coolly.`,
+      date:'october 11,2024',
+      content:`On October 24th, the Core Ultra 200S series—which emphasizes performance per watt and an integrated NPU—will be released.*
+
+The increased heat and power consumption of Intel's desktop CPUs is finally being addressed. Arriving on October 24th, Intel's new flagship Core Ultra 200S family of CPUs is designed to run cooler and more efficiently than its 14th generation counterparts by concentrating on performance per watt. These are also the first enthusiast desktop CPUs from Intel with an integrated neural processing unit, or NPU, to speed up AI activities. These CPUs are codenamed Arrow Lake S.
+
+For aficionados in desktop and mobile, "Arrow Lake will deliver Intel's best performance," says Josh Newman, general manager and vice president of product marketing for client computing. "As well as delivering the first Intel AI PC for enthusiasts in both the desktop and mobile performance space, Arrow Lake is also delivering that performance at significantly lower power levels than previous generations of Intel enthusiast products."
+Intel has made significant efforts to lower the power consumption of their chips, which is at the core of the Arrow Lake architecture. The Intel Core CPU versions 13 and 14 were both power-hungry, frequently consuming significantly more power than their AMD counterparts. When doing routine desktop chores, the power consumption will be halved thanks to these new Core Ultra 200S series CPUs. Additionally, Intel promises to save a significant amount of power when gaming.
+
+According to Intel Vice President of Client Computing Group Robert Hallock, "You'll see about half the power consumption at the desktop." Additionally, employing a single core will result in around half the power. 50 to 150 watts will be used for gaming, depending on the title and how it behaves.
+
+
+In contrast to its current Core i9-14900K, Intel showcased Assassin's Creed Mirage operating on its flagship Core Ultra 9 285K during a recent press briefing. In Mirage, the Ultra 9 285K produced performance that was comparable to or better at 80 watts less, and according to Intel, it can save up to 58 watts of power when playing games like Call of Duty.`,
+      image:Intel,
+      slug:'Ultra_200S_series',
+ 
+     },
+     {
+      id:43,
+      title:'Google updates Gemini with the picture generating model from the Pixel Studio app',
+      date:'october 11,2024',
+      content:`Apps like ChatGPT and Midjourney gained popularity thanks to early AI applications like chatbots and picture production. 
+
+Among other things, Google now provides deep AI integrations in its products and the Gemini chatbot assistant for image generation. 
+
+Though it might seem like a disservice to recent Pixel customers, Imagen 3 on Gemini now offers free access to realistic text-to-image models.
+Though AI is still developing, only a few early uses have captured the public's attention: chatbot-style conversations and the creation of images in response to textual requests. Just these elements contributed to the meteoric rise in popularity of apps like ChatGPT and Midjourney. 
+
+Google is now among our top AI apps for Android because to its numerous deep AI integrations and Gemini, a chatbot assistant that can also generate images. The corporation has provided a boost to Gemini's image creation capabilities.
+After revealing Imagen 3 at I/O earlier this year, Google has been using the technology in the background for Pixel Studio and other apps. Users can instruct the AI to create photos, and after a few repetitions, they can selectively improve the output. The software was restricted to the most recent Pixel 9 series, but it appears to function effectively with photos of individuals. A recent online visit to the Gemini service revealed that Imagen 3 is also accessible through the service, even at the free tier (via NotebookCheck).
+For the past few months, Google has been using the AI Test Kitchen to test Imagen 3 on Gemini. We are seeing a pop-up regarding these image generating capabilities on Gemini, which suggests that the firm chose to make them available to all customers after a few months of testing. In contrast to the Pixel Studio program, which transformed your prompt's artistic definitions into drop-down menus with options, Google's Gemini deployment prioritizes image quality, detail, and greater photorealism than the outgoing model.
+
+While the free use of Google's award-winning text-to-image model, which boasts unexpected realism, is undoubtedly beneficial, a considerable portion of Pixel 9 series buyers purchased the device specifically for the Pixel Studio app's ease of use. The phone isn't even a year old yet, and it may seem unfair to Google to make the Imagen 3 so widely available to Pixel customers who paid actual money for the AI intelligence.`,
+      image:Geminai,
+      slug:'Pixel_Studio_app',
+ 
+     },
     //  {
-    //   id:41,
+    //   id:44,
     //   title:'',
     //   date:'october 10,2024',
     //   content:``,
@@ -480,7 +548,7 @@ The iQOO 13, the company's upcoming flagship smartphone, is anticipated to go on
  
     //  }
     
-    // }
+    
      
     
   ]
