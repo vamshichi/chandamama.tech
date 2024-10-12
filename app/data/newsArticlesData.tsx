@@ -24,6 +24,9 @@ import Ratan from '@/app/images/news/Ratan TATA.png'
 import Intel from '@/app/images/news/Intel.png'
 import Tcs from '@/app/images/news/TCS.png'
 import Geminai from '@/app/images/news/Geminai.png'
+import WeRobo from '@/app/images/news/We ROBO Event.png'
+import TataNewChairman from '@/app/images/news/TATA New Chairman Noel.png'
+import Honehwell from '@/app/images/news/Honehwell .png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -538,15 +541,74 @@ While the free use of Google's award-winning text-to-image model, which boasts u
       slug:'Pixel_Studio_app',
  
      },
+     {
+      id:44,
+      title:`At the "We Robot" event, Elon Musk's Tesla company showcases its Optimus humanoid robots.`,
+      date:'october 12,2024',
+      content:`On Thursday, October 10, at Tesla's "We Robot" event in California, a number of humanoid Optimus robots were observed leaving the venue, distributing drinks, and giving out gift bags to the guests.
+
+In addition to the humanoid robots, the electric vehicle manufacturer unveiled Cyber cab, a larger self-driving automobile that can fit up to 20 people, and Cyber cab, a self-driving robo taxi.
+
+In a video demonstration shown at the ceremony, Optimus was also seen performing household chores like picking up deliveries and watering plants. "Among you, the Optimus will stroll. You can approach them directly, and they will offer beverages, 
+It may take a further two years for anyone hoping to utilize Tesla's Optimus for factory labor or dog walking, though, since Musk has previously stated that the humanoid robots won't be ready for usage until 2026. Nevertheless, they were far more visible on the Tesla factory floor.
+
+Musk has consistently stated that he sees applications for the humanoid Optimus robots outside of industrial tasks. Musk revealed to the public, for the first time, a bipedal Optimus prototype that could walk on stage and wave to the audience in 2022. The Optimus Gen 2 was seen to be being remotely controlled in a video, raising doubts about the robot's ability to move on its own. 
+
+The demonstration on Thursday demonstrated that Tesla has actually successfully developed autonomous locomotion with Optimus.`,
+      image:WeRobo,
+      slug:'We_Robot',
+ 
+     },
+     {
+      id:45,
+      title:`Tata Trusts chairman Noel is named: Ratan's half-brother assumes control of the $615 billion company`,
+      date:'october 12,2024',
+      content:`I look forward to carrying on the legacy of Mr. Ratan N. Tata and the Founders of the Tata Group," Noel Tata stated in response to his appointment. Established over a century ago, the Tata Trusts represent a distinctive means of pursuing social good.
+Among these are the two main trusts, the Sir Ratan Tata Trust and the Sir Dorabji Tata Trust, which together control over 50% of Tata Sons, the main holding company and corporation that promotes the Tata brands. Thirteen charitable trusts together own sixty-six percent of Tata Sons.
+
+Tata Trust chairmen have always come from the Parsi community. It has also been revealed that the community wanted someone with a Tata surname to lead these trusts, which made Noel Tata the most obvious candidate. There were rumours circulating prior to his selection that Mehli Mistry, a close confidante of Ratan Tata, was also a contender. However, this could not be verified.
+
+In a joint meeting in Mumbai, the trustees of the several Tata Trusts expressed their condolences for the passing of Ratan Tata, the chairman of the Tata Trusts, and "recalled his yeoman services not only to the Tata Group but also to nation building," according to a statement.
+
+The announcement also stated, "It was unanimously decided in separate meetings held immediately thereafter to appoint Mr. Noel Naval Tata as the Chairman of the various Trusts that constitute the Tata Trusts and also designate him as Chairman, Tata Trusts." 
+
+It further stated that his appointment is effective right now. As the sixth chairman of the Sir Ratan Tata Trust and the eleventh chairman of the Sir Dorabji Tata Trust, Noel assumed these roles.
+
+"I look forward to carrying on the legacy of Mr. Ratan N. Tata and the Founders of the Tata Group," Noel Tata stated in response to his appointment. The Tata Trusts, which were established over a century ago, offer a special means of pursuing social good.`,
+      image:TataNewChairman,
+      slug:'Tata_Trusts_chairman_Noel_is_named',
+ 
+     },
+     {
+      id:46,
+      title:`At Rs 39,999, Honeywell introduces the Aviator Hi-Fi Speaker, which supports lossless music.`,
+      date:'october 12,2024',
+      content:`The Honeywell Aviator Hi-Fi Speaker has been introduced in India by Secure Connection, an electronic products company based in Hong Kong and a Honeywell licensee. The speaker has several connectivity choices and high-fidelity audio, making it ideal for home entertainment.
+
+Cost of a Honeywell Aviator in India 
+The cost of the Honeywell Aviator Hi-Fi Speaker is Rs 39,999. The high-end audio gadget will be sold in India through a number of retail outlets as well as e-commerce sites, with the promise of providing numerous cutting-edge features.
+
+Availability of Honeywell Aviators 
+The merchandise will be sold both online and in physical stores around the nation.
+Features of the Honeywell Aviator 
+with 240 watts of power and a proprietary true-lossless 1MBPS+ audio codec, the Honeywell Aviator produces high-clarity sound. It is compatible with Bluetooth V5.3, which offers a seamless 30-meter range of connectivity. Lossless Dongle Connectivity, which is compatible with Type C and Lightning connectors and allows users to connect a variety of devices, is one of its primary characteristics. 
+Additionally, the product has Multi-Mode Audio-In, which allows users to alternate between AUX, Bluetooth, and Lossless Dongle inputs. For improved sound quality, the speaker also incorporates cutting-edge acoustic technology, including a 5-Channel Amplifier and All-Digital Processing for 5 Drivers and 3 Independent Sound Cavities.
+The Honeywell Aviator also has ambient lighting, which enhances the audio experience visually.`,
+      image:Honehwell,
+      slug:'Honeywell_introduces_the_Aviator_Hi-Fi_Speaker',
+ 
+     },
     //  {
     //   id:44,
     //   title:'',
-    //   date:'october 10,2024',
+    //   date:'october 12,2024',
     //   content:``,
     //   image:'',
     //   slug:'',
  
     //  }
+    
+    
     
     
      
