@@ -27,6 +27,9 @@ import Geminai from '@/app/images/news/Geminai.png'
 import WeRobo from '@/app/images/news/We ROBO Event.png'
 import TataNewChairman from '@/app/images/news/TATA New Chairman Noel.png'
 import Honehwell from '@/app/images/news/Honehwell .png'
+import Hal from '@/app/images/news/HAL.png'
+import GmailAiHake from '@/app/images/news/Gmail AI Hake.png'
+import TeslaRobo from '@/app/images/news/Tesla Robo.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -598,15 +601,83 @@ The Honeywell Aviator also has ambient lighting, which enhances the audio experi
       slug:'Honeywell_introduces_the_Aviator_Hi-Fi_Speaker',
  
      },
+     {
+      id:47,
+      title:`Hindustan Aeronautics Limited (HAL) is the fourteenth PSU to enter the exclusive group after being granted "Maharatna" status.`,
+      date:'october 13,2024',
+      content:`As a result of this upgrade, HAL is now the 14th Maharatna CPSE, a distinction that will strengthen its financial and operational independence.
+With this promotion, Hindustan Aeronautics Limited (HAL) is now a Maharatna Central Public Sector Enterprise (CPSE). Following Finance Minister Nirmala Sitharaman's clearance, the Department of Public Enterprises announced the upgrade through a post on X (previously Twitter) on October 12.
+
+Two high-level bodies, led by the Finance Secretary on the Inter-Ministerial Committee (IMC) and the Cabinet Secretary on the Apex Committee, had already recommended HAL's upgrade.
+
+Under the Department of Defence Production (DoDP), HAL reported a net profit of Rs 7,595 crore and annual revenue of Rs. 28,162 crore for the fiscal year 2023–2024. As a result of this upgrade, HAL is now the 14th Maharatna CPSE, a distinction that will strengthen its financial and operational independence. 
+
+The government gave "Maharatna" status to Oil India in August of last year, making it the most recent corporation to do so. 
+
+There are currently 14 "Maharatna" public sector enterprises (PSUs) in India, including the recently renamed Hindustan Aeronautics Limited (HAL) and well-known companies like BHEL, BPCL, Coal India, GAIL, HPCL, Indian Oil, NTPC, ONGC, Power Grid, SAIL, Oil India, REC, and PFC.
+
+A corporation must meet strict financial requirements in order to be granted Maharatna status: an average annual net value of more than Rs 15,000 crore, an average annual turnover exceeding Rs 25,000 crore, and an average annual net profit of more than Rs 5,000 crore during the previous three years.
+PSUs with Maharatna status have more freedom to invest in capital projects, such as replacements or new purchases, without any financial restrictions. These businesses must also run on their own, without reliance on government assurances or budgetary support.
+
+In contrast, corporations having Navratna status can invest up to ₹1,000 crore, or 15% of their net worth, in a single project without obtaining previous government approval. This means that the category confers greater financial and operational freedom.`,
+      image:Hal,
+      slug:'Hindustan_Aeronautics_Limited',
+ 
+     },
+     {
+      id:48,
+      title:'Verified AI Hack Raises New Gmail Security Alert for 2.5 Billion Users',
+      date:'october 13,2024',
+      content:`Although Google has put in place progressively more advanced safeguards to prevent hackers from accessing your Gmail account, hackers are also developing AI-driven assaults. Google estimates that over 2.5 billion people utilize the Gmail service at any given time. That it is such a target for hackers and con artists is understandable. What you should know is as follows.
+
+The Most Recent AI-Powered Gmail Attack Is Pretty Awesome
+
+Microsoft solutions consultant Sam Mitrovic has cautioned others after nearly falling for a “super realistic AI scam call” that might fool even the most seasoned users.
+It began a week before Mitrovic became aware of how sophisticated the attack was against him. In a blog post alerting other Gmail users to the potential threat, Mitrovic describes, "I received a notification to approve a Gmail account recovery attempt." One well-known technique used in phishing attacks is the request for confirmation of account recovery or password reset, which leads the victim to a phony login page where they are required to provide their login information in order to report the request as not coming from them.
+
+Naturally, Mitrovic was not buying into this and turned off the notification that seemed to be from the United States as well as a missed call that seemed to be from Google in Sydney, Australia, around forty minutes later. Thus far, it seems quite simple and avoidable. Then, almost exactly one week later, the real fun began with another notice request for permission of account recovery, followed forty minutes later by a phone call. This time, Mitrovic didn't miss the call and answered it. An American voice identifying itself as Google assistance verified that the Gmail account had been the subject of questionable behaviour.
+
+After I told him no, he inquired as to whether or not he had logged in from Germany, to which I replied in the negative, Mitrovic added. All of this is intended to instill dread in the recipient and trust in the caller. At this point, the phishing plan took a quick and extremely clever turn for the worst. Mitrovic was notified by the alleged Google support agent that an intruder had gained access to his Gmail account for the previous seven days and had taken possession of account information. Mitrovic remembered the missed call and recovery notification from a week prior, so this raised red flags.
+
+While he was still talking, Mitrovic Googled the phone number he was being contacted from and found that it did, in fact, connect to Google company pages. This alone is a cunning ploy that will probably trick a lot of gullible customers who are caught up in the moment's fear because it wasn't a Google support number; rather, it was about receiving calls from Google Assistant. "You will be informed at the beginning of the conversation that Google is the caller and why they are calling. The reader is kindly informed by the 100% authentic page that "You can expect the call to come from an automated system or, in some cases, a manual operator."`,
+      image:GmailAiHake,
+      slug:'New_Gmail_Security_Alert',
+ 
+     },
+     {
+      id:49,
+      title:`Discover Tesla's Optimus Robot, a humanoid "friend" with unlimited capabilities.`,
+      date:'october 13,2024',
+      content:`A number of humanoid Optimus robots were observed pouring beverages to guests and strolling the ramp at Tesla's 'We Robot' event in California, US.
+He is able to assist. He is a dancer. He's got selfie skills. He is able to speak. He is capable of everything "you want." That robot, Tesla's Optimus, can be a humanoid companion. At Tesla's 'We, Robot' event on Thursday in California, many humanoid Optimus robots were observed pouring beverages to spectators and strolling the ramp.
+It can pretty much do anything you ask of it. Perhaps a teacher. It can get groceries, mow your lawn, walk your dog, watch your kids, be your friend, and serve drinks. Elon Musk, CEO of Tesla, stated, "Anything you can think of, it will work and it's going to be awesome," when unveiling the most recent launch.
+A demo film aired during the occasion showed Optimus carrying out home tasks like watering plants, wiping down the kitchen counter, unloading groceries, and engaging in play with kids in addition to picking up deliveries.
+Musk demonstrated his claims by bringing several Optimus robots to the gathering and asking guests to treat them kindly. They will serve beverages at the bar, and you can approach them directly. Just having humanoid robots is an amazing experience. They are right in front of you, where you are.
+Long term, Optimus will cost between $20,000 and $30,000, according to Musk.
+
+Optimus is astounding the internet.
+"Didn't it feel like you were on some time travel trip to be there?" a user said. Undoubtedly, this incident changed history. 
+
+A few users expressed disapproval with Optimus's ability to interact. "Is this really Optimus talking?" a user from X asked. I have the impression that someone is behind it. 
+"The ones mingling and serving drinks were remotely operated but still really impressive," another person remarked.
+
+"I'd like to purchase an Optimus once its hand dexterity matches that of a human being. especially if it has the ability to learn and acquire information on a variety of topics. A second person expressed interest in the idea and remarked, "I could use the help working on our rental properties and around our place in Arizona."`,
+      image:TeslaRobo,
+      slug:'Discover_Teslas_Optimus_Robot',
+ 
+     },
     //  {
-    //   id:44,
+    //   id:50,
     //   title:'',
-    //   date:'october 12,2024',
+    //   date:'october 13,2024',
     //   content:``,
     //   image:'',
     //   slug:'',
  
-    //  }
+    //  },
+
+
+     
     
     
     
