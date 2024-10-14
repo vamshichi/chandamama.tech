@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+// import { Suspense } from 'react'
 import HomePageContent from '@/app/page-metadata'
 import { Metadata } from 'next'
 
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <div >
       <HomePageContent />
-    </Suspense>
+    </div>
   )
 }
