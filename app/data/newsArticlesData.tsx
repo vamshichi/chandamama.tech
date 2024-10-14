@@ -30,6 +30,9 @@ import Honehwell from '@/app/images/news/Honehwell .png'
 import Hal from '@/app/images/news/HAL.png'
 import GmailAiHake from '@/app/images/news/Gmail AI Hake.png'
 import TeslaRobo from '@/app/images/news/Tesla Robo.png'
+import AutomaticShift from '@/app/images/news/Automatic Shift.png'
+import IndianMobile from '@/app/images/news/Indian Mobile Congress 2024.png'
+import StarshipRocket from '@/app/images/news/Starship Rocket.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -664,6 +667,67 @@ A few users expressed disapproval with Optimus's ability to interact. "Is this r
 "I'd like to purchase an Optimus once its hand dexterity matches that of a human being. especially if it has the ability to learn and acquire information on a variety of topics. A second person expressed interest in the idea and remarked, "I could use the help working on our rental properties and around our place in Arizona."`,
       image:TeslaRobo,
       slug:'Discover_Teslas_Optimus_Robot',
+ 
+     },
+     {
+      id:50,
+      title:'It shifts automatically! Buyers of cars quickly shifting gears for a smooth ride',
+      date:'october 14,2024',
+      content:`Despite their higher cost, more Indians are selecting automobiles with automatic transmissions for their smoother rides and higher fuel economy. Nowadays, 26% of mass-market automobile sales are automatic. Leading manufacturers are growing the options available for AT, such as Maruti Suzuki and Hyundai. It is anticipated that this trend would continue to rise despite rising prices.
+Mumbai: Despite their higher price tags, more and more mainstream automobile buyers in the nation are choosing automatic transmission (AT) cars because they offer smoother rides and better fuel economy. According to data compiled by Jato Dynamics, ATs, which were formerly thought of as a luxury, now account for about 26% of mass-market vehicle sales in the nation, a notable increase from 16% in 2020.
+
+These vehicles, which lessen the inconvenience of stop-and-go traffic, are becoming increasingly popular in metropolitan locations`,
+      image:AutomaticShift,
+      slug:'It_shifts_automatically',
+ 
+     },
+     {
+      id:51,
+      title:'As massive stars hip booster is caught by mechanical arms back at the launch pad, SpaceX creates history.',
+      date:'october 14,2024',
+      content:`After a successful test flight, SpaceX successfully returned the Star ship mega rocket’s first-stage booster to the launch pad on Sunday, completing a technical masterwork that advances the company's goal of quick reusability. 
+According to a livestream from Elon Musk's SpaceX Company, the "super heavy booster" had taken off attached to the unmanned Star ship rocket minutes earlier. It then made an impeccable controlled return to the same pad in Texas, where two enormous mechanical "chopsticks" reached out from the launch tower to bring the slowly descending booster to a stop.
+Soon later, Star ship’s top stage descended into the Indian Ocean as scheduled, a milestone that was celebrated.
+
+On the fifth test flight of the vehicle, he declared, "Ship landed precisely on target!" "The second of the two goals was accomplished." 
+
+Employees of the corporation cheered as the booster was successfully "caught" at the launch pad in Texas.
+On the livestream for the firm, a SpaceX representative remarked, "People, this is a day for the engineering history books." 
+
+Yestraday At 7:25 a.m. (12:25 GMT), the SpaceX facility in southern Texas successfully launched into bright skies.
+SpaceX made history in June when it successfully completed its first splashdown with Star ship; a prototype spacecraft that Elon Musk thinks could eventually transport people to Mars. 
+
+In order to increase the likelihood of success, SpaceX says that its engineers have "spent years preparing and months testing for the booster catch attempt, with technicians pouring tens of thousands of hours into building the infrastructure."`,
+      image:StarshipRocket,
+      slug:'As_massive_stars_hip_booster_is_caught',
+ 
+     },
+     {
+      id:52,
+      title:'Nokia at India Mobile Congress 2024 to Display AI-powered innovations 5G, 6G, AI, and Sustainability Solutions',
+      date:'october 14,2024',
+      content:`Solutions from the company's three main business segments—Mobile Networks (MN), Cloud and Network Services (CNS), and Network Infrastructure (NI)—will be on display. AI-powered 6G, energy-efficient networks, sophisticated cybersecurity, and quantum-safe technologies will all be on display. 
+Additionally, Nokia will showcase AI-powered smart manufacturing and industrial safety solutions from ViXR and WhoVR, two of its start-up partners.
+Important highlights include of: 
+
+AI-driven 6G: Using AI/ML to optimize CSI and improve cell-edge performance. 
+Reducing CO2 emissions and network power usage is known as energy efficiency. 
+Using GenAI for cybersecurity: bolstering 5G network defences against attacks. 
+Quantum-safe networks: Protecting networks from the hazards posed by quantum computing in the future. 
+AI in business operations: Increasing productivity by automating procedures. 
+Using AI/ML for industrial optimization and safety is known as "smart manufacturing." 
+AI-powered 6G, atmospheric ducts in radio networks, energy efficiency solutions (including hardware, software, and services), next-generation RAN solutions, 5G Advanced performance breakthroughs, and RedCap technology will all be demonstrated in this segment. 
+
+Showcase for Cloud and Network Services (CNS) 
+Highlights from this section will include cybersecurity operations driven by sophisticated GenAI, autonomous slice monetisation, programmable network monetisation, and sustainable operations with Nokia AVA.
+Showcase of Network Infrastructure (NI) 
+Nokia has three main topics under which it will showcase its NI solutions:
+
+Introducing Wi-Fi 6 products and the Cortical Marketplace, Fiber for Everything (PON), Fixed Wireless Access (FWA) using sub-6 and mm Wave technologies, and Grow Your Business and Expand Your Network. 
+
+Emphasize Nokia Deerfield Defender + Routers to expedite and enhance DDoS mitigation, Multi-Access Gateway, and Quantum-Safe in order to defend against outages and threats.`,
+      image:IndianMobile,
+      slug:'Nokia_at_India_Mobile_Congress_2024',
  
      },
     //  {
