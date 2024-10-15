@@ -33,6 +33,9 @@ import TeslaRobo from '@/app/images/news/Tesla Robo.png'
 import AutomaticShift from '@/app/images/news/Automatic Shift.png'
 import IndianMobile from '@/app/images/news/Indian Mobile Congress 2024.png'
 import StarshipRocket from '@/app/images/news/Starship Rocket.png'
+import CanadaPolice from '@/app/images/news/Canada Police.png'
+import QuantumComputer from '@/app/images/news/Quantum Computer.png'
+import SamsungGalaxyRing from '@/app/images/news/Samsung Galaxy Ring.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -730,16 +733,88 @@ Emphasize Nokia Deerfield Defender + Routers to expedite and enhance DDoS mitiga
       slug:'Nokia_at_India_Mobile_Congress_2024',
  
      },
+     {
+      id:53,
+      title:'Indian ambassadors are accused by Canadian police of "criminal" acts, including killings.',
+      date:'october 15,2024',
+      content:`Monday night, hours after senior diplomats were ejected from both nations in an intensifying geopolitical spat, Canadian police accused Indian diplomats and consular personnel of engaging in "clandestine" and "criminal" operations within the nation. 
+
+
+The head of the Royal Canadian Mounted police (RCMP) told reporters during a hurriedly scheduled press conference that the agency has proof of "agents" acting on behalf of the Indian government and engaging in harassment, extortion, intimidation, and coercion. Commissioner Mike Duheme said to reporters that investigations had shown that Indian consular and diplomat personnel stationed in Canada took advantage of their official positions to carry out covert operations like gathering intelligence for the Indian government, either directly or through intermediaries; 
+
+and other people who took voluntary or coercive action.
+The Prime Minister, Justin Trudeau, accused India last year of assassinating the well-known Sikh leader Hardeep Singh Nijjar in the British Columbian province. The claims made by the RCMP represent the first official look by the police into the breadth and depth of India's purported activities in Canada.
+
+"We will never tolerate the involvement of a foreign government threatening and killing Canadian citizens on Canadian soil," Prime Minister Justin Trudeau declared on Monday night. India erred greatly when it decided to target Canadians with its diplomats and organized crime.
+
+The RCMP has obtained "ample, clear and concrete evidence which identified six individuals as persons of interest in the Nijjar case," according to Canada's foreign minister, Mélanie Joly. 
+
+She claimed that although India was asked to participate with the probe and forgo its diplomatic and consular immunity, it refused. 
+
+Joly stated, "Unfortunately, since India refused to comply and considering the continuous worries about Canadians' safety, Canada served notices of expulsion to these individuals."
+Because "getting to the bottom of this is still in the interest of both of our countries," she requested that the Indian government assist the current probe. 
+Activists have charged India in recent months with a well-planned campaign of "transnational terrorism" directed on Sikhs.`,
+      image:CanadaPolice,
+      slug:'Indian_ambassadors_are_accused_by_Canadian_police',
+ 
+     },
+     {
+      id:54,
+      title:'Soon, the Samsung Galaxy Ring will be available in India, and pre-orders will open: Specifics',
+      date:'october 15,2024',
+      content:`[5:02 AM, 10/15/2024] Mohan Mamma N: In India, the Samsung Galaxy Ring is currently accessible for pre-order. Initially accessible in a limited number of areas, the next-generation health and fitness wearable from the South Korean electronics manufacturer was introduced in July alongside the Galaxy Z 6 series foldable devices. The Galaxy Ring is currently expanding to new markets, one of which being India. Pre-orders for the Galaxy Ring are open till October 15, which may indicate that India will soon be able to buy Samsung's new ring-shaped wearable.
+
+Samsung Galaxy Ring: Specifics of the pre-order
+
+Customers who are interested in buying the Samsung Galaxy Ring can reserve a device on the company's official website in India or through the online retailers Flipkart and Amazon for a nominal fee of Rs 1,999. Samsung has attested to the refundable nature of this token sum.
+
+Customers who pre-reserve a Galaxy Ring will be among the first to purchase the smartphone when it launches, according to Samsung. Furthermore, buyers who pre-reserve a Galaxy Ring from Samsung will receive a Wireless Charger Duo at no additional cost. A charging case and data cord are included with the Galaxy Ring.
+
+Samsung Galaxy Ring: Specifics
+
+The Galaxy Ring will initially be free of charge for users who visit Samsung's website. This suggests that, like Samsung Galaxy Watches, it will connect with the Samsung Health app. This methodology is distinct from certain smart rings provided by other companies, like Oura, which conceal sophisticated health data behind a paywall.
+The Samsung Galaxy Ring, which was introduced in July of this year, has a thin design and weighs between 2.3 and 3g, depending on the size. Titanium Black, Titanium Silver, and Titanium Gold are the three color selections and nine size variations for the Galaxy Ring. It has 10ATM water resistance and is constructed of Grade 5 titanium. Up to seven days of battery life between charges is what Samsung boasts. 
+Additionally, Samsung has integrated Galaxy AI into the Galaxy Ring to produce comprehensive health reports that highlight different health metrics. The Galaxy Ring with Galaxy AI helps users concentrate on their daily attempts to develop by offering an Energy Score measure that makes recommendations depending on the users' current physical state. 
+A number of health parameters, including sleep, activity, sleeping heart rate, and sleeping heart rate variability, are measured by the ring and used to compute this score.`,
+      image:SamsungGalaxyRing,
+      slug:'the_Samsung_Galaxy_Ring_will_be_available_in_India',
+ 
+     },
+     {
+      id:55,
+      title:'Using a quantum computer, Chinese researchers have cracked the popular RSA Algorithm (Rivest, Shamir, Adleman) encryption.',
+      date:'october 15,2024',
+      content:`Adleman, Shamir, and Rivest. These are the people who created the well-known RSA Algorithm.
+Chinese researchers have revealed a way to break classic encryption using D-Wave's quantum annealing systems, which could hasten the day when quantum computers actually threaten commonly used cryptography systems. This is a potentially concerning development for global cybersecurity.
+
+The paper, titled "Quantum Annealing Public Key Cryptographic Attack Algorithm Based on D-Wave Advantage," which was published in the Chinese Journal of Computers, described how D-Wave's machines were used to attack symmetric encryption systems and break RSA encryption, raising serious concerns about the future of cybersecurity. 
+Under the direction of Shanghai University's Wang Chao, the research team discovered that D-Wave's quantum computers may maximize problem-solving in a way that makes it feasible to breach encryption techniques like RSA.
+
+In the publication, the researchers stated, "We successfully factored a 22-bit RSA integer using the D-Wave Advantage, demonstrating the potential for quantum machines to tackle cryptographic problems."
+
+The work demonstrates how quantum annealing can transform cryptography assaults into more manageable combinatorial optimization issues. 
+
+The researchers stated, "This is the first time that a real quantum computer has posed a substantial threat to multiple full-scale SPN structured algorithms in use today." The SPN structure is the foundation of many popular encryption techniques. 
+
+How does this affect cybersecurity, and why? 
+This research has important ramifications. Although this study indicates that the timescale for such threats may be significantly shorter than anticipated, experts have long predicted that quantum computers might someday crack today's encryption. 
+
+"Data security and privacy for a variety of businesses may be gravely jeopardized by the development of quantum computing, impacting basic concepts like confidentiality, integrity, and authentication," Kaur continued. "Revaluating the security of these cryptographic techniques is crucial in light of this." 
+
+The group made the point that information that is encrypted now might be vulnerable if hackers take it with the goal of decrypting it later on when quantum technology develops.`,
+      image:QuantumComputer,
+      slug:'Using_a_quantum_computer',
+ 
+     },
     //  {
-    //   id:50,
+    //   id:55,
     //   title:'',
-    //   date:'october 13,2024',
+    //   date:'october 15,2024',
     //   content:``,
     //   image:'',
     //   slug:'',
  
     //  },
-
 
      
     
