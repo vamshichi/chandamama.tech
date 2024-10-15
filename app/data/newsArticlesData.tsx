@@ -762,7 +762,7 @@ Activists have charged India in recent months with a well-planned campaign of "t
       id:54,
       title:'Soon, the Samsung Galaxy Ring will be available in India, and pre-orders will open: Specifics',
       date:'october 15,2024',
-      content:`[5:02 AM, 10/15/2024] Mohan Mamma N: In India, the Samsung Galaxy Ring is currently accessible for pre-order. Initially accessible in a limited number of areas, the next-generation health and fitness wearable from the South Korean electronics manufacturer was introduced in July alongside the Galaxy Z 6 series foldable devices. The Galaxy Ring is currently expanding to new markets, one of which being India. Pre-orders for the Galaxy Ring are open till October 15, which may indicate that India will soon be able to buy Samsung's new ring-shaped wearable.
+      content:`In India, the Samsung Galaxy Ring is currently accessible for pre-order. Initially accessible in a limited number of areas, the next-generation health and fitness wearable from the South Korean electronics manufacturer was introduced in July alongside the Galaxy Z 6 series foldable devices. The Galaxy Ring is currently expanding to new markets, one of which being India. Pre-orders for the Galaxy Ring are open till October 15, which may indicate that India will soon be able to buy Samsung's new ring-shaped wearable.
 
 Samsung Galaxy Ring: Specifics of the pre-order
 
