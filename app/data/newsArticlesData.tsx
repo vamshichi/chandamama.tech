@@ -36,7 +36,9 @@ import StarshipRocket from '@/app/images/news/Starship Rocket.png'
 import CanadaPolice from '@/app/images/news/Canada Police.png'
 import QuantumComputer from '@/app/images/news/Quantum Computer.png'
 import SamsungGalaxyRing from '@/app/images/news/Samsung Galaxy Ring.png'
-
+import HeaveyRains from '@/app/images/news/Heavey Rains.png'
+import IpadMini from '@/app/images/news/I PAD Mini.png'
+import Android15 from '@/app/images/news/Android 15.png'
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
 //     year: 'numeric',
@@ -806,8 +808,66 @@ The group made the point that information that is encrypted now might be vulnera
       slug:'Using_a_quantum_computer',
  
      },
+     {
+      id:56,
+      title:'Rainfall LIVE Updates: Severe downpours in Kerala, Andhra Pradesh, Tamil Nadu, and Karnataka send states reeling',
+      date:'october 16,2024',
+      content:`On Wednesday, October 16, 2024, intense rain continued to batter Chennai and other regions of Tamil Nadu, submerging residential areas and highways up to the knees in water, creating traffic jams, and impairing public transportation.
+
+According to a news release from the Met, "it is likely to move west-north-westwards and cross north-south Andhra Pradesh-Tamil Nadu coasts between Puducherry and Nellore, close to Chennai, during the early morning of October 17 as a depression."
+Over the southwest and adjacent west-central Bay of Bengal, especially along and off the shores of Tamil Nadu, Puducherry, and south Andhra Pradesh, squally weather with wind gusts of up to 60 km/h is predicted. Coasts until October 17.
+
+The State and Central disaster reaction force teams are reportedly on standby in 26 places throughout Chennai and the surrounding regions, according to the Tamil Nadu government. Additionally, 219 boats are prepared for service in Chennai and other regions of the state for rain-related jobs. 
+Schools in Bengaluru are closed due to severe rain, and many people choose to work from home. 
+
+After a brief respite on Tuesday, October 15, 2024, the rain is still falling in several areas of Bengaluru on Wednesday, October 16, 2024. 
+While rain and a couple of hours' worth of disruption to metro services owing to a tree falling caused traffic jams in numerous areas, many private employees chose to work from home on Wednesday, October 16, 2024, and the district administration has proclaimed a holiday for schools. Online courses are offered by certain schools.`,
+      image:HeaveyRains,
+      slug:'Rainfall_LIVE_Updates',
+ 
+     },
+
+     {
+      id:57,
+      title:'In India, Apple releases the iPad mini: specs, cost, and other details',
+      date:'october 15,2024',
+      content:`In India, Apple has released the new iPad mini. The A17 Pro chip, which powers Apple's smallest iPad, enables it to operate Apple Intelligence capabilities.
+
+Apple iPad mini: Availability and cost 
+The new iPad mini is priced at Rs 49,900 for the Wi-Fi variant and Rs 64,900 for the Wi-Fi + Cellular model. It is available in blue, purple, starlight, and space grey. With 128GB of capacity out of the box, the new iPad mini has twice as much storage as the previous model. The 256GB and 512GB models of the new iPad mini are also offered. The new iPad mini is available for pre order now and will ship on Wednesday, October 23. 
+
+Key features of the Apple iPad mini 
+
+The Liquid Retina display on the iPad mini measures 8.3 inches. With a faster CPU and GPU, a Neural Engine that is twice as fast as the one in the previous generation iPad mini, and support for Apple Intelligence, Apple claims that the A17 Pro processor offers a significant performance gain for even the most taxing workloads.
+
+The Apple Pencil Pro is compatible with the Apple iPad mini. A 12MP wide-angle rear camera with Smart HDR 4 functionality is present. The new iPad mini uses artificial intelligence (AI) to recognize documents automatically in the Camera app and can use the new True Tone flash to eliminate shadows from the paper. This is made possible by the device's potent 16-core Neural Engine. A 12MP Ultra Wide front-facing camera is also included.
+
+According to Apple, the new iPad mini has a full day's worth of battery life. With up to twice the performance of the previous generation, Wi-Fi 6E, which is supported by the new iPad mini, allows users to download files, play games online, and stream movies even more quickly.`,
+      image:IpadMini,
+      slug:'Apple_releases_the_iPad_mini',
+ 
+     },
+     {
+      id:58,
+      title:`Android 15 is released by Google for Pixel phones: What's fresh`,
+      date:'october 15,2024',
+      content:`The newest version of Google's mobile operating system, Android 15, has been formally revealed. Its goal is to improve the user experience on Pixel phones. Along with a host of new features, this version concentrates on performance boosts and security upgrades that consumers have become accustomed to from Google's flagship products. Features of the new Android OS include enhanced security, a more streamlined user interface, AI integration, and more. Let's take a closer look at these attributes.
+Android 15: New functionalities
+Improved UI design with Privacy Space: The streamlined user interface of Android 15 is one of its most notable innovations. With minor adjustments, the update offers a more simplified design that improves navigation and makes it easier to use. With Google's new customizable lock screen, users may now more efficiently display widgets and notifications, providing instant access to important information without having to unlock their handset. This modification attempts to preserve the phone's elegant appearance while enhancing its general usability. However, Android 15 also brought in Private space, which functions as a virtual safe on your phone.
+Multitasker: Android 15 significantly enhances the usefulness of multitasking, particularly on tablets and foldable devices. Now that users may access split-screen mode more effortlessly and quickly flip between apps, multitasking users will be more productive. Google has also improved picture-in-picture mode, which lets users view films while using other apps. This is especially helpful for streaming media when on the go. You can more easily access the apps that help you complete tasks, whether you're composing an email or coming up with ideas in a document, thanks to new features in Android 15. You can now quickly pin and unpin your taskbar on tablets and foldable smartphones. This enables you to maintain your favourite apps and modify your layout.
+
+similar to Gmail or Google Photos, in order to facilitate faster access and increased efficiency.
+This upgrade has also significantly improved security and privacy. Users now have more transparency and control over their data thanks to the new privacy options included in Android 15. With the redesigned Privacy Dashboard, users can make educated decisions about their privacy settings by seeing a comprehensive summary of how apps are accessing sensitive data. Google has also tightened up on app permissions, making sure that programs can only access the data required for them to function.
+Theft Detection Lock: To better protect your data, the new Theft Detection Lock makes use of AI. Your phone will immediately lock if it detects that someone has stolen it and is attempting to flee by bike, car, or other means. Additionally, you may use your phone number and a brief security check to remotely lock your smartphone from any device with Remote Lock. The majority of Android 10+ smartphones may now access these functionalities. 
+
+AI-powered: The incorporation of artificial intelligence into a number of system operations is another noteworthy development. Using machine learning, Android 15 optimizes battery life and enhances app performance according to usage trends. By extending battery life, this clever resource management aims to increase device efficiency and dependability throughout the day.`,
+      image:Android15,
+      slug:'Android_15_is_released_by_Google_for_Pixel_phones',
+ 
+     },
+
     //  {
-    //   id:55,
+    //   id:59,
     //   title:'',
     //   date:'october 15,2024',
     //   content:``,
@@ -815,9 +875,15 @@ The group made the point that information that is encrypted now might be vulnera
     //   slug:'',
  
     //  },
-
-     
-    
+    //  {
+    //   id:60,
+    //   title:'',
+    //   date:'october 15,2024',
+    //   content:``,
+    //   image:'',
+    //   slug:'',
+ 
+    //  },
     
     
     
