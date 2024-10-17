@@ -39,6 +39,9 @@ import SamsungGalaxyRing from '@/app/images/news/Samsung Galaxy Ring.png'
 import HeaveyRains from '@/app/images/news/Heavey Rains.png'
 import IpadMini from '@/app/images/news/I PAD Mini.png'
 import Android15 from '@/app/images/news/Android 15.png'
+import JayasenkerinPakistan from '@/app/images/news/Jayasenker in Pakistan.png'
+import YouTube_Mini from '@/app/images/news/YouTube Mini.png'
+import Jothiraditya_Sindhiya from '@/app/images/news/Jothiraditya Sindhiya.png'
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
 //     year: 'numeric',
@@ -866,8 +869,79 @@ AI-powered: The incorporation of artificial intelligence into a number of system
  
      },
 
+     {
+      id:59,
+      title:`"If Trust Is Lacking...": Jaishankar's Strong SCO Speech in Pakistan Critiques Cross-Border Terrorism`,
+      date:'october 16,2024',
+      content:`During the SCO meeting in Islamabad on Wednesday, External Affairs Minister S Jaishankar sent a strong message to Pakistan over the problem of cross-border terrorism. He suggested that the country should consider the causes behind the deterioration of ties between the two neighbours.
+
+"If trust is lacking or cooperation is inadequate, if the friendship has fallen short and good neighbourliness is missing somewhere, there are surely reasons to introspect and causes to address," Jaishankar stated at the SCO Council of Heads of Government (CHG) summit. The minister went on, "Without specifically addressing Pakistan, 
+
+"It is unlikely that cross-border activities that promote terrorism, extremism, and separatism will also foster parallel developments in trade, energy flows, connectivity, and people-to-people interactions."
+
+In a social media message before leaving Islamabad, he thanked the Pakistani government, Deputy Prime Minister and Foreign Minister Ishaq Dar, and Prime Minister Shehbaz Sharif for their kindness and hospitality. 
+Relations between Pakistan and India 
+Following the Pulwama terror incident in February 2019, India's airplanes struck a Jaish-e-Mohammed terrorist training centre in Balakot, Pakistan, severely straining ties between the two countries. After India stated on August 5, 2019, that it was splitting the state into two union territories and withdrawing Jammu and Kashmir's special powers, the relationship between the two countries further worsened.
+
+Following New Delhi's repeal of Article 370, Pakistan reduced its diplomatic relations with India. India has consistently stated that it wants to have regular neigh borly relations with Pakistan, but it also insists that Islamabad must establish an atmosphere free from hatred and terror in order for these contacts to take place.
+
+Greetings and exchanges 
+Jaishankar made his speech the day after he greeted Shehbaz Sharif, the prime minister of Pakistan, shortly after arriving in the country's capital to attend a Shanghai Cooperation Organization conference. The brief conversation happened during a dinner party that Sharif threw for the delegates of the SCO member nations at his house.
+After exchanging cordial handshakes, Jaishankar and Sharif had a brief conversation. The prime minister of Pakistan greeted each and every head of the SCO member country delegation. Around 3:30 pm (local time), Jaishankar's plane touched down at the Nur Khan airfield outside of the Pakistani capital, where he was welcomed by high-ranking Pakistani authorities.`,
+      image:JayasenkerinPakistan,
+      slug:'Jaishankars_Strong_SCO_Speech_in_Pakistan_Critiques_Cross-Border',
+ 
+     },
+     {
+      id:60,
+      title:'YouTube just revealed that it is improving YouTube Music, TVs, smartphones, and the web with "over two dozen improvements."',
+      date:'october 16,2024',
+      content:`The video-sharing website owned by Google stated in a blog post that among other things, the mini-player has been modified and Sleep Timer may now be used to establish a bedtime. Here's a brief overview of some of the most significant 
+upcoming changes to YouTube.
+An updated mini-player
+According to YouTube, its updated mini-player now facilitates multitasking for users. The mini-player can now be moved to any corner of the screen, unlike the previous version where it was anchored to the bottom right of the screen. 
+facilitating users' ability to position it anywhere they choose.
+Custom thumbnails and cooperative playlists
+Similar to Spotify, YouTube is adding a feature called collaborative playlists that lets users send special links or QR codes to friends and family. The functionality is now rolling out for users of the website and mobile app, but the business promises that TVs will soon be able to access it as well.
+Additionally, YouTube is rolling out a new tool that lets you use an image from your camera roll to create a personalized thumbnail. In case you're wondering, you may further customize your content by adding text, stickers, and filters.
+The platform offers the option to select an AI-generated theme and generate photographs based on your selection, in the event that you prefer not to use your own image. The business added that customers will soon have the option to vote on videos that are included in playlists.
+A sleep timer
+YouTube is getting a new feature called "Sleep Timer" in addition to the previously mentioned enhancements. As the name implies, this feature allows you to automatically pause movies after a specified amount of time. This functionality, which was previously exclusive to Premium members, is now open to all users.
+Badges on YouTube 
+YouTube is introducing new badges that will show up in the YouTube and YouTube Music applications in an effort to boost engagement on the platform. According to the firm, these badges would "celebrate milestones unique to the platform," such as becoming a top listener of an artist's channel early adopter or early subscriber. on the upcoming weeks, YouTube badges will be viewable on the "You" page, for those who are curious.
+Enhancements to YouTube TV 
+The latest version of YouTube promises "a more cinematic viewing experience" and includes a number of visual enhancements for those who prefer to watch on a large screen. Now, users don't have to stop watching movies to engage with Shorts, read comments, or even browse the shop. In addition, when you go to a creator's channel, Videos that give a preview of their material will automatically begin to play on the immersive channel sites.
+numerous new enhancements and features, including the capacity to customize playlist thumbnails, establish sleep timers, and enhance the mini-player.`,
+      image:YouTube_Mini,
+      slug:'YouTube_just_revealed_that_it_is_improving_YouTube_Music',
+ 
+     },
+    
+     {
+      id:61,
+      title:'According to telecom minister Jyotiraditya Scindia, India will distribute satellite internet spectrum through an administrative process.',
+      date:'october 16,2024',
+      content:`According to Jyotiraditya Scindia, Union Minister of Communications, India will administratively allot spectrum for satellite communication in accordance with the Telecommunications Act of 2023. This is viewed as a setback for Reliance Jio, which has been advocating for a spectrum auction and a victory for companies like Starlink, owned by Elon Musk, and Kuiper, owned by Amazon.
+
+"Spectrum will be distributed administratively for satcom. that does not imply that spectrum is free of charge. During a press conference at the India Mobile Congress, Scindia stated, "The TRAI will determine what that cost is and what the formula of that costing is going to be."
+
+All around the world, satellite spectrum is distributed administratively. Thus, India is acting in the same manner as the rest of the world. On the other hand, if you do want to put it up for auction, you will be taking a unique approach to doing things. Spectrum used for satellites is shared spectrum. "How can you price spectrum individually if it's shared?" he said.
+
+The ups and downs in the industry have created a high-profile rivalry between well-funded competitors, placing Reliance Jio up against companies like Elon Musk's Starlink.
+
+Reliance Jio had written to the Department of Telecommunications (DoT) earlier this month, objecting to the idea of allocating satellite spectrum administratively and advocating for an auction procedure. But in reaction to the advancement,
+
+"That would be unprecedented," Musk stated, "as this spectrum was long designated as shared spectrum for satellites by the ITU."
+On Tuesday, Sunil Bharti Mittal, the chairwoman of Bharti Enterprises, which holds a majority investment in OneWeb, stated that businesses wishing to provide satellite services to retail customers and in metropolitan areas must purchase spectrum and adhere to the same rules.
+
+
+"And those satellite businesses that wish to operate in cities and cater to individual consumers only have to pay the standard telecom license fees." They are subject to the same rules. They have the same requirements as telecom firms, including purchasing spectrum, paying license fees, and securing networks. of the telecom companies,” Mittal said.`,
+      image:Jothiraditya_Sindhiya,
+      slug:'According_to_telecom_minister_Jyotiraditya_Scindia',
+ 
+     },
     //  {
-    //   id:59,
+    //   id:62,
     //   title:'',
     //   date:'october 15,2024',
     //   content:``,
@@ -875,17 +949,6 @@ AI-powered: The incorporation of artificial intelligence into a number of system
     //   slug:'',
  
     //  },
-    //  {
-    //   id:60,
-    //   title:'',
-    //   date:'october 15,2024',
-    //   content:``,
-    //   image:'',
-    //   slug:'',
- 
-    //  },
-    
-    
     
      
     
