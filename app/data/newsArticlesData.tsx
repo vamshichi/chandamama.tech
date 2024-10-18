@@ -42,6 +42,10 @@ import Android15 from '@/app/images/news/Android 15.png'
 import JayasenkerinPakistan from '@/app/images/news/Jayasenker in Pakistan.png'
 import YouTube_Mini from '@/app/images/news/YouTube Mini.png'
 import Jothiraditya_Sindhiya from '@/app/images/news/Jothiraditya Sindhiya.png'
+import TataGroup from '@/app/images/news/TATA Group.png'
+import HuaweisTrifoldsmartphone from "@/app/images/news/Huawei's Trifold smartphone.png"
+import G6 from '@/app/images/news/6G.png'
+
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
 //     year: 'numeric',
@@ -940,8 +944,115 @@ On Tuesday, Sunil Bharti Mittal, the chairwoman of Bharti Enterprises, which hol
       slug:'According_to_telecom_minister_Jyotiraditya_Scindia',
  
      },
-    //  {
-    //   id:62,
+     {
+      id:62,
+      title:'List of Businesses Held by the Tata Group: Examine the List',
+      date:'october 18,2024',
+      content:`The Tata Group is a multi-business, major Indian conglomerate. It owns well-known businesses in a variety of sectors, including hotels, software, steel, automobiles, and more. View the list of businesses that are owned by the Tata Group, together with their headquarters and the year they were established.
+
+One of the largest and most established commercial companies in India, the Tata Group is renowned for its wide range of ventures. Jamsetji Tata founded the company in 1868, and it currently has operations in over 100 nations. It is the owner of numerous well-known businesses that produce goods and provide services in a variety of industries, such as tea, cars, steel, and software. This is a list of some significant businesses that the Tata Group owns.
+
+A Synopsis of the Tata Group 
+Established: 1968 
+Created by: Jamsetji Tata 
+Headquarters: Mumbai, India 
+Market Value: more than $300 billion 
+The Mumbai-based Tata Group was founded in 1868 and is an Indian corporation. With activities in 100 countries and products and services reaching over 150 nations, it is the largest corporate conglomerate in India. 
+
+There are 29 Tata Group firms listed on the stock market as of August 20, 2024, with a total valuation of ₹33.7 trillion (about US$403 billion). TCS, Tata Motors, Tata Steel, Tata Power, Titan, Tata Projects, Air India, Indian Hotels Company (Taj Hotels), Tata Consumer Products, Voltas, Trent, Cromā, and BigBasket are a few of the prominent businesses.
+
+Companies in the Tata Group Across Various Sectors 
+With companies in industries including IT, steel, automobiles, retail, and finance, the Tata Group is a massive Indian conglomerate. Notable brands like Tata Steel, TCS, Air India, and Tata Motors are among them. 
+
+The following is a list of the industries in which Tata Group has grown: 
+
+•  IT: Tata Consultancy Services, Tata Elxsi, Tata Digital, Tata Technologies
+•  Steel: Tata Steel
+•  Auto: Tata Motors, Jaguar Land Rover, Tata Autocomp Systems
+•  Consumer & Retail: Tata Chemicals, Tata Consumer Products, Titan, Voltas, Cromā, Trent
+•  Infrastructure: Tata Power, Tata Consulting Engineers, Tata Realty & Infrastructure, Tata Housing
+•  Financial Services: Tata Capital, Tata AIA Life, Tata AIG, Tata Asset Management
+•  Aerospace & Defense: Tata Advanced Systems
+•  Tourism & Travel: Indian Hotels, Tata SIA Airlines, Air India
+•  Telecom & Media: Tata Communications, Tata Play, Tata Teleservices
+•  Trading & Investment: Tata International, Tata Industries, Tata Investment Corporation
+List of Companies Owned by Tata Group
+S. No.	Company Name 	Year Founded	Headquarter
+1.	Tata Chemicals Limited	1939	Mumbai
+2.	Tata Steel Limited	1907	Mumbai
+3.	Tata Coffee Limited	1922	Bengaluru
+4.	Trent	1952	Mumbai
+5.	Tata Communications	1986	Mumbai
+6.	Tata Play	2001	Mumbai
+7.	Tata Teleservices	1996	Mumbai
+8.	Tata Consultancy Services	1968	Mumbai
+9.	Tata Digital	2019	Mumbai
+10.	Tata Technologies	1989	Pune
+11.	Tata AutoComp System	1995	Bengaluru
+12.	Voltas Limited	1954	Mumbai
+13.	Titan Company Limited	1984	Bengaluru
+14.	Tata Advanced Systems	2007	Hyderabad
+15.	Tata Asset Management	1994	Mumbai
+16.	Tata AIG	2001	Mumbai
+17.	Tata AIA Life	2001	Mumbai
+18.	Tata Capital	2007	Mumbai
+19.	Tata Housing	1984	Mumbai
+20.	Tata Reality & Infrastructure	2007	Mumbai
+21.	Tata Consultancy Engineers	1962	Mumbai
+22.	Tata Power Company Limited	1911	Mumbai
+23.	Air India	1932	New Delhi
+24.	Tata SIA Airlines	2013	Gurugram
+25.	Indian Hotels Company Limited	1902	Mumbai
+26.	Jaguar Land Rover	2013	Coventry, United Kingdom
+27.	Tata Motors Limited	1945	Mumbai
+28.	Tata Elxsi Limited	1989	Bengaluru
+29.	Tata Investment Corporation Limited	1937	Mumbai
+30.	Infiniti Retail	2006	Mumbai`,
+      image:TataGroup,
+      slug:'List_of_Businesses_Held_by_the_Tata_Group',
+ 
+     },
+      {
+      id:63,
+      title:"Huawei's stunning Mate XT 'Tri-Foldable' Phone… and Sceptical, Too",
+      date:'october 18,2024',
+      content:`Although they are a relatively new gadget type, most manufacturers of foldable phones only produce two variants: one that opens like a traditional flip phone and the other that unfolds like a book. But a more stylish cousin with a bigger display and the ability to fold twice to reveal three displays has just surpassed the book-style folding.
+
+Huawei unveiled the Mate XT Ultimate Design in September. This phone has two folding hinges that together generate three displays. It provides the unique opportunity to carry a tablet in your pocket. Triple-screen foldables were limited to the walls of tech conference showcases as concept phones prior to Huawei. That all changed when the Chinese tech giant introduced a product that was reasonably priced, at least in its native market of China.
+
+In light of US sanctions, Huawei's Mate XT represents a big victory, and it may set the stage for a wider trend among phone manufacturers like Samsung and Tecno, which have all dabbled with comparable designs. However, given the ongoing issues with cost and durability, it is still unclear whether this is the phone of the future.
+When completely extended, the Mate XT Ultimate Design's screen is 10.2 inches, making it comparable in size to an iPad. At just 3.6 millimetres thick when unfurled, it also breaks the record for being the thinnest foldable phone ever produced. It also has a dual mode that allows it to open to a screen size of about 8 inches, making it similar to folding books like Google's Pixel 9 Pro, Fold.
+
+Huawei devised a hinge system that combines two tracks that function in tandem to permit both inside and outward folds, achieving the technical marvel of a dual-folding screen. It is inaccurate to refer to the phone as a trifold phone as it is commonly used. Actually, it folds in just two locations, dividing its huge screen into three thin small panels. It currently retails in China for $2,800, which is the initial price after conversion from 19,999 yuan. On September 20, the day the iPhone 16 series debuted in its initial wave of nations and territories, including China, Huawei started selling it. 
+Because of its high pricing, Huawei is unlikely to see significant growth in sales with the Mate XT Ultimate Design. Nonetheless, the introduction of a triple-screen phone manufactured by Huawei represents the business's inventiveness and advancement in the smartphone space, in spite of US sanctions, signifying a symbolic win for the brand. 
+
+US sanctions that began to cripple the Chinese tech giant's phone business in 2019 almost completely destroyed Huawei's smartphone division. The company's phones became less competitive in the international market as a result of the sanctions, which prevented access to cutting-edge American technology that is necessary for smartphone semiconductors and critical software.
+The Mate XT Ultimate Design from Huawei may serve as the impetus for a new generation of foldable smartphones. Although even more specialized than standard foldables, triple-screen foldables`,
+      image:HuaweisTrifoldsmartphone,
+      slug:"Huawei's_stunning_Mate_XT_'Tri-Foldable'",
+ 
+     },
+      {
+      id:64,
+      title:'THE INTERNET SPEEDS ARE BEYOND IMAGINATION! 6G TESTS BEGIN',
+      date:'october 18,2024',
+      content:`In wireless data transmission, researchers at University College London have discovered a revolutionary breakthrough. Reaching a phenomenal 938 gigabits per second (Gbps). This is nine thousand times quicker than the current standard 5G connection. To put things in perspective, you could download over 20 movies every second at this speed. an enormous improvement in internet functionality.
+
+Under the direction of Professor Zhixin Liu, the group used a brand-new frequency spectrum that had never been tested before to reach this incredible speed. They combined radio waves and light to transmit data, operating in the frequency range of 5 GHz to 150 GHz. Their combined technological prowess allowed them to surpass earlier speed restrictions.
+Microwave photonics and high-speed electronics are two cutting-edge technologies that the team uses to great effect. With the use of quick digital to analog converters, they produced signals in the 5-75 GHz range. For even higher frequencies, such as W-band (75-110 GHz) and D-band (110-150 GHz), they combined frequency-locked lasers with light-based signals. Using this technique, a very effective system that can support the upcoming wireless communication generation was constructed. 
+
+Professor Liu likened this change to building a gigantic 10-lane freeway out of a little, single-lane road. "More bandwidth is needed to carry more data, just as we need wider roads to accommodate more cars," Liu stated. To make this technology available to people, the team is also in discussions with network providers and smartphone manufacturers soon.
+
+Japan's Progress with 6G 
+In the meantime, fascinating advancements in 6G technology are taking place in Japan. A technology developed by many Japanese telecom companies can provide data 20 times quicker than 5G. Up to 100 meters can be covered at speeds of up to 100 Gbps with this technology. Which, when compared to current wireless systems, is a considerable improvement. 
+
+The future of radio access networks (RANs), which require wireless rates greater than 100 Gbps, depends on these developments. The way we use the internet on a daily basis will alter as this technology advances. Accelerating and streamlining the entire process, from work to play.`,
+      image:G6,
+      slug:'THE_INTERNET_SPEEDS_ARE_BEYOND_IMAGINATION!_6G_TESTS_BEGIN',
+ 
+     },
+     //  {
+    //   id:65,
     //   title:'',
     //   date:'october 15,2024',
     //   content:``,
