@@ -45,6 +45,9 @@ import Jothiraditya_Sindhiya from '@/app/images/news/Jothiraditya Sindhiya.png'
 import TataGroup from '@/app/images/news/TATA Group.png'
 import HuaweisTrifoldsmartphone from "@/app/images/news/Huawei's Trifold smartphone.png"
 import G6 from '@/app/images/news/6G.png'
+import UAETravel from '@/app/images/news/UAE Travel Simplified.png'
+import DesktopChatGpt from '@/app/images/news/Desktop Chat GPT.png'
+import Starlink from '@/app/images/news/Starlink.png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -1049,6 +1052,75 @@ In the meantime, fascinating advancements in 6G technology are taking place in J
 The future of radio access networks (RANs), which require wireless rates greater than 100 Gbps, depends on these developments. The way we use the internet on a daily basis will alter as this technology advances. Accelerating and streamlining the entire process, from work to play.`,
       image:G6,
       slug:'THE_INTERNET_SPEEDS_ARE_BEYOND_IMAGINATION!_6G_TESTS_BEGIN',
+ 
+     },
+      {
+      id:65,
+      title:'Indian nationals who reside in the US, UK, and EU are exempt from visa requirements, according to the UAE.',
+      date:'october 19,2024',
+      content:`For Indian tourists visiting European nations, there is good news. An extension of the visa exemption for Indian nationals has been announced by the Federal Authority for Identity and Citizenship, Customs and Ports Security (ICA). Those who currently reside in the United States, the United Kingdom, or the European Union and who possess tourist visas from these countries will also be excluded. As long as their passport and visa are valid for at least six months, they can stay longer in the UAE after paying the necessary costs.
+
+Those who cannot enter the UAE without a visa or with a visa on arrival are eligible for a tourist visa. With the multiple entry 5-year tourist visa, visitors can enter the United Arab Emirates on their own initiative and stay for 90 days each time, with the option to stay for an additional 90 days. 
+
+At all UAE entrance points, Indian nationals and their families with regular passports can now get a visa upon arrival. Those who possess a valid U.S. visa, residency permit, or green card are eligible for this.
+a current visa or residency permit from the United Kingdom or the European Union. 
+
+The passport must be valid for a minimum of six months in order to be eligible.
+Upon arrival, Indian tourists have two options for visas: 
+a 14-day visa with the possibility of a 14-day extension. 
+a visa for 60 days that cannot be renewed. 
+Both choices necessitate paying the relevant fees in accordance with UAE laws.
+
+How much does it cost? 
+As previously stated, the cost of a 14-day entrance visa for Indian nationals and their family members with regular passports who possess a visa, resident permit, or green card from the US, EU, or the UK is AED 100. It costs AED 250 to extend this visa for an extra 14 days. Furthermore, AED 250 is required for a 60-day visa.`,
+      image:UAETravel,
+      slug:'Indian_nationals-who-reside_in_the-US,_UK,_and_EU',
+ 
+     },
+      {
+      id:66,
+      title:'Chat GPT is coming to Windows desktops in an effort to make AI more widely available.',
+      date:'october 19,2024',
+      content:`Windows gets ChatGPT as OpenAI seeks to increase its user base.
+Soon, Windows users will be able to access your much-loved ChatGPT. In an official blog post on October 17, OpenAI declared that the ChatGPT software will be accessible on desktop Windows. Following its debut, ChatGPT developed a sizable fan base. Thus, in an effort to spread its popularity, it will also be made available for Windows desktop use. 
+
+ChatGPt has served a variety of functions up to this point. ChatGPT can help with everything from brainstorming to producing content for social media.
+Coming soon on Windows desktop: ChatGPT 
+For Mac users, the ChatGPT desktop program was previously available. Following a favorable response, its current goal is to make it available to Windows users. According to the business, its current goal is to attract additional clients. It also seeks to increase the number of people who can access artificial intelligence (AI). 
+The ongoing desktop software development by OpenAI may herald a change in the enterprise software market. It appears that the company intends to introduce ChatGPT as a key productivity tool for companies. 
+
+In a blog post, OpenAI also mentioned the possibility that ChatGPT would eventually replace OS for upcoming generations. As AI becomes widely used across all organizations, this OpenAI ideal might come true!
+What that implies to you 
+You may rapidly open ChatGPT with the Windows app by using the Alt + Space shortcut. Please be aware that you will not be able to utilize this function if you are not a ChatGPTplus user. In addition, ChatGPT for Windows will be able to do almost all of the functions of a smartphone app or web version, including file and image analysis. Furthermore, the Windows edition of OpenAI will debut its Advanced Voice Mode.
+The feature is currently not accessible to everyone. Subscribers to ChatGPT Enterprise, ChatGPT Plus, Team, and Edu can presently access it in preview. This enables you to use the keyboard shortcut Alt + Space to reach the AI assistant from any location on your PC. So, how do you install the desktop version after it gets rolled out? Here’s how you can:
+
+You must go to https://openai.com/chatgpt/download/ first. 
+It is now necessary for you to select the "Test an early version of the Windows app" option. 
+You will then be taken to the Microsoft Store, where you must click one more time to finish the download. 
+You will need to log in after it has finished downloading. Upon logging in, you can start utilizing the application.`,
+      image:DesktopChatGpt,
+      slug:'Chat_GPT_is_coming_to_Windows_desktops',
+ 
+     },
+      {
+      id:67,
+      title:"With the most recent spectrum ruling, India prepares for Elon Musk's Star link internet services to eventually launch in India.",
+      date:'october 19,2024',
+      content:`Elon Musk's satellite internet project, Starlink, is about to formally enter the Indian market after years of navigating regulatory obstacles. The Indian government's recent decision to distribute satellite spectrum administratively as opposed to through an auction has allowed Starlink to increase its worldwide footprint and penetrate one of the biggest unexplored markets for satellite-based broadband services.
+
+What does the ruling signify?
+The Department of Telecommunications (DoT) in India recently made the decision to administratively allot spectrum for services related to satellite communication. Reliance Jio and Bharti Airtel, two of the largest local telecom companies, were not amused by this action. 
+It promoted an auction-based strategy, claiming it would level the playing field. Rather, the government adopted the global administrative allocation standard, which Musk has openly endorsed as the global norm for satellite communications.
+
+Starlink and other satellite internet service providers, including OneWeb and Jio Satellite Communications, can now obtain access to satellite spectrum without having to participate in pricey auctions thanks to this administrative path. To maintain fairness, the Telecom Regulatory Authority of India (TRAI) will continue to oversee spectrum pricing.
+India's Starlink's past 
+India has long been a target market for Starlink because of the vast majority of its rural residents lack access to dependable internet service. For its satellite-based internet services, Starlink first accepted preorders in 2021. However, the Indian government ordered the corporation to abide by local rules before accepting bookings, which led to bureaucratic obstacles and the company having to issue refunds to clients. Starlink has been obtaining the required clearances ever since, working behind the scenes. After almost three years of attempts, Starlink may now be able to formally enter the market thanks to this new change in regulation, which would be a major triumph.
+
+Musk's remarks 
+Elon Musk has made it clear that he supports the administrative distribution of spectrum and has labeled any attempt to auction off satellite spectrum as "unprecedented." He thinks that the ability of satellite service providers like Starlink to deliver reasonably priced services may be hampered by the auctioning of spectrum set aside for satellite communications, as advocated by Mukesh Ambani's Reliance. 
+It is anticipated that the launch of Starlink will completely transform internet access in underserved and rural parts of India. Low-Earth orbit (LEO) satellites from Starlink offer high-speed internet services in areas where installing fiber or other conventional infrastructure would be too expensive or unfeasible. This might provide millions of Indians access to dependable internet for the first time and drastically narrow the digital divide.`,
+      image:Starlink,
+      slug:'With_the_most_recent-spectrum_ruling',
  
      },
      //  {
