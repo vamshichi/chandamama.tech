@@ -48,6 +48,9 @@ import G6 from '@/app/images/news/6G.png'
 import UAETravel from '@/app/images/news/UAE Travel Simplified.png'
 import DesktopChatGpt from '@/app/images/news/Desktop Chat GPT.png'
 import Starlink from '@/app/images/news/Starlink.png'
+import AiLaptop from '@/app/images/news/AI Laptop.png'
+import GlanzaTovoto from '@/app/images/news/Glanza Toyoto.png'
+import Perplexity from '@/app/images/news/Perplexity AI .png'
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -1123,8 +1126,109 @@ It is anticipated that the launch of Starlink will completely transform internet
       slug:'With_the_most_recent-spectrum_ruling',
  
      },
-     //  {
-    //   id:65,
+      {
+      id:68,
+      title:`Glanza Festive Edition Launched – 3rd Toyota Special Edition For Diwali`,
+      date:'october 20,2024',
+      content:`After the Urban Cruiser Hyryder and Taisor holiday editions, Toyota has now released the Glanza holiday Edition as its third special edition. Today, Toyota Kirloskar Motor (TKM) announced the release of a second limited edition, this time based on the Glanza, in response to the introduction of the special edition Urban Cruiser Hyryder and Urban Cruiser Taisor. The brand's most economical model right now is the premium hatchback, which has been given a special edition for the holiday season. A bonus accessory package worth Rs. 20,567 is included with the Toyota Glanza Festive Edition. It includes items from the Toyota Genuine Accessories (TGA) line. The expiration date of this offer is October 31, 2024. 
+
+
+Compared to the base model, these add-ons improve the Glanza's external and interior features, increasing its allure. 
+
+Thirteen components, including chrome and black body side molding, chrome trim for the rear door and wing mirrors, rear reflectors, fenders, and an enhanced rear bumper, are part of the special edition Glanza accessory bundle. This festive edition also includes a welcoming door lamp, door visors, black and silver neck cushions, and 3D floor mats. 
+Speaking about the new launch, Sabari Manohar, Vice President, Sales-Service-Used Car Business, Toyota Kirloskar Motor, stated: "With the introduction of the 'Festival Limited Edition' of the Toyota Glanza, we hope to provide even more excitement to our consumers during this festive season. 
+With this limited edition, we are further increasing Glanza's appeal, which has long been recognized for its unique combination of dynamic-sporty design, cutting-edge technology, and exceptional performance.Car dealerships in the area 
+
+The 1.2L four-cylinder naturally aspirated petrol engine of the Toyota Glanza Festive Edition comes with a five-speed manual gearbox or an automated manual gearbox. There are additional CNG versions available for people seeking a less expensive choice.
+The limited edition can now be reserved online and at authorized dealerships around the nation. Next year, the Japanese automaker intends to introduce a number of new SUVs to India.`,
+      image:GlanzaTovoto,
+      slug:'Glanza_Festive_Edition_Launched',
+ 
+     },
+      {
+      id:69,
+      title:'Amazon Great Indian Festival Diwali Sale: More than 30% off on AI laptops from HP, Lenovo, Acer and more',
+      date:'october 20,2024',
+      content:`With the arrival of the Amazon Great Indian Festival Diwali Sale, tech enthusiasts will have the chance to get AI laptops at incredible savings. With savings of up to 30% on well-known brands like Acer, Lenovo, and HP, this sale is a great opportunity to modernize your computer setup in time for the holidays. Every demand and budget is catered to by the wide selection of alternatives, whether you're looking for a powerful laptop for work, gaming, or creative purposes. There has never been a better moment to invest in cutting-edge technology that blends performance and innovation than as Diwali draws near. This Diwali, embrace the holiday spirit and take advantage of these amazing discounts to improve your digital lifestyle!
+
+Product	Price	Rating
+Acer Swift Go 14 Built-in AI PC Premium Laptop Intel Core Ultra 7 155H (...
+₹89990	5
+Lenovo Yoga Slim 7 Intel Core Ultra 5 125H Built-in AI 14"(35.5cm) WUXGA...
+₹87990	4.5
+Lenovo IdeaPad Slim 5 Intel Core Ultra 5 125H Built-in AI 16" (40.6cm) W...
+₹79190	3.1
+Lenovo IdeaPad Pro 5 Intel Evo Core Ultra 9 185H Built-in AI 14" (35.56c...
+₹1.0L	4.5
+MSI Modern 15 H AI, Intel 1st Gen. Ultra 5 125H,Built-in AI, 40CM Laptop...
+₹57990	4
+HP Pavilion 16, Enhanced by AI, Intel Core Ultra 7 155U, 16-inch (40.6 c...
+₹81990	3.4
+HP Pavilion Plus, Enhanced by AI, Intel Core Ultra 5 125H, 14-inch, WQXG...
+₹80990	3.3
+HP Victus Gaming Laptop, AMD Ryzen 7 8845HS AI Powered, 6GB RTX 4050 GPU...
+₹94990	4.1
+HP Pavilion Aero, Lightest AI PC, AMD Ryzen 5 8640U, 13.3-inch, WUXGA, 4...
+₹74990	4.1
+HP Laptop 14, Intel Core Ultra 5 125H, Built-in AI, 14-inch (35.6 cm), F...
+₹69990	4.5
+Alienware m16 R2 Gaming Laptop, AI Enabled Processor Intel Core Ultra 9 ...
+₹1.6L	3.6
+MSI Pulse 16 AI, Intel Core Ultra 7 155H, Built-in Ai, 41CM 16:10 QHD+ 2...
+₹1.3L	-
+Hp Envy X360,Enhanced By Ai,Intel Core Ultra 7 155U,14-" (35.6 Cm),2.8K,...
+₹1.3L	3.7
+HP OMEN Gaming Laptop, AMD Ryzen 9 7940HS AI-Powered, 8GB RTX 4070 GPU, ...
+₹1.6L	3
+ASUS Vivobook S 15, 3K OLED 16:9, 120Hz, 600 nits, Snapdragon X Plus X1P...
+₹1.0L	5
+MSI Prestige 16 AI Evo, Intel Core Ultra 7 155H, Built-in AI, 41CM QHD+ ...
+₹1.1L	-
+MSI Stealth 18 AI Studio,Intel 1st. Gen Ultra 9 185H,Built-in AI,46CM 16...
+₹3.8L	-
+ASUSROG Zephyrus G16, 16" ROG Nebula Display, 240Hz 500 nits, AMD Ryzen ...
+₹1.9L	5
+HP Envy x360, Enhanced by AI, AMD Ryzen 7 8840HS, 14-inch (35.6 cm), WUX...
+₹94990	3.9
+ASUS Vivobook S 16 OLED (2024), Intel Core Ultra 7 155H, Built-in AI, 16...
+₹1.2L	3.9
+`,
+      image:AiLaptop,
+      slug:'Amazon_Great_Indian_Festival_Diwali_Sale',
+ 
+     },
+      {
+      id:70,
+      title:'Perplexity AI Can Help You Make Millions, or Even Billions of Dollars',
+      date:'october 20,2024',
+      content:`One of the top GenAI start-ups, Perplexity AI, is launching a number of new services for its paying commercial clients that will help them make wise financial decisions. These consist of a data repository, a financial information tool, and a knowledge search platform. 
+
+Businesses can use its "Internal Knowledge Search" to do simultaneous web and file searches from within the organization. 
+
+"Our goal is for Perplexity to serve as the primary knowledge base and research platform for all users," stated Aravind Srinivas, the creator of Perplexity AI, during a media interview. He continued by saying that users would benefit from it when it came to research inputs like documents, private information, and due diligence. 
+
+According to the company, utilizing internal research, call notes, and the most recent news in the sector to assist financial services firms in performing more thorough due diligence is one of the feature's main use cases. 
+
+Perplexity for Finance, a new product from Perplexity AI, offers real-time stock quotes, past earnings reports, industry peer comparisons, and thorough business financial analysis—all presented in an enjoyable user interface. The financial implications of these choices could reach the billions of dollars. Thus, it makes sense to use a tool to increase your clarity, according to Srinivas. 
+
+Soon, Perplexity AI will offer Enterprise Pro clients with active subscriptions third-party proprietary data integrations with Fact Set and Crunch base. According to Srinivas, "We'll also do the same for verticals outside finance, like legal and health."
+
+Perplexity has the potential to become the go-to resource for capital market research with this kind of data integration, potentially upending other online forums and websites. What's stated on it might have an impact on share prices!," an X user commented. 
+
+The Latest Development in Financial Analysis? 
+Perplexity AI's new financial analysis function can assist banks and fintech companies—both of which are now internal—that are concerned about data leaks. 
+Many services, including as Bloomberg Terminal, Stockopedia, Refinitiv Eikon, Yahoo Finance, Fidelity Investments, Robinhood, Zerodha, and Groww, are now relied upon by individuals. Still, many businesses have found it difficult to fully utilize generative AI.
+"Await their consumption of all the documents and reports. This is Google Finance or Yahoo Finance's next generation. A user on X stated, "A smart bank, wealth management, or securities company would be partnering with Perplexity AI to build this into their platform/app." 
+
+Third City independent consultant Michael J. Miraflor compared the tool to a Bloomberg Terminal for regular consumers, asking, "Is this... For normal people, Bloomberg Terminal Lite? (I realize it's not the intended use, but there are numerous instances of AI information aggregators that are headed in that way.) 
+
+Other top financial organizations are developing GenAI products to offer better services, much like Perplexity's product.`,
+      image:Perplexity,
+      slug:'Perplexity_AI_Can_Help_You_Make_Millions',
+ 
+     },
+    //   {
+    //   id:71,
     //   title:'',
     //   date:'october 15,2024',
     //   content:``,
