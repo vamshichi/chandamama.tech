@@ -51,6 +51,9 @@ import Starlink from '@/app/images/news/Starlink.png'
 import AiLaptop from '@/app/images/news/AI Laptop.png'
 import GlanzaTovoto from '@/app/images/news/Glanza Toyoto.png'
 import Perplexity from '@/app/images/news/Perplexity AI .png'
+import OnePlusos from '@/app/images/news/One Plus Oxygen OS.png'
+import Samsang24 from '@/app/images/news/Sam Sung 24 GB RAM.png'
+import WhatsappAi from "@/app/images/news/What'sapp AI.png"
 
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
@@ -1225,6 +1228,120 @@ Third City independent consultant Michael J. Miraflor compared the tool to a Blo
 Other top financial organizations are developing GenAI products to offer better services, much like Perplexity's product.`,
       image:Perplexity,
       slug:'Perplexity_AI_Can_Help_You_Make_Millions',
+ 
+     },
+      {
+      id:71,
+      title:'In order to provide more relevant AI chats, WhatsApp may test its memory feature.',
+      date:'october 21,2024',
+      content:`According to reports, Meta is working on a chat memory function for Meta AI on WhatsApp that would allow the bot to retain user preferences for more tailored conversations.
+
+After voice message capabilities for Meta AI chats were first introduced, this new feature attempts to improve the chatbot's personal touch. 
+The most recent WhatsApp beta for Android (version 2.24.22.9), which is not yet accessible to consumers, reveals that the company is developing a new chat memory improvement for Meta AI discussions, according to WABetaInfo. By selecting this option, the chatbot will be able to remember user-provided data and provide more individualized responses in subsequent exchanges. 
+
+Utilizing Meta AI to Recall User Preferences 
+Meta AI is able to recall a wide range of personal information, including birthdays, conversational styles, allergies, and preferences for particular books, podcasts, and documentaries. 
+
+According to the forthcoming Memory section, Meta AI "automatically remembers certain parts of your chat to give more relevant responses," highlighting what it remembers. With a "remember this" command, users can manually preserve information, which they can then change or remove whenever they choose. 
+
+According to WABetaInfo, the memory capability will significantly increase the level of customisation in interactions with Meta AI. Meta AI can provide personalized advice and suggestions by keeping user data. For example, it won't recommend meals that the user is allergic to or hates. Creating a more engaging and genuine experience that resembles a personal assistant. 
+The research highlights that users would retain full control over the data that Meta AI retains. This enables them to change or remove particular information whenever they choose. 
+
+Meta has not disclosed a launch date or verified the specifics of this functionality.
+
+A Chat Memory feature is being added to WhatsApp by Meta AI to provide more individualized user experiences. It will provide customized solutions by remembering preferences and specifics. Although no formal announcement has been made, the upgrade is anticipated to debut shortly and allows users to manage their data for privacy.`,
+      image:WhatsappAi,
+      slug:'In_order_to_provide_more_relevant_AI_chats',
+ 
+     },
+      {
+      id:72,
+      title:'OnePlus confirms the release date of Oxygen OS 15. Additionally, the new OS will include AI capabilities to help users with a variety of tasks, which could boost productivity.',
+      date:'october 21,2024',
+      content:`OnePlus has stated that its user community's input was incorporated into the creation of Oxygen OS 15. According to OnePlus, Oxygen OS 15, its newest smartphone operating system, will be released on October 24, 2024, at 3:30 p.m. Online streaming of the event will be available via OnePlus's official channels.
+
+The goal of Oxygen OS 15, which is based on Android 15, is to improve the user experience by adding new functionality and design components. According to OnePlus, the operating system incorporates improved software algorithms intended to enhance overall performance and animation smoothness.
+
+Additionally, the new OS will include AI capabilities to help users with a variety of tasks, which could boost productivity. OnePlus has stated that its user community's input was incorporated into the creation of Oxygen OS 15. 
+List of eligible devices
+
+Flagships
+
+•	OnePlus 10 Pro
+
+
+•	OnePlus 10T
+
+
+•	OnePlus 10R
+
+
+•	OnePlus 11
+
+
+•	OnePlus 11R
+
+
+•	OnePlus 12
+
+
+•	OnePlus 12R
+
+
+•	OnePlus Open
+•	
+Nord Series
+
+OnePlus Nord 3
+
+OnePlus CE3
+
+OnePlus CE3 Lite
+
+OnePlus Nord 4
+
+OnePlus Nord CE4
+
+OnePlus Nord CE4 Lite
+Tablets 
+
+The OnePlus Pad 
+
+You can rely on us to notify you as soon as OnePlus releases information regarding updates for the OnePlus Pad and OnePlus Pad 2, the latter of which was released earlier this year. 
+
+The distribution of Android 15 starts 
+
+Starting with its Pixel smartphones, Google began rolling out Android 15 on Tuesday. In September, Chinese smartphone manufacturer iQOO also said that the Fun touch OS 15 update would be available for its current flagship, the iQOO 12, beginning in mid-October. By or before May 2025, other iQOO devices that qualify for the update will receive it. 
+
+Vivo, the parent company of iQOO, also intends to implement a similar rollout for other eligible devices starting in mid-June 2025, starting with its flagship X line of smartphones.`,
+      image:OnePlusos,
+      slug:'Oxygen_OS_15.',
+ 
+     },
+      {
+      id:73,
+      title:'Samsung Creates the First 24GB GDDR7 DRAM in the Industry for AI Computing of the Future',
+      date:'october 21,2024',
+      content:`The new GDDR7 greatly raises the standard for graphics DRAM powering the future by providing industry-leading capacity and speed of over 40Gbps. 
+
+Production is scheduled for early next year, with validation with significant GPU clients starting this year.
+Samsung Electronics, a global pioneer in advanced memory technology, declared today that it has created the first 24-gigabit (Gb) GDDR71 DRAM in the market. The GDDR7 is the best option for next-generation applications since it has the quickest speed and the largest capacity in the industry.
+
+Beyond the conventional uses of graphics DRAM, the 24Gb GDDR7 will be extensively used in a variety of industries that demand high-performance memory solutions, including data centres and AI workstations, thanks to its large capacity and potent performance. 
+
+in game consoles, graphics cards, and self-driving cars.
+
+"With this latest accomplishment, Samsung has further solidified its technological leadership in the graphics DRAM market, following the development of the industry's first 16Gb GDDR7 last year," stated Yong Cheol Bae, Executive Vice President of Memory Product Planning at Samsung Electronics. "By introducing next-generation products that meet the expanding demands of the AI market, we will maintain our leadership position in the graphics DRAM market." The 5th-generation 10-nanometer (nm)-class DRAM used in the 24Gb GDDR7 allows for a 50% increase in cell density while keeping the same package size as the previous model.
+
+Along with the advanced manufacturing node, three-level Pulse-Amplitude Modulation (PAM3) signalling aids in achieving the 40 gigabits per second (Gbps) industry-leading speed for graphics DRAM. 
+
+a quarter better than the last iteration. The performance of GDDR7 can be further improved to 42.5 Gbps, contingent on the environment in which it is used.
+Applying technology previously utilized in mobile devices to graphics DRAM for the first time also improves power efficiency. Clock control management2 and dual VDD design3 are two techniques that can be used to drastically cut down on wasteful power use, improving power efficiency by more than 30%.
+The 24Gb GDDR7 uses power gating design techniques to reduce current leakage and increase operational stability during high-speed operations.
+
+Major GPU customers will start validating the 24Gb GDDR7 in next-generation AI computing systems this year, with intentions to commercialize the technology early the next year.`,
+      image:Samsang24,
+      slug:'Sam_Sung_24_GB_RAM',
  
      },
     //   {
