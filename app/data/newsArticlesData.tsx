@@ -54,7 +54,9 @@ import Perplexity from '@/app/images/news/Perplexity AI .png'
 import OnePlusos from '@/app/images/news/One Plus Oxygen OS.png'
 import Samsang24 from '@/app/images/news/Sam Sung 24 GB RAM.png'
 import WhatsappAi from "@/app/images/news/What'sapp AI.png"
-
+import AMDRyzen9000 from "@/app/images/news/AMD Ryzen 9000.png"
+import CopilotStudio from "@/app/images/news/Copilot Studio.png"
+import Meridian from "@/app/images/news/Meridian.png"
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
 //     year: 'numeric',
@@ -1344,7 +1346,72 @@ Major GPU customers will start validating the 24Gb GDDR7 in next-generation AI c
       slug:'Sam_Sung_24_GB_RAM',
  
      },
-    //   {
+      {
+      id:74,
+      title:'Launch Price of the 2025 Jeep Meridian: Rs 24.99L with Additional Features and Variants',
+      date:'october 22,2024',
+      content:`Unlike the previous model, the base-level 2025 Jeep Meridian has a 5-seater option and about 670L of trunk capacity. With the release of the revised 2025 Jeep Meridian, Jeep India is partaking in the festivities as the holiday season approaches. This upgrade, which adds new features and variations to increase sales during the holiday season, is not a facelift. For the first time, the Jeep Meridian is also available in a five-seater configuration.
+
+Launch of the 2025 Jeep Meridian The Jeep Compass with three rows has been available for purchase for a while. Because of its high-end placement and related costs, 
+                 Meridian's sales performance hasn't been very impressive. For comparison, in September 2024, only 55 Meridian were sold, representing a 38.89% YoY and an 8.33% MoM drop.
+
+                  With prices starting with Rs 24.99 lakh (Ex-sh), Jeep has introduced the revised Meridian in an effort to increase sales throughout the holiday season. Jeep India is adopting a new approach by introducing a 5-seater version of the Meridian for the first time, and the new model is intended to change the tide. Additionally, Meridian has ADAS functions for the first time. There are precisely ten ADAS features.
+
+                     The exterior of the 2025 Jeep Meridian has not changed in any way, and it still has the same appearance. Depending on the trim level selected, Jeep is giving new suede inserts on the inside in addition to contrasting copper accents and copper stitching. A panoramic sunroof, heated and ventilated seats, and a U connect telematics suite are additional noteworthy features. 
+
+                          Duties are still performed by a single 2.0L diesel engine with a maximum output of 170 PS and a maximum torque of 250 Nm. Either a 6-speed manual or a 9-speed torque converter automatic transmission can be paired with this engine. Depending on the trim level, 4X2 and 4X4 drivetrains with the Jeep Selec-Terrain system are also available. 
+                   Jeep India's statement: The Jeep Meridian was created in response to our recognition of the increasing need for a high-end model among consumers who have advanced through the Jeep portfolio. With its imposing and sophisticated design, high-end finishing, and state-of-the-art technology, the Meridian will mark the beginning of a new era for Jeep in India while maintaining the iconic adventure capabilities that one would expect from a Jeep. 
+
+              We're thrilled to serve a wide range of customers with the new models, upholding our dedication to lowering the barrier to entry for Jeep lovers in India. said Jeep India's Brand Director, Kumar Priyesh.`,
+      image:Meridian,
+      slug:'Launch_Price_of_the_2025_Jeep_Meridian',
+ 
+     },
+     {
+      id:75,
+      title:'Massive Unexpected Price Drop for AMD Ryzen 9000 Processor AMD has announced',
+      date:'october 22,2024',
+      content:` Significant price reductions for all of its currently available models, ranging from the Ryzen 5 9600X to the Ryzen 9 9950X, a clear indication that sales of its Zen 5 Ryzen 9000 processors aren't doing well. The price reductions seem to be global, as the US and UK prices have already been verified.
+
+                        First of all, keep in mind that AMD is stating that these prices may not persist because this is an early holiday offer. They are also stating that price reductions of up to a specific amount may prevent us from seeing the entire discount in every store or even at all. However, this is how they compare, assuming we can afford the CPUs at these reduced costs.
+
+                  The flagship Ryzen 9 9950X will receive the largest price reduction, with a $50 reduction, bringing the launch price down from $599 to $549. Additionally, that is a huge $150 less than the Ryzen 9 7950X's initial MSRP. The Ryzen 9 9950X is presently selling for $599 on Amazon, however that price was lowered by $50 recently, which may be the reason for this. In the UK, the price will drop from £610 to £560. 
+
+Ryzen 9 9950X	Ryzen 9 9900X	Ryzen 7 9700X	Ryzen 5 9600X
+Cores	16	12	8	6
+Threads	32	24	16	12
+Max boost	5.7GHz	5.6GHz	5.5GHz	5.4GHz
+Cache	80MB	76MB	38MB	40MB
+TDP	170W	120W	65W	65W
+Price	$599	$499	$359	$279
+New price	$549	$469	$329	$249
+	(7950X $699)	(7900X $549)	(7700X $399)	(7600X $299)
+
+
+                         Then, only eight weeks after its own launch, the Ryzen 9 9900X drops $30 from $499 to $469, undercutting the Ryzen 9 7900X's launch price by $90. The CPU has actually already dropped below this point. presently available on Newegg for a just $429. The Ryzen 9 9900X, which is currently available for a little less than this, for instance at Overclockers UK, will experience a more substantial price reduction in the UK, going from £460 to under £400.`,
+      image:AMDRyzen9000,
+      slug:'Massive_Unexpected_Price_Drop',
+ 
+     },
+     {
+      id:76,
+      title:'Microsoft adds self-governing AI agents to Copilot to improve business operations.',
+      date:'october 22,2024',
+      content:`                Microsoft has revealed new autonomous agent capabilities that will revolutionize corporate operations as part of a major upgrade to its AI-powered Copilot platform. CEO and Chairman Satya Nadella posted an update on X that explained how Copilot Studio and Dynamics 365 will give companies the resources they need to create and oversee AI agents in an effort to increase productivity in a variety of industries.
+
+                 The update focuses on Copilot Studio's upcoming public preview of autonomous agent capabilities, which is set for next month. Microsoft claims that these agents will assist companies in streamlining a number of operations, such as supply chain management, finance, and sales. Using the new instruments, From basic task aides to completely autonomous systems that manage whole company operations, firms will be able to develop agents.
+
+                       It is anticipated that these agents, which are made to operate in the Microsoft 365 environment, will help with duties like supply chain management, lead creation, and sales order processing. Utilizing data from platforms like Fabric, Dataverse, and Microsoft 365 Graph, they will be able to carry out tasks independently while abiding by security and governance guidelines.
+
+                            Microsoft announced the release of ten more autonomous agents in Dynamics 365 in addition to the public preview. These agents are intended to assist companies in their transition to AI-first supply chain, finance, customer care, and sales procedures.
+                   By studying prospects and automating outreach with tailored communication, one such agent, the Sales Qualification Agent, seeks to prioritize high-value sales opportunities. To avoid supply chain interruptions, another, the Supplier Communications Agent, independently monitors supplier performance. Customer Intent and Customer Knowledge Management Agents, on the other hand, are made to improve customer service by addressing problems on their own and facilitating better team knowledge sharing.
+
+                         Microsoft has emphasized that these new agent capabilities place a high priority on data security and governance. The tech giant claims that Copilot Studio agents will have strong security features like rigorous authentication methods and data loss protection, all of which can be controlled by IT administrators to guarantee adherence to corporate standards.`,
+      image:CopilotStudio,
+      slug:'Microsoft_adds_self-governing_AI',
+ 
+     },
+    //  {
     //   id:71,
     //   title:'',
     //   date:'october 15,2024',
