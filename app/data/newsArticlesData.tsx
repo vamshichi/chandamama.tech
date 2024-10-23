@@ -57,6 +57,7 @@ import WhatsappAi from "@/app/images/news/What'sapp AI.png"
 import AMDRyzen9000 from "@/app/images/news/AMD Ryzen 9000.png"
 import CopilotStudio from "@/app/images/news/Copilot Studio.png"
 import Meridian from "@/app/images/news/Meridian.png"
+import BRICS_MEETING from "@/app/images/news/BRICS MEETING .png"
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
 //     year: 'numeric',
@@ -1409,6 +1410,27 @@ New price	$549	$469	$329	$249
                          Microsoft has emphasized that these new agent capabilities place a high priority on data security and governance. The tech giant claims that Copilot Studio agents will have strong security features like rigorous authentication methods and data loss protection, all of which can be controlled by IT administrators to guarantee adherence to corporate standards.`,
       image:CopilotStudio,
       slug:'Microsoft_adds_self-governing_AI',
+ 
+     },
+	{
+      id:71,
+      title:'In a meeting with Putin, Indian Prime Minister Modi demands a swift end to the conflict in Ukraine.',
+      date:'october 23,2024',
+      content:`At the annual BRICS conference on Tuesday, Indian Prime Minister Narendra Modi met with Russian President Vladimir Putin and expressed his desire for a peaceful and "quick" resolution to the conflict in Ukraine.
+
+According to experts, Putin wants to portray the alliance as a counterweight to Western "hegemony." The three-day meeting, which is taking place in Kazan, the capital of Tatarstan, is the largest international gathering to occur in Russia since the full-scale invasion of Ukraine. 
+
+"We have been in constant touch over the conflict between Russia and Ukraine," Modi said to Putin following their embrace and handshake. "We think that the only way to settle disagreements is amicably. We wholeheartedly back initiatives to bring peace and stability back as soon as possible. 
+
+Putin, for his part, praised the "privileged strategic partnership" between Russia and India and pledged to strengthen relations even more.
+Since the full-scale conflict in Ukraine began, New Delhi has had to balance its diplomatic responsibilities by promising humanitarian aid to Kyiv without outright denouncing Russia's invasion. 
+
+In an attempt to promote peace negotiations between the two warring parties, Modi travelled to Moscow in July and Kyiv in August. 
+UN Secretary-General Antonio Guterres, Turkish President Recep Tayyip Erdogan, and Chinese leader Xi Jinping are among the approximately two dozen international leaders anticipated to attend this week's BRICS conference. 
+
+The primary topics of discussion are the growing Middle East conflict and Putin's proposal for a BRICS-led payment system to compete with SWIFT.`,
+      image:BRICS_MEETING,
+      slug:'In_a_meeting_with_Putin',
  
      },
     //  {
