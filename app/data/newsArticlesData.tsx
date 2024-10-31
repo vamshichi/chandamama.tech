@@ -1488,28 +1488,28 @@ Software-wise, the OnePlus 13 will come with Color OS 15, which is based on Andr
       image:Oneples13,
       slug:'OnePlus_13',
      },
-	{
-      id:71,
-      title:'In a meeting with Putin, Indian Prime Minister Modi demands a swift end to the conflict in Ukraine.',
-      date:'october 23,2024',
-      content:`At the annual BRICS conference on Tuesday, Indian Prime Minister Narendra Modi met with Russian President Vladimir Putin and expressed his desire for a peaceful and "quick" resolution to the conflict in Ukraine.
+// 	{
+//       id:71,
+//       title:'In a meeting with Putin, Indian Prime Minister Modi demands a swift end to the conflict in Ukraine.',
+//       date:'october 23,2024',
+//       content:`At the annual BRICS conference on Tuesday, Indian Prime Minister Narendra Modi met with Russian President Vladimir Putin and expressed his desire for a peaceful and "quick" resolution to the conflict in Ukraine.
 
-According to experts, Putin wants to portray the alliance as a counterweight to Western "hegemony." The three-day meeting, which is taking place in Kazan, the capital of Tatarstan, is the largest international gathering to occur in Russia since the full-scale invasion of Ukraine. 
+// According to experts, Putin wants to portray the alliance as a counterweight to Western "hegemony." The three-day meeting, which is taking place in Kazan, the capital of Tatarstan, is the largest international gathering to occur in Russia since the full-scale invasion of Ukraine. 
 
-"We have been in constant touch over the conflict between Russia and Ukraine," Modi said to Putin following their embrace and handshake. "We think that the only way to settle disagreements is amicably. We wholeheartedly back initiatives to bring peace and stability back as soon as possible. 
+// "We have been in constant touch over the conflict between Russia and Ukraine," Modi said to Putin following their embrace and handshake. "We think that the only way to settle disagreements is amicably. We wholeheartedly back initiatives to bring peace and stability back as soon as possible. 
 
-Putin, for his part, praised the "privileged strategic partnership" between Russia and India and pledged to strengthen relations even more.
-Since the full-scale conflict in Ukraine began, New Delhi has had to balance its diplomatic responsibilities by promising humanitarian aid to Kyiv without outright denouncing Russia's invasion. 
+// Putin, for his part, praised the "privileged strategic partnership" between Russia and India and pledged to strengthen relations even more.
+// Since the full-scale conflict in Ukraine began, New Delhi has had to balance its diplomatic responsibilities by promising humanitarian aid to Kyiv without outright denouncing Russia's invasion. 
 
-In an attempt to promote peace negotiations between the two warring parties, Modi travelled to Moscow in July and Kyiv in August. 
-UN Secretary-General Antonio Guterres, Turkish President Recep Tayyip Erdogan, and Chinese leader Xi Jinping are among the approximately two dozen international leaders anticipated to attend this week's BRICS conference. 
+// In an attempt to promote peace negotiations between the two warring parties, Modi travelled to Moscow in July and Kyiv in August. 
+// UN Secretary-General Antonio Guterres, Turkish President Recep Tayyip Erdogan, and Chinese leader Xi Jinping are among the approximately two dozen international leaders anticipated to attend this week's BRICS conference. 
 
-The primary topics of discussion are the growing Middle East conflict and Putin's proposal for a BRICS-led payment system to compete with SWIFT.`,
-      image:BRICS_MEETING,
-      slug:'In_a_meeting_with_Putin',
+// The primary topics of discussion are the growing Middle East conflict and Putin's proposal for a BRICS-led payment system to compete with SWIFT.`,
+//       image:BRICS_MEETING,
+//       slug:'In_a_meeting_with_Putin',
 
  
-     },
+//      },
     //  {
     //   id:71,
     //   title:'',
