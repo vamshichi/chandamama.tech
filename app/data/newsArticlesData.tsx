@@ -57,6 +57,10 @@ import WhatsappAi from "@/app/images/news/What'sapp AI.png"
 import AMDRyzen9000 from "@/app/images/news/AMD Ryzen 9000.png"
 import CopilotStudio from "@/app/images/news/Copilot Studio.png"
 import Meridian from "@/app/images/news/Meridian.png"
+import Adani from "@/app/images/news/Adani.png"
+import GoldSceme from "@/app/images/news/Gold Scheme.png"
+import Oneples13 from "@/app/images/news/Onplus 13.png" 
+
 // function getFormattedDate(): string {
 //   return new Date().toLocaleDateString('en-US', {
 //     year: 'numeric',
@@ -1409,6 +1413,77 @@ New price	$549	$469	$329	$249
                          Microsoft has emphasized that these new agent capabilities place a high priority on data security and governance. The tech giant claims that Copilot Studio agents will have strong security features like rigorous authentication methods and data loss protection, all of which can be controlled by IT administrators to guarantee adherence to corporate standards.`,
       image:CopilotStudio,
       slug:'Microsoft_adds_self-governing_AI',
+ 
+     },
+     {
+      id:77,
+      title:"Adani Enterprises' second-quarter net profit increases eightfold to Rs 1,742 crore,",
+      date:'october 31,2024',
+      content:`Results for Adani Enterprises' Q2 FY25: At Rs 1,742 crore, the net profit increased eightfold. The revenue was estimated by brokers to be Rs 26,345 crore. while sales is below projections.
+
+At Rs 1,742 crore, Adani Enterprises' Q2 FY25 net profit nearly doubled year over year. Revenue from operations for the multinational business increased by 16 percent to Rs 22,608 crore in the second quarter. When revenue growth outpaced spending, net profit increased.
+A Bloomberg poll of brokerages predicted that Adani Enterprises would announce EBITDA of Rs 4,900 crore and revenue of Rs 26,345 crore, up 17% year over year (YoY).
+
+Following the earnings release, the stock increased and was trading at Rs 2,853 on the NSE, up almost 2% from the previous close. In the past year, it has increased by 24%, bringing the company's market value to Rs 3.29 lakh crore. 
+
+The board of Adani Enterprises made the decision to revoke the August 2024-approved draft plan of arrangement with Adani Wilmar Ltd. In a stock exchange filing, the Board stated that Adani Wilmar must meet its compliance requirements with relation to Minimum Public Shareholding (MPS). 
+
+Additionally, Adani Enterprises has chosen to issue non-convertible debentures in order to raise Rs 2,000 crore. According to the corporation, the NCDs would be made available to the public in one or more tranches.
+
+Prior to this, in October 2024, Adani Enterprises received Rs 4,200 crore through a QIP from institutional investors, with the largest investor being Quant Mutual Fund. 
+
+Coal and solar, natural resources, transportation (ports and airports), aircraft, agriculture, food processing, and emerging industries like digital technology, data centers, and green hydrogen are all interests of Adani Enterprises, the flagship firm of the Gautam Adani group. 
+
+With a price objective of Rs 4,368 and a "overweight" rating, Cantor Fitzgerald began covering Adani Enterprises in January 2024.
+"We value the diversification it offers; investing in a single stock gives you exposure to multiple innovative businesses that you might not access by investing in a company focused on just one sector," stated Brett Knoblauch, Director of Equity Research at Cantor Fitzgerald, in an interview.`,
+      image:Adani,
+      slug:'Adani_Enterprises',
+ 
+     },
+     {
+      id:78,
+      title:"Get gold for just Rs 10 with Mukesh Ambani's Super Diwali offer. ",
+      date:'october 31,2024',
+      content:`With this arrangement, a customer can begin investing in gold with just Rs 10 and doesn't need to spend thousands or lakhs of rupees.
+
+Today is Dhanteras 2024, the country's celebration of the holiday. On this day, individuals purchase gold or anything new, according to Hindu custom. Today, every market is a flurry of activity, and the demand for gold has increased significantly despite rates that are increasing. Jio Finance, the business owned by billionaire Mukesh Ambani, has made the calculated decision to allow its clients to purchase gold from the convenience of their homes. 
+
+Customers can now buy digital gold for just Rs 10 thanks to the Smart Gold initiative, which was introduced by Jio Finance, the business owned by Reliance Industries Chairman Mukesh Ambani. This program was launched by Ambani's company during Dhanteras, which is soon before Diwali. Investments made in digital gold are likewise redeemable under the 
+
+Smart Gold program.
+Anytime you buy Smart Gold units with this gold investment, you may turn them into jewellery, cash, or gold coins.
+
+With this arrangement, a customer can begin investing in gold with just Rs 10 and doesn't need to spend thousands or lakhs of rupees.
+
+24 Karat gold, equal to the investment amount, will be bought and kept in an insured vault as soon as the consumer deposits funds into the Smart Gold Scheme. 
+
+Customers can choose between two ways to invest in gold through the Jio Finance App's SmartGold scheme. Setting a total investment amount is the first step, and investing depending on the weight of gold in grams is the second. 
+
+Delivery of physical gold will only be possible for holdings weighing 0.5 grams or greater. The denominations that will be available include 0.5 grams, 1 gram, 2 grams, 5 grams, and 10 grams. On the Jio Finance app, users can also buy gold coins directly and take advantage of home delivery ease.`,
+      image:GoldSceme,
+      slug:'Get_gold_for_just_Rs_10',
+ 
+     },
+     {
+      id:79,
+      title:'OnePlus 13 with Snapdragon 8 Gen 4 SoC launching on October 31',
+      date:'october 31,2024',
+      content:`On October 31, 2024, OnePlus is preparing for the highly anticipated release of the OnePlus 13. The flagship gadget, whose launch date is quickly approaching, is expected to offer gradual improvements in a number of important areas, such as battery life, display 
+
+technology, and camera capabilities. Early in 2025, a worldwide deployment, encompassing regions like India, is anticipated after its introduction in China.
+
+The enormous 6,000 mAh battery of the OnePlus 13, which outperforms the 5,400 mAh battery of the OnePlus 12, will be one of its most notable characteristics. Rapid 100W wired charging will be used in conjunction with this. The OnePlus 13 also adds 50W wireless charging, albeit this magnetic function will only work with specially made cases. 
+
+With a unique circular camera module and a micro-quad-curved display, the OnePlus 13 will have a new design. Additionally, this new camera arrangement will contrast from the earlier models that had a distinct, round island-like look on the rear. To highlight the phone's photography skills, the module will include three lenses set in a square, each encircled by a sleek metallic ring.
+
+The display will be a 6.7-inch second-generation Oriental X2 8T LTPO AMOLED panel created by BOE, which supports Dolby Vision and HDR10+ and has a refresh rate of 120 Hz. Its outstanding quality is demonstrated by its Display Mate A++ accreditation. Eye strain is reduced by user-friendly features including DC dimming and anti-flicker technology, while cutting-edge features like Rain Touch 2.0 improve usability when it's raining. 
+
+Qualcomm's most recent Snapdragon 8 Elite chipset, which promises exceptional performance and economy, will power the OnePlus 13. Up to 24GB of RAM and 1TB of internal storage may be available in certain combinations. 
+
+Once again, photography aficionados will value the partnership with Hasselblad. A triple-camera configuration with a 50-megapixel primary sensor, a 50-megapixel periscope telephoto lens, and a 50-megapixel ultra-wide lens with a 120-degree field of view is anticipated for the OnePlus 13. Together with cutting-edge image processing skills, this remarkable array promises to provide exceptional performance, especially in low light.
+Software-wise, the OnePlus 13 will come with Color OS 15, which is based on Android 15, when it launches in China.`,
+      image:Oneples13,
+      slug:'OnePlus_13',
  
      },
     //  {
